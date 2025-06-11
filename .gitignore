@@ -1,4 +1,3 @@
 # Exclude large training files
 single_objective/dpo_training_setup/dpo_training_1gpu/checkpoints_4gpu/
 single_objective/dpo_training_setup/dpo_training_1gpu/logs_4gpu/
-single_objective/qwen_conversation_logs/
