@@ -20,7 +20,8 @@ python single_objective/vllm_server.py \
     --host 0.0.0.0 \
     --port 8000 \
     --gpu-memory-utilization 0.9 \
+    --tensor-parallel-size 4 \
     --trust-remote-code \
-    --max-model-len 4096
+    --max-model-len 8192
 
 echo "Server stopped." 

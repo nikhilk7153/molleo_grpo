@@ -22,7 +22,7 @@ def main():
     print("Sample data keys:", dataset.column_names)
     
     # Load tokenizer
-    model_name = "Qwen/Qwen2.5-7B-Instruct"
+    model_name = "Qwen/Qwen2.5-1.5B-Instruct"
     print(f"Loading tokenizer from {model_name}")
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     if tokenizer.pad_token is None:
@@ -35,6 +35,7 @@ def main():
         torch_dtype=torch.float16,
         trust_remote_code=True,
         low_cpu_mem_usage=True,
+        device_map="auto",  # Use auto device mapping for multi-GPU
     )
     
     # Load reference model on CPU to save GPU memory

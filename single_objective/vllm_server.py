@@ -57,6 +57,8 @@ def list_available_models():
         "TheBloke/Llama-2-7B-Chat-GGUF",
         "meta-llama/Llama-2-7b-chat-hf",
         "mistralai/Mistral-7B-Instruct-v0.2", 
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        "Qwen/Qwen2.5-7B-Instruct",
         "Qwen/Qwen2-7B-Instruct",
         "Qwen/Qwen1.5-7B-Chat",
         "microsoft/Phi-2",
@@ -65,7 +67,7 @@ def list_available_models():
     for model in models:
         print(f"  - {model}")
     print("\nFor Qwen models, you need to accept terms of use on HuggingFace and provide a token.")
-    print("Visit: https://huggingface.co/Qwen/Qwen2-7B-Instruct")
+    print("Visit: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct")
 
 def start_vllm_server(model_name, host, port, gpu_memory_utilization, max_model_len, tensor_parallel_size, trust_remote_code):
     """Start the VLLM server with the specified model and configuration"""
@@ -118,18 +120,18 @@ def start_vllm_server(model_name, host, port, gpu_memory_utilization, max_model_
 
 def main():
     parser = argparse.ArgumentParser(description='Start a VLLM server with Qwen model')
-    parser.add_argument('--model', type=str, default='Qwen/Qwen2-7B-Instruct', 
-                        help='Model name or path (default: Qwen/Qwen2-7B-Instruct)')
+    parser.add_argument('--model', type=str, default='Qwen/Qwen2.5-7B-Instruct', 
+                        help='Model name or path (default: Qwen/Qwen2.5-7B-Instruct)')
     parser.add_argument('--host', type=str, default='0.0.0.0', 
                         help='Host to bind server to (default: 0.0.0.0)')
     parser.add_argument('--port', type=int, default=8000, 
                         help='Port to bind server to (default: 8000)')
-    parser.add_argument('--gpu-memory-utilization', type=float, default=0.9, 
-                        help='GPU memory utilization (default: 0.9)')
-    parser.add_argument('--max-model-len', type=int, default=4096, 
-                        help='Maximum model length for context (default: 4096)')
-    parser.add_argument('--tensor-parallel-size', type=int, default=1, 
-                        help='Tensor parallel size for multi-GPU inference (default: 1)')
+    parser.add_argument('--gpu-memory-utilization', type=float, default=0.8, 
+                        help='GPU memory utilization (default: 0.8)')
+    parser.add_argument('--max-model-len', type=int, default=8192, 
+                        help='Maximum model length for context (default: 8192)')
+    parser.add_argument('--tensor-parallel-size', type=int, default=4, 
+                        help='Tensor parallel size for multi-GPU inference (default: 4)')
     parser.add_argument('--hf-token', type=str, default=None,
                         help='HuggingFace access token for authentication (required for Qwen models)')
     parser.add_argument('--trust-remote-code', action='store_true',

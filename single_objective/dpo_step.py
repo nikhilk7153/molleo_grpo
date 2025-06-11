@@ -594,14 +594,14 @@ def create_final_dpo_training_files(all_preferences: List[Dict[str, Any]],
     # Create verl training config
     verl_config = {
         "model": {
-            "path": "Qwen/Qwen2.5-7B-Instruct",
+            "path": "Qwen/Qwen2.5-1.5B-Instruct",
             "trust_remote_code": True
         },
         "training": {
             "algorithm": "dpo",
-            "num_gpus": 2,
-            "per_device_train_batch_size": 4,
-            "gradient_accumulation_steps": 4,
+            "num_gpus": 4,
+            "per_device_train_batch_size": 8,
+            "gradient_accumulation_steps": 2,
             "learning_rate": 5e-7,
             "num_epochs": 3,
             "max_length": 2048,

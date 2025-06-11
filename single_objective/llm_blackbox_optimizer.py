@@ -139,7 +139,7 @@ class LLMBlackBoxOptimizer:
         ]
         
         payload = {
-            "model": "Qwen/Qwen2.5-7B-Instruct",
+            "model": "Qwen/Qwen2.5-1.5B-Instruct",
             "messages": messages,
             "temperature": temperature,
             "max_tokens": 2048,  # Reduce max tokens to leave more room for prompt

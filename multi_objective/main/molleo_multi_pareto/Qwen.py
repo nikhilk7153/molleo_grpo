@@ -21,7 +21,7 @@ def query_LLM(question, temperature=0.0):
     
     # Prepare the request payload
     payload = {
-        "model": "Qwen/Qwen2.5-7B-Instruct",  # This should match the model served by vLLM
+        "model": "Qwen/Qwen2.5-1.5B-Instruct",  # This should match the model served by vLLM
         "messages": messages,
         "temperature": temperature,
         "max_tokens": 2048,

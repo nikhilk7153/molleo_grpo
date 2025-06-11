@@ -1,6 +1,8 @@
 import requests
 import json
 import re
+import os
+from datetime import datetime
 from rdkit import Chem
 import main.molleo.crossover as co, main.molleo.mutate as mu
 import random
@@ -13,16 +15,13 @@ VLLM_SERVER_URL = "http://localhost:8000/v1/chat/completions"
 def query_LLM(question, temperature=0.0):
     """Query the Qwen model using vLLM server"""
     
-    # Create the chat messages
-    messages = [
-        {"role": "system", "content": "You are a helpful agent who can answer the question based on your molecule knowledge."},
-        {"role": "user", "content": question}
-    ]
+    message = [{"role": "system", "content": "You are a helpful agent who can answer the question based on your molecule knowledge."}]
+    message.append({"role": "user", "content": question})
     
     # Prepare the request payload
     payload = {
-        "model": "Qwen/Qwen2.5-7B-Instruct",  # This should match the model served by vLLM
-        "messages": messages,
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "messages": message,
         "temperature": temperature,
         "max_tokens": 2048,
         "stop": ["User:", "System:"]
@@ -34,32 +33,24 @@ def query_LLM(question, temperature=0.0):
             response = requests.post(
                 VLLM_SERVER_URL,
                 headers={"Content-Type": "application/json"},
-                json=payload,
-                timeout=120  # 2 minute timeout
+                json=payload
             )
             response.raise_for_status()
             
             # Parse response
             result = response.json()
             assistant_response = result["choices"][0]["message"]["content"].strip()
+            message.append({"role": "assistant", "content": assistant_response})
+            break
             
-            # Create message format for compatibility
-            messages.append({"role": "assistant", "content": assistant_response})
-            
-            print("=>")
-            return messages, assistant_response
-            
-        except requests.exceptions.RequestException as e:
-            print(f"HTTP request failed: {e}")
-            if retry == 2:  # Last retry
-                print("Failed to connect to vLLM server. Make sure it's running on localhost:8000")
-                raise e
         except Exception as e:
             print(f"{type(e).__name__} {e}")
             if retry == 2:  # Last retry
-                raise e
+                print("Failed to connect to vLLM server. Make sure it's running on localhost:8000")
+                return None, None
 
-    return None, None
+    print("=>")
+    return message, assistant_response
 
 class Qwen:
     def __init__(self):
@@ -90,7 +81,35 @@ class Qwen:
         self.requirements = """\n\nYour output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \\box{$Molecule}}. Here are the requirements:\n
         \n\n1. $EXPLANATION should be your analysis.\n2. The $Molecule should be the smiles of your propsosed molecule.\n3. The molecule should be valid.
         """
-        self.task=None
+        self.task = None
+        
+        # Initialize conversation logging
+        self.call_count = 0
+        self.logs_dir = "qwen_conversation_logs"
+        os.makedirs(self.logs_dir, exist_ok=True)
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.log_file = os.path.join(self.logs_dir, f"qwen_conversations_{timestamp}.jsonl")
+        print(f"Qwen conversation logging initialized. Logs will be saved to: {self.log_file}")
+
+    def save_conversation(self, messages, metadata=None):
+        """Save conversation messages to log file"""
+        self.call_count += 1
+        
+        log_entry = {
+            "timestamp": datetime.now().isoformat(),
+            "call_id": self.call_count,
+            "task": self.task[0] if self.task else None,
+            "messages": messages,
+            "metadata": metadata or {}
+        }
+        
+        try:
+            with open(self.log_file, 'a') as f:
+                f.write(json.dumps(log_entry) + '\n')
+            print(f"💾 Conversation saved (Call #{self.call_count})")
+        except Exception as e:
+            print(f"⚠️  Failed to save conversation: {e}")
 
     def edit(self, mating_tuples, mutation_rate):
         task = self.task
@@ -102,35 +121,66 @@ class Qwen:
         parent.append(random.choice(mating_tuples))
         parent_mol = [t[1] for t in parent]
         parent_scores = [t[0] for t in parent]
+        
         try:
             mol_tuple = ''
             for i in range(2):
                 tu = '\n[' + Chem.MolToSmiles(parent_mol[i]) + ',' + str(parent_scores[i]) + ']'
                 mol_tuple = mol_tuple + tu
             prompt = task_definition + mol_tuple + task_objective + self.requirements
-            _, r = query_LLM(prompt)
             
-            # Extract explanation and molecule
-            explanation_match = re.search(r'<<<Explaination>>>:\s*(.*?)(?=<<<Molecule>>>|$)', r, re.DOTALL)
-            explanation = explanation_match.group(1).strip() if explanation_match else "No explanation provided"
+            # Store metadata about this call
+            metadata = {
+                "parent_molecules": [Chem.MolToSmiles(mol) for mol in parent_mol],
+                "parent_scores": parent_scores,
+                "mutation_rate": mutation_rate,
+                "task": task[0]
+            }
             
-            proposed_smiles = re.search(r'\\box\{(.*?)\}', r).group(1)
-            proposed_smiles = sanitize_smiles(proposed_smiles)
+            messages, r = query_LLM(prompt)
             
-            print(f"  Explanation: {explanation}")
-            print(f"  Generated SMILES: {proposed_smiles}")
+            if messages is None or r is None:
+                # Connection failed, fall back to genetic operations
+                raise ConnectionError("Failed to get response from vLLM server")
             
-            assert proposed_smiles != None
-            new_child = Chem.MolFromSmiles(proposed_smiles)
-
-            return new_child
+            # Save the conversation
+            self.save_conversation(messages, metadata)
+            
+            # Try to extract SMILES using the expected format
+            smiles_match = re.search(r'\\box\{(.*?)\}', r)
+            if smiles_match:
+                proposed_smiles = smiles_match.group(1)
+                proposed_smiles = sanitize_smiles(proposed_smiles)
+                print(f"Extracted SMILES: {proposed_smiles}")
+                
+                if proposed_smiles is not None:
+                    new_child = Chem.MolFromSmiles(proposed_smiles)
+                    return new_child
+                else:
+                    print("SMILES sanitization failed, setting reward to 0")
+                    return None
+            else:
+                # If parsing fails, save raw output and set reward to 0
+                print("Could not parse SMILES from response, saving raw output and setting reward to 0")
+                print(f"Raw response: {r}")
+                return None
+                
         except Exception as e:
             print(f"{type(e).__name__} {e}")
+            # Fall back to genetic operations
             new_child = co.crossover(parent_mol[0], parent_mol[1])
             if new_child is not None:
                 new_child = mu.mutate(new_child, mutation_rate)
             return new_child
-    
+
+    def get_conversation_summary(self):
+        """Get a summary of all conversations"""
+        return {
+            "total_calls": self.call_count,
+            "log_file": self.log_file,
+            "conversations_saved": self.call_count
+        }
+
 def sanitize_smiles(smi):
     """
     Return a canonical smile representation of smi 
