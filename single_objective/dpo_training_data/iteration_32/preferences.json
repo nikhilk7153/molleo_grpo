@@ -1,0 +1,192 @@
+{
+  "iteration": 32,
+  "oracle": "jnk3",
+  "data": [
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(=O)NC(=O)N(C)c1cccc(Br)c1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{Cc1ccccc1CN1CCN(CC(=O)NCc2ccco2)C1=O}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{C=C(C)COc1ccc(-c2[nH]ncc2-c2ccc(OC)c(OC)c2)c(O)c1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(=O)NC(=O)N(C)c1cccc(Br)c1}\"}",
+      "chosen_reward": 0.05,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CO[C@H](CNCc1cn(C)nc1-c1cccc(Cl)c1)c1cccs1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{O=C1C(c2ccccc2)C2CC=C2N1C1CCCCC1}\"}",
+      "chosen_reward": 0.06,
+      "rejected_reward": 0.01,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(C)NC(=O)[C@H](Cl)c1cccc(C2CC2)c1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(=O)NC(=O)N(C)c1cccc(Br)c1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CO[C@H](CNCc1cn(C)nc1-c1cccc(Cl)c1)c1cccs1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(=O)NC(=O)N(C)c1cccc(Br)c1}\"}",
+      "chosen_reward": 0.06,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CO[C@H](CNCc1cn(C)nc1-c1cccc(Cl)c1)c1cccs1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(=O)NC(=O)N(C)c1cccc(Br)c1}\"}",
+      "chosen_reward": 0.06,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{O=C1C(c2ccccc2)C2CC=C2N1C1CCCCC1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.01,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CO[C@H](CNCc1cn(C)nc1-c1cccc(Cl)c1)c1cccs1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{Cc1ccccc1CN1CCN(CC(=O)NCc2ccco2)C1=O}\"}",
+      "chosen_reward": 0.06,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{C=C(C)COc1ccc(-c2[nH]ncc2-c2ccc(OC)c(OC)c2)c(O)c1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{Cc1ccccc1CN1CCN(CC(=O)NCc2ccco2)C1=O}\"}",
+      "chosen_reward": 0.05,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC1=NN(F)C(=O)OCC(C)C(=O)N(C)C[SH](C)C(=O)N1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.01,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(=O)NC(=O)N(C)c1cccc(Br)c1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC1=NN(F)C(=O)OCC(C)C(=O)N(C)C[SH](C)C(=O)N1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.01,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{Cc1ccccc1CN1CCN(CC(=O)NCc2ccco2)C1=O}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CO[C@H](CNCc1cn(C)nc1-c1cccc(Cl)c1)c1cccs1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC(C)NC(=O)[C@H](Cl)c1cccc(C2CC2)c1}\"}",
+      "chosen_reward": 0.06,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC1=NN(F)C(=O)OCC(C)C(=O)N(C)C[SH](C)C(=O)N1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.01,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CC1=NN(F)C(=O)OCC(C)C(=O)N(C)C[SH](C)C(=O)N1}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.01,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CCNC(=O)[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@@H](O)[C@@H]1O}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{Cc1ccccc1CN1CCN(CC(=O)NCc2ccco2)C1=O}\"}",
+      "chosen_reward": 0.07,
+      "rejected_reward": 0.0,
+      "iteration": 32,
+      "oracle": "jnk3"
+    },
+    {
+      "prompt": "Generate a molecule optimized for jnk3. Analyze the following examples and generate a better performing molecule.\n\nTask: Generate a molecule with high jnk3 score.\nUse the format: {\"<<<Explanation>>>\": \"Your reasoning here\", \"<<<Molecule>>>\": \"\\box{SMILES_HERE}\"}\n\nResponse:",
+      "chosen": "{\"<<<Explanation>>>\": \"Based on molecular analysis, this structure should have high jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{CO[C@H](CNCc1cn(C)nc1-c1cccc(Cl)c1)c1cccs1}\"}",
+      "rejected": "{\"<<<Explanation>>>\": \"This molecule has lower predicted jnk3 activity.\", \"<<<Molecule>>>\": \"\\box{O=C1C(c2ccccc2)C2CC=C2N1C1CCCCC1}\"}",
+      "chosen_reward": 0.06,
+      "rejected_reward": 0.01,
+      "iteration": 32,
+      "oracle": "jnk3"
+    }
+  ],
+  "stats": {
+    "num_pairs": 20,
+    "avg_reward_diff": 0.06150000000000001,
+    "has_preferences": true,
+    "reason_for_no_preferences": null
+  }
+}

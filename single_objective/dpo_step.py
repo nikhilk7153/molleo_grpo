@@ -384,6 +384,309 @@ def add_dpo_step(llm_blackbox_optimizer_instance: Any,
         output_dir='./dpo_results'
     )
 
+def create_iteration_preferences(positive_samples: List[Tuple[str, float]], 
+                               negative_samples: List[Tuple[str, float]], 
+                               new_molecules: List[str],
+                               oracle: Any,
+                               oracle_name: str,
+                               iteration: int) -> List[Dict[str, Any]]:
+    """
+    Create preference pairs for a single iteration in DPO training format.
+    
+    Args:
+        positive_samples: List of (smiles, score) tuples for positive examples
+        negative_samples: List of (smiles, score) tuples for negative examples  
+        new_molecules: List of newly generated SMILES
+        oracle: Oracle function to evaluate molecules
+        oracle_name: Name of the oracle (e.g., 'jnk3')
+        iteration: Current iteration number
+        
+    Returns:
+        List of preference pairs in DPO format
+    """
+    # Combine all molecules from this iteration with their scores
+    iteration_molecules = []
+    
+    # Add positive samples
+    for smi, score in positive_samples:
+        iteration_molecules.append((smi, score))
+    
+    # Add negative samples  
+    for smi, score in negative_samples:
+        iteration_molecules.append((smi, score))
+        
+    # Add new molecules (get their scores)
+    for smi in new_molecules:
+        sanitized = sanitize_smiles(smi)
+        if sanitized:
+            try:
+                score = oracle.score_smi(smi) if hasattr(oracle, 'score_smi') else oracle(smi)
+                iteration_molecules.append((sanitized, score))
+            except:
+                iteration_molecules.append((sanitized, 0.0))
+    
+    # Remove duplicates
+    seen = set()
+    unique_molecules = []
+    for smi, score in iteration_molecules:
+        if smi not in seen:
+            seen.add(smi)
+            unique_molecules.append((smi, score))
+    
+    if len(unique_molecules) < 2:
+        return []
+        
+    # Sort by score (highest first)
+    sorted_molecules = sorted(unique_molecules, key=lambda x: x[1], reverse=True)
+    
+    # Create preference pairs for this iteration
+    pairs = []
+    num_pairs = min(50, len(sorted_molecules) * 2)  # Create reasonable number of pairs
+    
+    for _ in range(num_pairs):
+        if len(sorted_molecules) < 2:
+            break
+            
+        # Pick a high-reward molecule (preferred) - from top 30%
+        high_idx = np.random.randint(0, max(1, len(sorted_molecules) * 3 // 10))
+        high_smiles, high_reward = sorted_molecules[high_idx]
+        
+        # Pick a low-reward molecule (rejected) - from bottom 50%
+        low_idx = np.random.randint(max(1, len(sorted_molecules) // 2), len(sorted_molecules))
+        low_smiles, low_reward = sorted_molecules[low_idx]
+        
+        if high_reward <= low_reward:
+            continue
+            
+        # Create the prompt
+        prompt = f"""Generate a molecule optimized for {oracle_name}. Analyze the following examples and generate a better performing molecule.
+
+Task: Generate a molecule with high {oracle_name} score.
+Use the format: {{"<<<Explanation>>>": "Your reasoning here", "<<<Molecule>>>": "\\box{{SMILES_HERE}}"}}
+
+Response:"""
+        
+        # Create preferred and rejected responses
+        preferred_response = f'{{"<<<Explanation>>>": "Based on molecular analysis, this structure should have high {oracle_name} activity.", "<<<Molecule>>>": "\\box{{{high_smiles}}}"}}'
+        rejected_response = f'{{"<<<Explanation>>>": "This molecule has lower predicted {oracle_name} activity.", "<<<Molecule>>>": "\\box{{{low_smiles}}}"}}'
+        
+        pairs.append({
+            "prompt": prompt,
+            "chosen": preferred_response,
+            "rejected": rejected_response,
+            "chosen_reward": float(high_reward),
+            "rejected_reward": float(low_reward),
+            "iteration": iteration,
+            "oracle": oracle_name
+        })
+    
+    return pairs
+
+def save_iteration_preferences(preferences: List[Dict[str, Any]], 
+                             iteration: int, 
+                             output_dir: str,
+                             oracle_name: str,
+                             all_preferences: List[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+    """
+    Save preference pairs for this iteration and return updated cumulative list.
+    
+    Args:
+        preferences: Preference pairs for this iteration
+        iteration: Current iteration number
+        output_dir: Base output directory
+        oracle_name: Name of the oracle
+        all_preferences: Cumulative list of all preferences (will be updated)
+        
+    Returns:
+        Updated cumulative list of all preferences
+    """
+    # Initialize cumulative list if not provided
+    if all_preferences is None:
+        all_preferences = []
+        
+    # Add to cumulative list (even if empty - we still want to track the iteration)
+    if preferences:
+        all_preferences.extend(preferences)
+    
+    # Create iteration-specific directory (always, even if no preferences)
+    iter_dir = os.path.join(output_dir, f"iteration_{iteration}")
+    os.makedirs(iter_dir, exist_ok=True)
+    
+    # Save iteration preferences (or metadata even if empty)
+    iter_data = {
+        "iteration": iteration,
+        "oracle": oracle_name,
+        "data": preferences,
+        "stats": {
+            "num_pairs": len(preferences),
+            "avg_reward_diff": np.mean([p["chosen_reward"] - p["rejected_reward"] for p in preferences]) if preferences else 0,
+            "has_preferences": len(preferences) > 0,
+            "reason_for_no_preferences": "Insufficient unique molecules (< 2)" if not preferences else None
+        }
+    }
+    
+    iter_file = os.path.join(iter_dir, "preferences.json")
+    with open(iter_file, 'w') as f:
+        json.dump(iter_data, f, indent=2)
+    
+    # Save cumulative preferences (all iterations so far)
+    cumulative_data = {
+        "total_iterations": iteration,
+        "oracle": oracle_name,
+        "data": all_preferences,
+        "stats": {
+            "total_pairs": len(all_preferences),
+            "avg_reward_diff": np.mean([p["chosen_reward"] - p["rejected_reward"] for p in all_preferences]) if all_preferences else 0,
+            "iterations_completed": iteration
+        }
+    }
+    
+    cumulative_file = os.path.join(output_dir, "all_preferences.json")
+    with open(cumulative_file, 'w') as f:
+        json.dump(cumulative_data, f, indent=2)
+    
+    if preferences:
+        print(f"  💾 Saved {len(preferences)} preference pairs for iteration {iteration}")
+    else:
+        print(f"  ⚠️  Iteration {iteration}: No preference pairs created (insufficient unique molecules)")
+    print(f"  📊 Total preference pairs collected: {len(all_preferences)}")
+    
+    return all_preferences
+
+def create_final_dpo_training_files(all_preferences: List[Dict[str, Any]],
+                                  output_dir: str,
+                                  oracle_name: str,
+                                  total_iterations: int) -> Dict[str, Any]:
+    """
+    Create final DPO training files with all accumulated preferences.
+    
+    Args:
+        all_preferences: All preference pairs collected across iterations
+        output_dir: Base output directory  
+        oracle_name: Name of the oracle
+        total_iterations: Total number of iterations completed
+        
+    Returns:
+        Dictionary with file paths and statistics
+    """
+    if not all_preferences:
+        return {"status": "no_preferences", "message": "No preference pairs collected for DPO training"}
+        
+    final_output_dir = os.path.join(output_dir, "final_dpo_training")
+    os.makedirs(final_output_dir, exist_ok=True)
+    
+    # Create final training dataset
+    final_data = {
+        "data": all_preferences,
+        "dataset_info": {
+            "total_pairs": len(all_preferences),
+            "total_iterations": total_iterations,
+            "oracle": oracle_name,
+            "avg_reward_difference": np.mean([p["chosen_reward"] - p["rejected_reward"] for p in all_preferences])
+        }
+    }
+    
+    # Save final preference dataset
+    final_file = os.path.join(final_output_dir, "final_preferences.json")
+    with open(final_file, 'w') as f:
+        json.dump(final_data, f, indent=2)
+    
+    # Create verl training config
+    verl_config = {
+        "model": {
+            "path": "Qwen/Qwen2.5-7B-Instruct",
+            "trust_remote_code": True
+        },
+        "training": {
+            "algorithm": "dpo",
+            "num_gpus": 2,
+            "per_device_train_batch_size": 4,
+            "gradient_accumulation_steps": 4,
+            "learning_rate": 5e-7,
+            "num_epochs": 3,
+            "max_length": 2048,
+            "beta": 0.1
+        },
+        "data": {
+            "train_files": [final_file],
+            "eval_files": [final_file],
+            "prompt_key": "prompt",
+            "chosen_key": "chosen",
+            "rejected_key": "rejected"
+        },
+        "output": {
+            "save_dir": os.path.join(final_output_dir, "checkpoints"),
+            "logging_dir": os.path.join(final_output_dir, "logs")
+        }
+    }
+    
+    config_file = os.path.join(final_output_dir, "verl_config.json")
+    with open(config_file, 'w') as f:
+        json.dump(verl_config, f, indent=2)
+    
+    # Create training script
+    training_script = f"""#!/bin/bash
+
+# Final DPO Training Script for Molecular Optimization
+# Generated from {total_iterations} iterations of blackbox optimization
+
+export CUDA_VISIBLE_DEVICES=0,1
+export PYTHONPATH=$PYTHONPATH:$(pwd)
+
+echo "Starting DPO training with {len(all_preferences)} preference pairs..."
+echo "Oracle: {oracle_name}"
+echo "Iterations completed: {total_iterations}"
+
+# Run DPO training with verl
+python -m verl.trainer.fsdp_dpo_trainer \\
+    --config_path {config_file} \\
+    --num_gpus 2 \\
+    --per_device_train_batch_size 4 \\
+    --gradient_accumulation_steps 4 \\
+    --learning_rate 5e-7 \\
+    --num_epochs 3 \\
+    --max_length 2048 \\
+    --beta 0.1 \\
+    --output_dir {os.path.join(final_output_dir, "checkpoints")} \\
+    --logging_dir {os.path.join(final_output_dir, "logs")} \\
+    --save_steps 100 \\
+    --eval_steps 100 \\
+    --warmup_steps 50 \\
+    --report_to tensorboard
+
+echo "DPO training completed. Checkpoints saved to {os.path.join(final_output_dir, "checkpoints")}"
+"""
+    
+    script_file = os.path.join(final_output_dir, "run_dpo_training.sh")
+    with open(script_file, 'w') as f:
+        f.write(training_script)
+    os.chmod(script_file, 0o755)
+    
+    results = {
+        "status": "success",
+        "dataset_stats": {
+            "total_pairs": len(all_preferences),
+            "total_iterations": total_iterations,
+            "oracle": oracle_name,
+            "avg_reward_difference": final_data['dataset_info']['avg_reward_difference']
+        },
+        "files": {
+            "preference_data": final_file,
+            "verl_config": config_file,
+            "training_script": script_file
+        },
+        "output_dir": final_output_dir
+    }
+    
+    print(f"\n🎉 FINAL DPO Training Files Created! 🎉")
+    print(f"✅ Total preference pairs: {len(all_preferences)}")
+    print(f"📊 From {total_iterations} iterations")
+    print(f"💾 Files saved to: {final_output_dir}")
+    print(f"🚀 To start DPO training: bash {script_file}")
+    print(f"📈 Avg reward difference: {final_data['dataset_info']['avg_reward_difference']:.4f}")
+    
+    return results
+
 if __name__ == "__main__":
     # Example usage
     print("DPO Dataset Creation Module")
