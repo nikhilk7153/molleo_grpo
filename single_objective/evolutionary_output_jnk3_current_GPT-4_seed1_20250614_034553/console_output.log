@@ -1,0 +1,877 @@
+2025-06-14 03:46:01 - 
+=== INITIAL POPULATION ===
+2025-06-14 03:46:01 - Population size: 120
+2025-06-14 03:46:01 - Initial scores - Mean: 0.0166, Max: 0.1900, Min: 0.0000
+2025-06-14 03:46:01 - Best initial molecule: Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.1900)
+2025-06-14 03:46:01 - 
+=== GENERATION 1 ===
+2025-06-14 03:46:01 - Generating 70 offspring using GPT-4...
+2025-06-14 03:46:01 - 
+  --- Offspring 1 ---
+2025-06-14 03:46:02 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:02 -   Generated SMILES: CC1=CC=C([N+](=O)[O-])C=C1
+2025-06-14 03:46:02 -   Score: 0.0400
+2025-06-14 03:46:02 - 
+  --- Offspring 2 ---
+2025-06-14 03:46:03 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:03 -   Generated SMILES: COC1=NC=CC(C2=NOC(C3=CCO[C@H](C)C3)=N2)=C1
+2025-06-14 03:46:03 -   Score: 0.0500
+2025-06-14 03:46:03 - 
+  --- Offspring 3 ---
+2025-06-14 03:46:04 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:04 -   Generated SMILES: CC(C)(C)[C@H](O)CNO
+2025-06-14 03:46:04 -   Score: 0.0000
+2025-06-14 03:46:04 - 
+  --- Offspring 4 ---
+2025-06-14 03:46:05 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:05 -   Generated SMILES: CC(=O)N[C@H](C)C1=CC=C(C2=CSC(NC(=O)[C@@H](C)OC3=C(Cl)C=CC(C)=C3)=N2)C=C1
+2025-06-14 03:46:05 -   Score: 0.0400
+2025-06-14 03:46:05 - 
+  --- Offspring 5 ---
+2025-06-14 03:46:05 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:05 -   Generated SMILES: CONC1=CC=C2C(=C1)N=CN=C2N1CCCC1
+2025-06-14 03:46:05 -   Score: 0.1400
+2025-06-14 03:46:05 - 
+  --- Offspring 6 ---
+2025-06-14 03:46:06 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:06 -   Generated SMILES: CC1=CC=C([C@H](C)NC(=O)N[C@H]2C=C(C)N(C3CC3)C2)C=C1[N+](=O)[O-]
+2025-06-14 03:46:06 -   Score: 0.0200
+2025-06-14 03:46:06 - 
+  --- Offspring 7 ---
+2025-06-14 03:46:06 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:06 -   Generated SMILES: O=C(CSC1=NC2=CC=CC=C2O1)NF
+2025-06-14 03:46:07 -   Score: 0.0000
+2025-06-14 03:46:07 - 
+  --- Offspring 8 ---
+2025-06-14 03:46:07 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:07 -   Generated SMILES: CS[C@@H](C)C1=CC(NC(=O)C2=CN(C[C@H](C[NH3+])CO)N=C2C2=CC=CC=C2)=CC=C1
+2025-06-14 03:46:07 -   Score: 0.0400
+2025-06-14 03:46:07 - 
+  --- Offspring 9 ---
+2025-06-14 03:46:08 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:08 -   Generated SMILES: O=[N+]([O-])C1=CC=C(O)C=C1C[NH+]1CC=CCC1
+2025-06-14 03:46:08 -   Score: 0.0700
+2025-06-14 03:46:08 - 
+  --- Offspring 10 ---
+2025-06-14 03:46:08 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:08 -   Generated SMILES: COC1=CC=C(CC(=O)N[C@H]2CC(=O)N(C3CC3)C2)C=C1
+2025-06-14 03:46:08 -   Score: 0.0000
+2025-06-14 03:46:08 - 
+  --- Offspring 11 ---
+2025-06-14 03:46:09 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:09 -   Generated SMILES: CC(=O)[C@@H]1CCCN(C(=O)NC2CCC([NH+]3CCCCC3)CC2)C1
+2025-06-14 03:46:09 -   Score: 0.0100
+2025-06-14 03:46:09 - 
+  --- Offspring 12 ---
+2025-06-14 03:46:09 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:09 -   Generated SMILES: C[NH2+]C[C@@H]1CN2CCCC[C@@H]2CO1
+2025-06-14 03:46:09 -   Score: 0.0100
+2025-06-14 03:46:09 - 
+  --- Offspring 13 ---
+2025-06-14 03:46:10 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:10 -   Generated SMILES: CC(C)(C)[C@H](O)CNC1=CC(C[C@H](C[NH3+])CO)=CC(Br)=C1
+2025-06-14 03:46:10 -   Score: 0.0600
+2025-06-14 03:46:10 - 
+  --- Offspring 14 ---
+2025-06-14 03:46:11 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:11 -   Generated SMILES: CC(N)C[C@H]1C[NH2+]CC[C@@H]1C1=CC=CC2=C1OC(C)(C)C2
+2025-06-14 03:46:11 -   Score: 0.0100
+2025-06-14 03:46:11 - 
+  --- Offspring 15 ---
+2025-06-14 03:46:11 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:11 -   Generated SMILES: CC1=CC=C([C@H](C)NC(=O)N[C@H]2CC(=O)N(C3CC3)C2)C=C1[N+](=O)[O-]
+2025-06-14 03:46:11 -   Score: 0.0600
+2025-06-14 03:46:11 - 
+  --- Offspring 16 ---
+2025-06-14 03:46:12 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:12 -   Generated SMILES: ClN1CCC[C@H]1C1=NC2=CC=CC=C2N1
+2025-06-14 03:46:12 -   Score: 0.0000
+2025-06-14 03:46:12 - 
+  --- Offspring 17 ---
+2025-06-14 03:46:12 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:12 -   Generated SMILES: [O-]C1=CC=NC(Cl)=C1
+2025-06-14 03:46:12 -   Score: 0.0200
+2025-06-14 03:46:12 - 
+  --- Offspring 18 ---
+2025-06-14 03:46:13 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:13 -   Generated SMILES: CC(C)(C)OC(=O)N1CC(=CC(=O)NC2=CCN3C[C@@H](C[NH2+]CC4=CC5=CC(F)=CC=C5O4)OC[C@@H]23)C1
+2025-06-14 03:46:13 -   Score: 0.0800
+2025-06-14 03:46:13 - 
+  --- Offspring 19 ---
+2025-06-14 03:46:14 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:14 -   Generated SMILES: C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(Cl)C=C1C(=O)NC1=CC=CC([C@H](C)SC)=C1)NC(=O)N2CC
+2025-06-14 03:46:14 -   Score: 0.0300
+2025-06-14 03:46:14 - 
+  --- Offspring 20 ---
+2025-06-14 03:46:14 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:14 -   Generated SMILES: CC1=CC=C(Cl)C(F)=C1
+2025-06-14 03:46:14 -   Score: 0.0000
+2025-06-14 03:46:14 - 
+  --- Offspring 21 ---
+2025-06-14 03:46:15 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:15 -   Generated SMILES: CC(=O)NC12C[C@H]3C[C@@H](C1)CC(C1=CC=C([N+](=O)[O-])C=C1)(C3)C2
+2025-06-14 03:46:15 -   Score: 0.0400
+2025-06-14 03:46:15 - 
+  --- Offspring 22 ---
+2025-06-14 03:46:15 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:15 -   Generated SMILES: CC(C)N1C=CC(C2=CC=C3C(=C2)N=CN=C3N2CCCC2)=N1
+2025-06-14 03:46:15 -   Score: 0.1100
+2025-06-14 03:46:15 - 
+  --- Offspring 23 ---
+2025-06-14 03:46:16 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:16 -   Generated SMILES: CC(=O)NC1=C(C)C(CN2C[C@H](CO)OC[C@@H]2C)=CC1
+2025-06-14 03:46:16 -   Score: 0.0100
+2025-06-14 03:46:16 - 
+  --- Offspring 24 ---
+2025-06-14 03:46:17 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:17 -   Generated SMILES: COC1=NC=CC(C2=NOC(C3C=C(C)O[C@H](C)C3)=N2)=C1
+2025-06-14 03:46:17 -   Score: 0.0400
+2025-06-14 03:46:17 - 
+  --- Offspring 25 ---
+2025-06-14 03:46:17 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:17 -   Generated SMILES: COC1=CC=C([C@H](NC(C)=O)C2CCOCC2)C=C1
+2025-06-14 03:46:17 -   Score: 0.0000
+2025-06-14 03:46:17 - 
+  --- Offspring 26 ---
+2025-06-14 03:46:18 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:18 -   Generated SMILES: O=[N+]([O-])C1=NN(CC2=CC=C(CN3C=C(Cl)C([N+](=O)[O-])=N3)C2)C=C1Cl
+2025-06-14 03:46:18 -   Score: 0.0100
+2025-06-14 03:46:18 - 
+  --- Offspring 27 ---
+2025-06-14 03:46:18 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:18 -   Generated SMILES: CC1=C([C@H]([NH3+])CSC[C@@H](C)CO)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1
+2025-06-14 03:46:18 -   Score: 0.1700
+2025-06-14 03:46:18 - 
+  --- Offspring 28 ---
+2025-06-14 03:46:19 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:19 -   Generated SMILES: CC(C)(C)NC(=O)CNC1=NCC=[SH]1
+2025-06-14 03:46:19 -   Score: 0.0100
+2025-06-14 03:46:19 - 
+  --- Offspring 29 ---
+2025-06-14 03:46:20 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:20 -   Generated SMILES: CC1=NON=C1CC(=O)N1CCC[C@H](C(=O)[C@@H]2CC(=O)C3=C(C2)N[C@@H]2N=NC(O)=C2[C@H]3C2=CC=C(Cl)C(Cl)=C2)C1
+2025-06-14 03:46:20 -   Score: 0.0200
+2025-06-14 03:46:20 - 
+  --- Offspring 30 ---
+2025-06-14 03:46:20 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:20 -   Generated SMILES: CCN1C(=O)N[C@H](C2=CC=C(Cl)C=C2Cl)C2=C1C=NN(C)C2=O
+2025-06-14 03:46:20 -   Score: 0.0200
+2025-06-14 03:46:20 - 
+  --- Offspring 31 ---
+2025-06-14 03:46:21 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:21 -   Generated SMILES: CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1C=C(C)C([N+](=O)[O-])=C1
+2025-06-14 03:46:21 -   Score: 0.1700
+2025-06-14 03:46:21 - 
+  --- Offspring 32 ---
+2025-06-14 03:46:21 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:21 -   Generated SMILES: CC1=CC=CC=C1N[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O
+2025-06-14 03:46:21 -   Score: 0.0400
+2025-06-14 03:46:21 - 
+  --- Offspring 33 ---
+2025-06-14 03:46:22 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:22 -   Generated SMILES: CS[C@@H](C)C1=CC=CC1
+2025-06-14 03:46:22 -   Score: 0.0000
+2025-06-14 03:46:22 - 
+  --- Offspring 34 ---
+2025-06-14 03:46:23 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:23 -   Generated SMILES: C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=COCC1)NC(=O)N2CC
+2025-06-14 03:46:23 -   Score: 0.0300
+2025-06-14 03:46:23 - 
+  --- Offspring 35 ---
+2025-06-14 03:46:23 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:23 -   Generated SMILES: CC1=CC=C(C2=CC(CCC[NH+](C)CC3=NC=C(C)O3)=NN2)C=C1
+2025-06-14 03:46:23 -   Score: 0.0300
+2025-06-14 03:46:23 - 
+  --- Offspring 36 ---
+2025-06-14 03:46:24 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:24 -   Generated SMILES: O=C1C=C(C2=CC=C(F)C=C2)CN1C1CC1
+2025-06-14 03:46:24 -   Score: 0.0100
+2025-06-14 03:46:24 - 
+  --- Offspring 37 ---
+2025-06-14 03:46:25 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:25 -   Generated SMILES: CC(=O)NC1=CC=C(NCC2=CC=CC=C2F)C(C2=CC(C)=C(Br)C=N2)=C1
+2025-06-14 03:46:25 -   Score: 0.1100
+2025-06-14 03:46:25 - 
+  --- Offspring 38 ---
+2025-06-14 03:46:25 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:25 -   Generated SMILES: COC1=CC=C([C@H](NC(=O)C2=CC=C3N=CC=NC3=C2)C2CCOCC2)C=C1
+2025-06-14 03:46:25 -   Score: 0.0200
+2025-06-14 03:46:25 - 
+  --- Offspring 39 ---
+2025-06-14 03:46:26 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:26 -   Generated SMILES: COC1=CC=C(CNC(=O)[C@H]2CCOC2)C=N1
+2025-06-14 03:46:26 -   Score: 0.0100
+2025-06-14 03:46:26 - 
+  --- Offspring 40 ---
+2025-06-14 03:46:26 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:26 -   Generated SMILES: CC(=O)NC=CC1=CSC=C1
+2025-06-14 03:46:26 -   Score: 0.0000
+2025-06-14 03:46:26 - 
+  --- Offspring 41 ---
+2025-06-14 03:46:27 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:27 -   Generated SMILES: CC(=O)NC1=CC=C(NCC2=C(C)CC=C2F)C(C(F)(F)F)=C1
+2025-06-14 03:46:27 -   Score: 0.0900
+2025-06-14 03:46:27 - 
+  --- Offspring 42 ---
+2025-06-14 03:46:28 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:28 -   Generated SMILES: O=[N+]([O-])C1=CC=C(O)C=C1C[NH+]1C=CC=CC1
+2025-06-14 03:46:28 -   Score: 0.0500
+2025-06-14 03:46:28 - 
+  --- Offspring 43 ---
+2025-06-14 03:46:28 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:28 -   Generated SMILES: CCSC[C@@H](C)N(C)C(=O)NCC1=CC=C(NC(=O)C2=CC=CC=C2C)C1N(C)C
+2025-06-14 03:46:28 -   Score: 0.0200
+2025-06-14 03:46:28 - 
+  --- Offspring 44 ---
+2025-06-14 03:46:29 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:29 -   Generated SMILES: COC1=CC=C(CC(=O)C2=CC=C(CN3C=C(Cl)C([N+](=O)[O-])=N3)C=C2)C=N1
+2025-06-14 03:46:29 -   Score: 0.0200
+2025-06-14 03:46:29 - 
+  --- Offspring 45 ---
+2025-06-14 03:46:29 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:29 -   Generated SMILES: O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(C1=CC(Cl)=NC=C1)(C3)C2
+2025-06-14 03:46:29 -   Score: 0.0300
+2025-06-14 03:46:29 - 
+  --- Offspring 46 ---
+2025-06-14 03:46:30 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:30 -   Generated SMILES: COC1=CC=C(CNC(=O)C2=CC(OC)=C(OC)C=C2[N+](=O)[O-])C=N1
+2025-06-14 03:46:30 -   Score: 0.0500
+2025-06-14 03:46:30 - 
+  --- Offspring 47 ---
+2025-06-14 03:46:31 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:31 -   Generated SMILES: CC1=CC=C(NC2(C)CC3=C(O2)C([C@H]2CC[NH2+]C[C@@H]2CC(C)C)=CC=C3)C=C1
+2025-06-14 03:46:31 -   Score: 0.0000
+2025-06-14 03:46:31 - 
+  --- Offspring 48 ---
+2025-06-14 03:46:31 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:31 -   Generated SMILES: CC1=CC=CCC1
+2025-06-14 03:46:31 -   Score: 0.0000
+2025-06-14 03:46:31 - 
+  --- Offspring 49 ---
+2025-06-14 03:46:32 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:32 -   Generated SMILES: COC1=C(NC(=O)C(C)C)[SH]=CC=C1N
+2025-06-14 03:46:32 -   Score: 0.0000
+2025-06-14 03:46:32 - 
+  --- Offspring 50 ---
+2025-06-14 03:46:32 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:32 -   Generated SMILES: CCSC[C@@H](C)N(C(=O)NCC1=CC=C(C)C=C1N(C)C)C1=CC=C(Cl)C(F)=C1
+2025-06-14 03:46:32 -   Score: 0.0100
+2025-06-14 03:46:32 - 
+  --- Offspring 51 ---
+2025-06-14 03:46:33 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:33 -   Generated SMILES: C1=CN=C[NH2+]C1
+2025-06-14 03:46:33 -   Score: 0.0200
+2025-06-14 03:46:33 - 
+  --- Offspring 52 ---
+2025-06-14 03:46:34 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:34 -   Generated SMILES: C[C@H](CC1=CSC=C1)[NH+](C)CC1=CN=C(N2CC[NH+]([N+](=O)[O-])CC2)N=C1
+2025-06-14 03:46:34 -   Score: 0.0500
+2025-06-14 03:46:34 - 
+  --- Offspring 53 ---
+2025-06-14 03:46:34 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:34 -   Generated SMILES: O=C1C[C@H](NC2=NC=COC2[N+](=O)[O-])CN1CC(F)(F)F
+2025-06-14 03:46:34 -   Score: 0.0600
+2025-06-14 03:46:34 - 
+  --- Offspring 54 ---
+2025-06-14 03:46:35 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:35 -   Generated SMILES: COC1=NC=CC(C=CF)=C1
+2025-06-14 03:46:35 -   Score: 0.0200
+2025-06-14 03:46:35 - 
+  --- Offspring 55 ---
+2025-06-14 03:46:35 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:35 -   Generated SMILES: CC(C)C[C@H]1C[NH2+]CC[C@@H]1CCNC(=O)CCC1=CN(C2=CC=CC=C2)N=C1
+2025-06-14 03:46:35 -   Score: 0.0100
+2025-06-14 03:46:35 - 
+  --- Offspring 56 ---
+2025-06-14 03:46:36 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:36 -   Generated SMILES: COC1=C(C(=O)NC[C@@H](O)C(C)(C)C)SC(C2=C([NH+]3CCCCC3)CC=C2)=C1
+2025-06-14 03:46:36 -   Score: 0.0200
+2025-06-14 03:46:36 - 
+  --- Offspring 57 ---
+2025-06-14 03:46:37 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:37 -   Generated SMILES: COC1=C[C@H](CO)OC1
+2025-06-14 03:46:37 -   Score: 0.0200
+2025-06-14 03:46:37 - 
+  --- Offspring 58 ---
+2025-06-14 03:46:37 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:37 -   Generated SMILES: CC(C)(C)OC(=O)N1C=CN=C1
+2025-06-14 03:46:37 -   Score: 0.0000
+2025-06-14 03:46:37 - 
+  --- Offspring 59 ---
+2025-06-14 03:46:38 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:38 -   Generated SMILES: CC1=CC=C(Cl)C(O[C@H](C)C2=CC3=CC(F)=CC=C3O2)=C1
+2025-06-14 03:46:38 -   Score: 0.0100
+2025-06-14 03:46:38 - 
+  --- Offspring 60 ---
+2025-06-14 03:46:38 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:38 -   Generated SMILES: CC1=NC(N2CCC(C(=O)NCC(C)(C)CO)CC2)=NC2=C1C=C(Cl)C=C2
+2025-06-14 03:46:38 -   Score: 0.0300
+2025-06-14 03:46:38 - 
+  --- Offspring 61 ---
+2025-06-14 03:46:39 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:39 -   Generated SMILES: CC1=CN=C(C[NH+](C)CCCC2=NNC(C3=CC=C(F)C=C3)=C2)O1
+2025-06-14 03:46:39 -   Score: 0.0400
+2025-06-14 03:46:39 - 
+  --- Offspring 62 ---
+2025-06-14 03:46:39 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:39 -   Generated SMILES: CC1=CC=CC=C1C(=O)NC1=CC=CC(C(N)=O)=C1
+2025-06-14 03:46:39 -   Score: 0.0100
+2025-06-14 03:46:39 - 
+  --- Offspring 63 ---
+2025-06-14 03:46:40 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:40 -   Generated SMILES: CC(C)C[C@H]1C[NH2+]CC[C@@H]1N[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O
+2025-06-14 03:46:40 -   Score: 0.0200
+2025-06-14 03:46:40 - 
+  --- Offspring 64 ---
+2025-06-14 03:46:41 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:41 -   Generated SMILES: CC(C)C[C@H]1C[NH2+]CC[C@@H]1C1=C([C@H](NC(=O)C2=CC=C3N=CC=NC3=C2)C2CCOCC2)CC2=C1OC(C)(C)C2
+2025-06-14 03:46:41 -   Score: 0.0400
+2025-06-14 03:46:41 - 
+  --- Offspring 65 ---
+2025-06-14 03:46:41 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:41 -   Generated SMILES: CC1=CC=C(C2=NC=CO2)C=C1NC(=O)C1=NC(Cl)=CC=C1[NH2+][C@@H](C)C1=CC=NC(Cl)=C1
+2025-06-14 03:46:41 -   Score: 0.0300
+2025-06-14 03:46:41 - 
+  --- Offspring 66 ---
+2025-06-14 03:46:42 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:42 -   Generated SMILES: COC(=O)[C@@H]1CCCN(C(=O)NC2CC=C(OC)CC2)C1
+2025-06-14 03:46:42 -   Score: 0.0000
+2025-06-14 03:46:42 - 
+  --- Offspring 67 ---
+2025-06-14 03:46:42 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:42 -   Generated SMILES: CC1=CC=CC=C1C(=O)C12C[C@H]3C[C@@H](C1)CC(C1=CC=C([N+](=O)[O-])C=C1)(C3)C2
+2025-06-14 03:46:42 -   Score: 0.0400
+2025-06-14 03:46:42 - 
+  --- Offspring 68 ---
+2025-06-14 03:46:43 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:43 -   Generated SMILES: FC1=CC(C2=CC=C3OCCCOC3=C2)=CC=C1Cl
+2025-06-14 03:46:43 -   Score: 0.0000
+2025-06-14 03:46:43 - 
+  --- Offspring 69 ---
+2025-06-14 03:46:44 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:44 -   Generated SMILES: O=C(CSC1=NC2=CC=CC=C2O1)NC1=CC=C(C23C[C@@H]4C[C@@H](CC(C(=O)N5CCOCC5)(C4)C2)C3)C=C1
+2025-06-14 03:46:44 -   Score: 0.0000
+2025-06-14 03:46:44 - 
+  --- Offspring 70 ---
+2025-06-14 03:46:44 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:44 -   Generated SMILES: [NH3+]C[C@H](CO)CC1=CCCC1
+2025-06-14 03:46:44 -   Score: 0.0000
+2025-06-14 03:46:44 - 
+Generated 70 valid offspring molecules
+2025-06-14 03:46:44 - 
+New offspring scores:
+2025-06-14 03:46:44 -   CC1=CC=C([N+](=O)[O-])C=C1: 0.0400
+2025-06-14 03:46:44 -   COC1=NC=CC(C2=NOC(C3=CCO[C@H](C)C3)=N2)=C1: 0.0500
+2025-06-14 03:46:44 -   CC(C)(C)[C@H](O)CNO: 0.0000
+2025-06-14 03:46:44 -   CC(=O)N[C@H](C)C1=CC=C(C2=CSC(NC(=O)[C@@H](C)OC3=C(Cl)C=CC(C)=C3)=N2)C=C1: 0.0400
+2025-06-14 03:46:44 -   CONC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1400
+2025-06-14 03:46:44 -   CC1=CC=C([C@H](C)NC(=O)N[C@H]2C=C(C)N(C3CC3)C2)C=C1[N+](=O)[O-]: 0.0200
+2025-06-14 03:46:44 -   O=C(CSC1=NC2=CC=CC=C2O1)NF: 0.0000
+2025-06-14 03:46:44 -   CS[C@@H](C)C1=CC(NC(=O)C2=CN(C[C@H](C[NH3+])CO)N=C2C2=CC=CC=C2)=CC=C1: 0.0400
+2025-06-14 03:46:44 -   O=[N+]([O-])C1=CC=C(O)C=C1C[NH+]1CC=CCC1: 0.0700
+2025-06-14 03:46:44 -   COC1=CC=C(CC(=O)N[C@H]2CC(=O)N(C3CC3)C2)C=C1: 0.0000
+2025-06-14 03:46:44 -   CC(=O)[C@@H]1CCCN(C(=O)NC2CCC([NH+]3CCCCC3)CC2)C1: 0.0100
+2025-06-14 03:46:44 -   C[NH2+]C[C@@H]1CN2CCCC[C@@H]2CO1: 0.0100
+2025-06-14 03:46:44 -   CC(C)(C)[C@H](O)CNC1=CC(C[C@H](C[NH3+])CO)=CC(Br)=C1: 0.0600
+2025-06-14 03:46:44 -   CC(N)C[C@H]1C[NH2+]CC[C@@H]1C1=CC=CC2=C1OC(C)(C)C2: 0.0100
+2025-06-14 03:46:44 -   ClN1CCC[C@H]1C1=NC2=CC=CC=C2N1: 0.0000
+2025-06-14 03:46:44 -   [O-]C1=CC=NC(Cl)=C1: 0.0200
+2025-06-14 03:46:44 -   CC(C)(C)OC(=O)N1CC(=CC(=O)NC2=CCN3C[C@@H](C[NH2+]CC4=CC5=CC(F)=CC=C5O4)OC[C@@H]23)C1: 0.0800
+2025-06-14 03:46:44 -   C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(Cl)C=C1C(=O)NC1=CC=CC([C@H](C)SC)=C1)NC(=O)N2CC: 0.0300
+2025-06-14 03:46:44 -   CC1=CC=C(Cl)C(F)=C1: 0.0000
+2025-06-14 03:46:44 -   CC(=O)NC12C[C@H]3C[C@@H](C1)CC(C1=CC=C([N+](=O)[O-])C=C1)(C3)C2: 0.0400
+2025-06-14 03:46:44 -   CC(C)N1C=CC(C2=CC=C3C(=C2)N=CN=C3N2CCCC2)=N1: 0.1100
+2025-06-14 03:46:44 -   CC(=O)NC1=C(C)C(CN2C[C@H](CO)OC[C@@H]2C)=CC1: 0.0100
+2025-06-14 03:46:44 -   COC1=NC=CC(C2=NOC(C3C=C(C)O[C@H](C)C3)=N2)=C1: 0.0400
+2025-06-14 03:46:44 -   COC1=CC=C([C@H](NC(C)=O)C2CCOCC2)C=C1: 0.0000
+2025-06-14 03:46:44 -   O=[N+]([O-])C1=NN(CC2=CC=C(CN3C=C(Cl)C([N+](=O)[O-])=N3)C2)C=C1Cl: 0.0100
+2025-06-14 03:46:44 -   CC1=C([C@H]([NH3+])CSC[C@@H](C)CO)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1700
+2025-06-14 03:46:44 -   CC(C)(C)NC(=O)CNC1=NCC=[SH]1: 0.0100
+2025-06-14 03:46:44 -   CC1=NON=C1CC(=O)N1CCC[C@H](C(=O)[C@@H]2CC(=O)C3=C(C2)N[C@@H]2N=NC(O)=C2[C@H]3C2=CC=C(Cl)C(Cl)=C2)C1: 0.0200
+2025-06-14 03:46:44 -   CCN1C(=O)N[C@H](C2=CC=C(Cl)C=C2Cl)C2=C1C=NN(C)C2=O: 0.0200
+2025-06-14 03:46:44 -   CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1C=C(C)C([N+](=O)[O-])=C1: 0.1700
+2025-06-14 03:46:44 -   CC1=CC=CC=C1N[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O: 0.0400
+2025-06-14 03:46:44 -   CS[C@@H](C)C1=CC=CC1: 0.0000
+2025-06-14 03:46:44 -   C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=COCC1)NC(=O)N2CC: 0.0300
+2025-06-14 03:46:44 -   CC1=CC=C(C2=CC(CCC[NH+](C)CC3=NC=C(C)O3)=NN2)C=C1: 0.0300
+2025-06-14 03:46:44 -   O=C1C=C(C2=CC=C(F)C=C2)CN1C1CC1: 0.0100
+2025-06-14 03:46:44 -   CC(=O)NC1=CC=C(NCC2=CC=CC=C2F)C(C2=CC(C)=C(Br)C=N2)=C1: 0.1100
+2025-06-14 03:46:44 -   COC1=CC=C(CNC(=O)[C@H]2CCOC2)C=N1: 0.0100
+2025-06-14 03:46:44 -   CC(=O)NC=CC1=CSC=C1: 0.0000
+2025-06-14 03:46:44 -   CC(=O)NC1=CC=C(NCC2=C(C)CC=C2F)C(C(F)(F)F)=C1: 0.0900
+2025-06-14 03:46:44 -   O=[N+]([O-])C1=CC=C(O)C=C1C[NH+]1C=CC=CC1: 0.0500
+2025-06-14 03:46:44 -   CCSC[C@@H](C)N(C)C(=O)NCC1=CC=C(NC(=O)C2=CC=CC=C2C)C1N(C)C: 0.0200
+2025-06-14 03:46:44 -   COC1=CC=C(CC(=O)C2=CC=C(CN3C=C(Cl)C([N+](=O)[O-])=N3)C=C2)C=N1: 0.0200
+2025-06-14 03:46:44 -   O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(C1=CC(Cl)=NC=C1)(C3)C2: 0.0300
+2025-06-14 03:46:44 -   CC1=CC=C(NC2(C)CC3=C(O2)C([C@H]2CC[NH2+]C[C@@H]2CC(C)C)=CC=C3)C=C1: 0.0000
+2025-06-14 03:46:44 -   CC1=CC=CCC1: 0.0000
+2025-06-14 03:46:44 -   COC1=C(NC(=O)C(C)C)[SH]=CC=C1N: 0.0000
+2025-06-14 03:46:44 -   CCSC[C@@H](C)N(C(=O)NCC1=CC=C(C)C=C1N(C)C)C1=CC=C(Cl)C(F)=C1: 0.0100
+2025-06-14 03:46:44 -   C1=CN=C[NH2+]C1: 0.0200
+2025-06-14 03:46:44 -   C[C@H](CC1=CSC=C1)[NH+](C)CC1=CN=C(N2CC[NH+]([N+](=O)[O-])CC2)N=C1: 0.0500
+2025-06-14 03:46:44 -   O=C1C[C@H](NC2=NC=COC2[N+](=O)[O-])CN1CC(F)(F)F: 0.0600
+2025-06-14 03:46:44 -   COC1=NC=CC(C=CF)=C1: 0.0200
+2025-06-14 03:46:44 -   CC(C)C[C@H]1C[NH2+]CC[C@@H]1CCNC(=O)CCC1=CN(C2=CC=CC=C2)N=C1: 0.0100
+2025-06-14 03:46:44 -   COC1=C(C(=O)NC[C@@H](O)C(C)(C)C)SC(C2=C([NH+]3CCCCC3)CC=C2)=C1: 0.0200
+2025-06-14 03:46:44 -   COC1=C[C@H](CO)OC1: 0.0200
+2025-06-14 03:46:44 -   CC(C)(C)OC(=O)N1C=CN=C1: 0.0000
+2025-06-14 03:46:44 -   CC1=CC=C(Cl)C(O[C@H](C)C2=CC3=CC(F)=CC=C3O2)=C1: 0.0100
+2025-06-14 03:46:44 -   CC1=NC(N2CCC(C(=O)NCC(C)(C)CO)CC2)=NC2=C1C=C(Cl)C=C2: 0.0300
+2025-06-14 03:46:44 -   CC1=CC=CC=C1C(=O)NC1=CC=CC(C(N)=O)=C1: 0.0100
+2025-06-14 03:46:44 -   CC(C)C[C@H]1C[NH2+]CC[C@@H]1N[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O: 0.0200
+2025-06-14 03:46:44 -   CC(C)C[C@H]1C[NH2+]CC[C@@H]1C1=C([C@H](NC(=O)C2=CC=C3N=CC=NC3=C2)C2CCOCC2)CC2=C1OC(C)(C)C2: 0.0400
+2025-06-14 03:46:44 -   CC1=CC=C(C2=NC=CO2)C=C1NC(=O)C1=NC(Cl)=CC=C1[NH2+][C@@H](C)C1=CC=NC(Cl)=C1: 0.0300
+2025-06-14 03:46:44 -   COC(=O)[C@@H]1CCCN(C(=O)NC2CC=C(OC)CC2)C1: 0.0000
+2025-06-14 03:46:44 -   CC1=CC=CC=C1C(=O)C12C[C@H]3C[C@@H](C1)CC(C1=CC=C([N+](=O)[O-])C=C1)(C3)C2: 0.0400
+2025-06-14 03:46:44 -   FC1=CC(C2=CC=C3OCCCOC3=C2)=CC=C1Cl: 0.0000
+2025-06-14 03:46:44 -   O=C(CSC1=NC2=CC=CC=C2O1)NC1=CC=C(C23C[C@@H]4C[C@@H](CC(C(=O)N5CCOCC5)(C4)C2)C3)C=C1: 0.0000
+2025-06-14 03:46:44 -   [NH3+]C[C@H](CO)CC1=CCCC1: 0.0000
+2025-06-14 03:46:44 - 
+--- Generation 1 Summary ---
+2025-06-14 03:46:44 - Population size: 120
+2025-06-14 03:46:44 - Score statistics - Mean: 0.0334, Max: 0.1900, Min: 0.0100, Std: 0.0326
+2025-06-14 03:46:44 - Best molecule this generation: CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1 (score: 0.1900)
+2025-06-14 03:46:44 - Total oracle calls so far: 185
+2025-06-14 03:46:44 - Top 5 molecules:
+2025-06-14 03:46:44 -   1. CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-14 03:46:44 -   2. CC1=C([C@H]([NH3+])CSC[C@@H](C)CO)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1700
+2025-06-14 03:46:44 -   3. CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1C=C(C)C([N+](=O)[O-])=C1: 0.1700
+2025-06-14 03:46:44 -   4. CONC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1400
+2025-06-14 03:46:44 -   5. CC(C)N1C=CC(C2=CC=C3C(=C2)N=CN=C3N2CCCC2)=N1: 0.1100
+2025-06-14 03:46:44 - 
+=== GENERATION 2 ===
+2025-06-14 03:46:44 - Generating 70 offspring using GPT-4...
+2025-06-14 03:46:44 - 
+  --- Offspring 1 ---
+2025-06-14 03:46:45 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:45 -   Generated SMILES: CC(=O)C1=CC=C(C(F)(F)F)C=C1C
+2025-06-14 03:46:45 -   Score: 0.0000
+2025-06-14 03:46:45 - 
+  --- Offspring 2 ---
+2025-06-14 03:46:46 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:46 -   Generated SMILES: CC1=C(Br)C=NC(C2=C(NCC3=CC=CC=C3F)C=CC(NCCC(=O)OC3=CC=C(Cl)C=C3Cl)=C2)=C1
+2025-06-14 03:46:46 -   Score: 0.1100
+2025-06-14 03:46:46 - 
+  --- Offspring 3 ---
+2025-06-14 03:46:46 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:46 -   Generated SMILES: CC1=CC=CC=C1C(=O)NNC(=O)C[NH+]1CCCN(CC2=CC=CC(Cl)=C2)S1(=O)=O
+2025-06-14 03:46:46 -   Score: 0.0400
+2025-06-14 03:46:46 - 
+  --- Offspring 4 ---
+2025-06-14 03:46:47 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:47 -   Generated SMILES: CC1=CC=CC=C1C(=O)NC1=CCC(C2=NN(C(C)C)C=C2)=C1N(C)C
+2025-06-14 03:46:47 -   Score: 0.0200
+2025-06-14 03:46:47 - 
+  --- Offspring 5 ---
+2025-06-14 03:46:48 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:48 -   Generated SMILES: CC(=O)C1=CC=C(N[C@H]2CC(=O)N(NC3=NC=COC3[N+](=O)[O-])C2)C([N+](=O)[O-])=C1
+2025-06-14 03:46:48 -   Score: 0.0600
+2025-06-14 03:46:48 - 
+  --- Offspring 6 ---
+2025-06-14 03:46:48 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:48 -   Generated SMILES: O=[N+]([O-])C1OC=CN=C1NC1C=CC=C1
+2025-06-14 03:46:48 -   Score: 0.0300
+2025-06-14 03:46:48 - 
+  --- Offspring 7 ---
+2025-06-14 03:46:49 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:49 -   Generated SMILES: CC1=NN(C)C=C1CNC(=O)C1=CC=C(CN2C=C(Cl)C([N+](=O)[O-])=N2)C=C1
+2025-06-14 03:46:49 -   Score: 0.0500
+2025-06-14 03:46:49 - 
+  --- Offspring 8 ---
+2025-06-14 03:46:49 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:49 -   Generated SMILES: C[C@@H]1C=C([NH+]2CCCCC2)CCO1
+2025-06-14 03:46:49 -   Score: 0.0100
+2025-06-14 03:46:49 - 
+  --- Offspring 9 ---
+2025-06-14 03:46:50 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:50 -   Generated SMILES: CS[C@@H](C)C1=CC(NC(=O)C2=CN(C[C@H](C[NH3+])CO)N=C2C2=CC2=O)=CC=C1
+2025-06-14 03:46:50 -   Score: 0.0400
+2025-06-14 03:46:50 - 
+  --- Offspring 10 ---
+2025-06-14 03:46:51 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:51 -   Generated SMILES: O=[N+]([O-])NC1=CC=C(C2=NN=C3CCCCCN32)C=C1
+2025-06-14 03:46:51 -   Score: 0.0400
+2025-06-14 03:46:51 - 
+  --- Offspring 11 ---
+2025-06-14 03:46:51 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:51 -   Generated SMILES: CC1=CC=C([N+](=O)[O-])C=C1
+2025-06-14 03:46:51 -   Score: 0.0400
+2025-06-14 03:46:51 - 
+  --- Offspring 12 ---
+2025-06-14 03:46:52 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:52 -   Generated SMILES: COC1=NC=CC(C2=NOC(C3=CN=C(NC(=O)NC4=CC=CC(Cl)=C4)C=C3C)=N2)=C1
+2025-06-14 03:46:52 -   Score: 0.1000
+2025-06-14 03:46:52 - 
+  --- Offspring 13 ---
+2025-06-14 03:46:52 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:52 -   Generated SMILES: [NH3+]C[C@H](CO)CN1C=C(C(=O)NC2=CC=CC2)C(C2=CC=CC=C2)=N1
+2025-06-14 03:46:52 -   Score: 0.0300
+2025-06-14 03:46:52 - 
+  --- Offspring 14 ---
+2025-06-14 03:46:53 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:53 -   Generated SMILES: CC1=C(O)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1
+2025-06-14 03:46:53 -   Score: 0.2100
+2025-06-14 03:46:53 - 
+  --- Offspring 15 ---
+2025-06-14 03:46:53 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:53 -   Generated SMILES: CS(=O)(=O)[N-][N+](=O)C1=C(C[NH+]2CC=CCC2)C=C(O)C=C1
+2025-06-14 03:46:54 -   Score: 0.0500
+2025-06-14 03:46:54 - 
+  --- Offspring 16 ---
+2025-06-14 03:46:54 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:54 -   Generated SMILES: CCSC[C@@H](C)N(C)C(=O)NCC1=CC=C(NC(=O)C2=CC=CC=C2C)C1CC(C)(C)CO
+2025-06-14 03:46:54 -   Score: 0.0200
+2025-06-14 03:46:54 - 
+  --- Offspring 17 ---
+2025-06-14 03:46:55 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:55 -   Generated SMILES: CC1=C(CNC2=CC3=C(C=C2)C(N2CCCC2)=NC=N3)C(F)=CC1
+2025-06-14 03:46:55 -   Score: 0.1200
+2025-06-14 03:46:55 - 
+  --- Offspring 18 ---
+2025-06-14 03:46:56 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:56 -   Generated SMILES: O=C1C=CCN1C1CC1
+2025-06-14 03:46:56 -   Score: 0.0000
+2025-06-14 03:46:56 - 
+  --- Offspring 19 ---
+2025-06-14 03:46:56 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:56 -   Generated SMILES: CC1=CC=C(C2=NC=CO2)C=C1NC(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1
+2025-06-14 03:46:56 -   Score: 0.1200
+2025-06-14 03:46:56 - 
+  --- Offspring 20 ---
+2025-06-14 03:46:57 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:57 -   Generated SMILES: CONC1=CCC([N+](=O)[O-])=C1
+2025-06-14 03:46:57 -   Score: 0.0200
+2025-06-14 03:46:57 - 
+  --- Offspring 21 ---
+2025-06-14 03:46:57 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:57 -   Generated SMILES: CCNC(=O)C1=CC=C(CN2C=C(Cl)C([N+](=O)[O-])=N2)C=C1
+2025-06-14 03:46:57 -   Score: 0.0100
+2025-06-14 03:46:57 - 
+  --- Offspring 22 ---
+2025-06-14 03:46:58 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:58 -   Generated SMILES: COC1=NC=CC(SC)=C1
+2025-06-14 03:46:58 -   Score: 0.0000
+2025-06-14 03:46:58 - 
+  --- Offspring 23 ---
+2025-06-14 03:46:58 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:58 -   Generated SMILES: COC1=CC2=C(C=C1)OC[C@H](C(=O)NCCC1=CSC(NC(=O)[C@@H](C)OC3=CC(C)=CC=C3Cl)=N1)C2
+2025-06-14 03:46:59 -   Score: 0.0400
+2025-06-14 03:46:59 - 
+  --- Offspring 24 ---
+2025-06-14 03:46:59 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:46:59 -   Generated SMILES: O=C1C[C@H](NC2OC=CN=C2[N+](=O)[O-])CN1CC(F)(F)F
+2025-06-14 03:46:59 -   Score: 0.0500
+2025-06-14 03:46:59 - 
+  --- Offspring 25 ---
+2025-06-14 03:47:00 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:00 -   Failed to generate valid molecule
+2025-06-14 03:47:00 - 
+  --- Offspring 26 ---
+2025-06-14 03:47:00 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:00 -   Generated SMILES: COC1C=C(C2=NOC(C3=CCO[C@H](C)C3)=N2)C=CC1
+2025-06-14 03:47:00 -   Score: 0.0200
+2025-06-14 03:47:00 - 
+  --- Offspring 27 ---
+2025-06-14 03:47:01 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:01 -   Generated SMILES: COC1=CC2=C(C=C1)OC[C@H](C(=O)NC1=CC=C(N[C@H](C)C(=O)NC3=CC=C4OCOC4=C3)C=C1)C2
+2025-06-14 03:47:01 -   Score: 0.0300
+2025-06-14 03:47:01 - 
+  --- Offspring 28 ---
+2025-06-14 03:47:01 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:01 -   Generated SMILES: COC1=NC=CC(C2=NOC(NC3=CC=C4C(=C3)N=CN=C4N3CCCC3)=N2)=C1
+2025-06-14 03:47:02 -   Score: 0.1700
+2025-06-14 03:47:02 - 
+  --- Offspring 29 ---
+2025-06-14 03:47:02 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:02 -   Generated SMILES: C[C@@H](CO)CSC[C@@H]([NH3+])C1=CCC(C(=O)NC2=CC=C3C(=C2)N=CN=C3N2CCCC2)=CC1
+2025-06-14 03:47:02 -   Score: 0.1900
+2025-06-14 03:47:02 - 
+  --- Offspring 30 ---
+2025-06-14 03:47:03 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:03 -   Generated SMILES: COC1=NC=CC(C2=CC=CC2)=C1
+2025-06-14 03:47:03 -   Score: 0.0000
+2025-06-14 03:47:03 - 
+  --- Offspring 31 ---
+2025-06-14 03:47:03 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:03 -   Generated SMILES: COC1=CC(C[NH+](C)[C@H](C)CC2=CSC=C2)=CC=N1
+2025-06-14 03:47:03 -   Score: 0.0200
+2025-06-14 03:47:03 - 
+  --- Offspring 32 ---
+2025-06-14 03:47:04 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:04 -   Generated SMILES: C[C@@H]1CC(C2=NC(C3=CC=NC(C4=CC=C5OC(C[NH2+]C[C@@H]6CN7CCCC[C@@H]7CO6)=CC5=C4)=C3)=NO2)=CCO1
+2025-06-14 03:47:04 -   Score: 0.1800
+2025-06-14 03:47:04 - 
+  --- Offspring 33 ---
+2025-06-14 03:47:07 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:07 -   Generated SMILES: CC1=CN=C(C[NH+](C)CCCC2=NNC(C3=C(F)C=CC=C3)=C2)O1
+2025-06-14 03:47:07 -   Score: 0.0400
+2025-06-14 03:47:07 - 
+  --- Offspring 34 ---
+2025-06-14 03:47:08 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:08 -   Generated SMILES: COC1=CC([C@H](C)SC)=CC=C1
+2025-06-14 03:47:08 -   Score: 0.0000
+2025-06-14 03:47:08 - 
+  --- Offspring 35 ---
+2025-06-14 03:47:08 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:08 -   Generated SMILES: O=[N+]([O-])C1=CC=C2OC(C[NH2+]C[C@@H]3CN4CCCC[C@@H]4CO3)=CC2=C1
+2025-06-14 03:47:08 -   Score: 0.0900
+2025-06-14 03:47:08 - 
+  --- Offspring 36 ---
+2025-06-14 03:47:09 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:09 -   Generated SMILES: COC1=NC(N[C@@H]2C[NH+]3CCC2CC3)=C(C(=O)NN)C1N
+2025-06-14 03:47:09 -   Score: 0.0200
+2025-06-14 03:47:09 - 
+  --- Offspring 37 ---
+2025-06-14 03:47:10 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:10 -   Generated SMILES: O=[N+]([O-])C1OC=CN=C1N[C@H]1C=CCN(CC(F)(F)F)C1
+2025-06-14 03:47:10 -   Score: 0.0300
+2025-06-14 03:47:10 - 
+  --- Offspring 38 ---
+2025-06-14 03:47:10 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:10 -   Generated SMILES: CNC(=O)N[C@H]1C=C(C)N(C2CC2)C1
+2025-06-14 03:47:10 -   Score: 0.0000
+2025-06-14 03:47:10 - 
+  --- Offspring 39 ---
+2025-06-14 03:47:11 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:11 -   Generated SMILES: C[C@@H]1CC(C2=NC(CCC3=C([NH+]4CCCCC4)CC=C3)=NO2)=CCO1
+2025-06-14 03:47:11 -   Score: 0.0200
+2025-06-14 03:47:11 - 
+  --- Offspring 40 ---
+2025-06-14 03:47:11 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:11 -   Generated SMILES: C[C@@H](CO)CSC[C@@H]([NH3+])C1=C[NH+](CC2=CC=CN=C2)CC1
+2025-06-14 03:47:11 -   Score: 0.0300
+2025-06-14 03:47:11 - 
+  --- Offspring 41 ---
+2025-06-14 03:47:12 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:12 -   Generated SMILES: COC1=CC=CC(Cl)N1
+2025-06-14 03:47:12 -   Score: 0.0100
+2025-06-14 03:47:12 - 
+  --- Offspring 42 ---
+2025-06-14 03:47:13 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:13 -   Generated SMILES: CC(=O)NC1=CC(C2=NC=CO2)=CC=C1C
+2025-06-14 03:47:13 -   Score: 0.0100
+2025-06-14 03:47:13 - 
+  --- Offspring 43 ---
+2025-06-14 03:47:13 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:13 -   Generated SMILES: CC(C)N1C=C(C[NH+]2CC[C@@]3(CCC[NH+](CC4=CC(C[NH2+]C[C@@H]5CN6CCCC[C@@H]6CO5)=CC=C4)C3)C2)C=N1
+2025-06-14 03:47:13 -   Score: 0.0500
+2025-06-14 03:47:13 - 
+  --- Offspring 44 ---
+2025-06-14 03:47:14 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:14 -   Generated SMILES: C[C@H](C(=O)NC1=CC=C2OCOC2=C1)C1=CC=C2OC(C[NH2+]C[C@@H]3CN4CCCC[C@@H]4CO3)=CC2=C1
+2025-06-14 03:47:14 -   Score: 0.0800
+2025-06-14 03:47:14 - 
+  --- Offspring 45 ---
+2025-06-14 03:47:14 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:15 -   Generated SMILES: C[C@H](C[NH+](C)CC1=CN2C=CC=NC2=N1)NC(=O)C1=CC=CC=C1
+2025-06-14 03:47:15 -   Score: 0.0000
+2025-06-14 03:47:15 - 
+  --- Offspring 46 ---
+2025-06-14 03:47:15 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:15 -   Generated SMILES: C[C@H](CC1=CSC=C1)[NH+](C)CC1=CCCC1
+2025-06-14 03:47:15 -   Score: 0.0000
+2025-06-14 03:47:15 - 
+  --- Offspring 47 ---
+2025-06-14 03:47:16 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:16 -   Generated SMILES: CC1=C[NH+]2CCC1CC2
+2025-06-14 03:47:16 -   Score: 0.0100
+2025-06-14 03:47:16 - 
+  --- Offspring 48 ---
+2025-06-14 03:47:16 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:16 -   Generated SMILES: CC(C)N1C=CC(C2=CC=C3C(=C2)N=CN=C3N2CCCC2)=N1
+2025-06-14 03:47:16 -   Score: 0.1100
+2025-06-14 03:47:16 - 
+  --- Offspring 49 ---
+2025-06-14 03:47:17 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:17 -   Generated SMILES: COC1=C(OC)C=C([N+](=O)[O-])C(C(=O)NCO)=C1
+2025-06-14 03:47:17 -   Score: 0.0300
+2025-06-14 03:47:17 - 
+  --- Offspring 50 ---
+2025-06-14 03:47:17 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:17 -   Generated SMILES: CNC1=C(C2=CC(C)=C(Br)C=N2)C=C(NC(C)=O)C=C1
+2025-06-14 03:47:17 -   Score: 0.0500
+2025-06-14 03:47:17 - 
+  --- Offspring 51 ---
+2025-06-14 03:47:18 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:18 -   Generated SMILES: C=C(C)CN(C)C(=O)CC1=NC(N2CCC(C(=O)NCC(C)(C)CO)CC2)=NC2=CC=C(C)C=C21
+2025-06-14 03:47:18 -   Score: 0.0400
+2025-06-14 03:47:18 - 
+  --- Offspring 52 ---
+2025-06-14 03:47:19 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:19 -   Generated SMILES: COC1=NC=CC(C2=NOC(NC(=O)C3=NC(Cl)=CC=C3[NH2+][C@@H](C)C3=CC=NC(Cl)=C3)=N2)=C1
+2025-06-14 03:47:19 -   Score: 0.0200
+2025-06-14 03:47:19 - 
+  --- Offspring 53 ---
+2025-06-14 03:47:19 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:19 -   Generated SMILES: O=C(NCC1CC[NH+](CC2=CC(=O)N(CC(F)(F)F)C2)CC1)C1=CNN=C1C1=CC=C(Cl)C=C1
+2025-06-14 03:47:19 -   Score: 0.0700
+2025-06-14 03:47:19 - 
+  --- Offspring 54 ---
+2025-06-14 03:47:20 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:20 -   Generated SMILES: O=C1CN=C[C@@H](NC2=NC=COC2[N+](=O)[O-])C1
+2025-06-14 03:47:20 -   Score: 0.0100
+2025-06-14 03:47:20 - 
+  --- Offspring 55 ---
+2025-06-14 03:47:20 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:20 -   Generated SMILES: C[C@@H](NC1=CC=C([N-]S(C)(=O)=O)C=C1)C(=O)NC1=CCCC=C1
+2025-06-14 03:47:20 -   Score: 0.0000
+2025-06-14 03:47:20 - 
+  --- Offspring 56 ---
+2025-06-14 03:47:21 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:21 -   Generated SMILES: COC1=C(C(=O)NC[C@@H](O)C(C)(C)C)SC(C2=CNC=C2)=C1
+2025-06-14 03:47:21 -   Score: 0.0300
+2025-06-14 03:47:21 - 
+  --- Offspring 57 ---
+2025-06-14 03:47:22 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:22 -   Generated SMILES: CC(C)C[C@H]1C[NH2+]CC[C@@H]1C1[NH2+]C=CC2=C1OC(C)(C)C2
+2025-06-14 03:47:22 -   Score: 0.0000
+2025-06-14 03:47:22 - 
+  --- Offspring 58 ---
+2025-06-14 03:47:22 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:22 -   Generated SMILES: O=[N+]([O-])C1=C(F)C=CC=C1Cl
+2025-06-14 03:47:22 -   Score: 0.0400
+2025-06-14 03:47:22 - 
+  --- Offspring 59 ---
+2025-06-14 03:47:23 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:23 -   Generated SMILES: CC(C)NC(=O)C1=CC=C(CN2CCOC[C@H]2C)N=C1
+2025-06-14 03:47:23 -   Score: 0.0100
+2025-06-14 03:47:23 - 
+  --- Offspring 60 ---
+2025-06-14 03:47:23 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:23 -   Generated SMILES: CC1=CC=C(C2=NC=CO2)C=C1NC(=O)C1=NC(Cl)=CC=C1[NH2+][C@@H](C)C1=CC=NC(Cl)=C1
+2025-06-14 03:47:23 -   Score: 0.0300
+2025-06-14 03:47:23 - 
+  --- Offspring 61 ---
+2025-06-14 03:47:24 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:24 -   Generated SMILES: C[C@@H](NC=CC1=C([NH+]2CCCCC2)CC=C1)C(=O)NC1=CC=C2OCOC2=C1
+2025-06-14 03:47:24 -   Score: 0.0100
+2025-06-14 03:47:24 - 
+  --- Offspring 62 ---
+2025-06-14 03:47:24 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:24 -   Generated SMILES: FC=CC1=CCN2C[C@@H](C[NH2+]CC3=CC4=CC(F)=CC=C4O3)OC[C@@H]12
+2025-06-14 03:47:25 -   Score: 0.0800
+2025-06-14 03:47:25 - 
+  --- Offspring 63 ---
+2025-06-14 03:47:25 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:25 -   Generated SMILES: COC1=NC=CC(C2=NCC=N2)=C1
+2025-06-14 03:47:25 -   Score: 0.0200
+2025-06-14 03:47:25 - 
+  --- Offspring 64 ---
+2025-06-14 03:47:26 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:26 -   Generated SMILES: FC1=CC=C(C2=CC(CC(F)(F)F)=NN2)C=C1
+2025-06-14 03:47:26 -   Score: 0.0200
+2025-06-14 03:47:26 - 
+  --- Offspring 65 ---
+2025-06-14 03:47:26 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:26 -   Generated SMILES: CC1=CN=C(N2CC[NH+](C)CC2)N=C1
+2025-06-14 03:47:26 -   Score: 0.0000
+2025-06-14 03:47:26 - 
+  --- Offspring 66 ---
+2025-06-14 03:47:27 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:27 -   Generated SMILES: CC(=O)NC1=CC=C(N[C@H]2CC(=O)N(CC(F)(F)F)C2)C(C2=CC(C)=C(Br)C=N2)=C1
+2025-06-14 03:47:27 -   Score: 0.0400
+2025-06-14 03:47:27 - 
+  --- Offspring 67 ---
+2025-06-14 03:47:27 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:27 -   Generated SMILES: CC1=NON=C1CN[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O
+2025-06-14 03:47:27 -   Score: 0.0000
+2025-06-14 03:47:27 - 
+  --- Offspring 68 ---
+2025-06-14 03:47:28 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:28 -   Generated SMILES: O=[N+]([O-])C1=CC=CC=C1C[NH+]1CC=CCC1
+2025-06-14 03:47:28 -   Score: 0.0500
+2025-06-14 03:47:28 - 
+  --- Offspring 69 ---
+2025-06-14 03:47:29 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:29 -   Generated SMILES: CS[C@@H](C)C1=CC(NC(=O)C2=CN(C[C@H](C[NH3+])CO)N=C2C2=CC=CC=C2)=CC=C1
+2025-06-14 03:47:29 -   Score: 0.0400
+2025-06-14 03:47:29 - 
+  --- Offspring 70 ---
+2025-06-14 03:47:29 -   LLM Explanation: Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'temperature' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_parameter'}}
+2025-06-14 03:47:29 -   Generated SMILES: COC1=CC=C(C[C@H](CC2=CC=C3NC=CC3=N2)C[NH+](C)CC2=CN3C=CC=NC3=N2)C=C1
+2025-06-14 03:47:29 -   Score: 0.0000
+2025-06-14 03:47:29 - 
+Generated 69 valid offspring molecules
+2025-06-14 03:47:29 - 
+New offspring scores:
+2025-06-14 03:47:29 -   CC(=O)C1=CC=C(C(F)(F)F)C=C1C: 0.0000
+2025-06-14 03:47:29 -   CC1=C(Br)C=NC(C2=C(NCC3=CC=CC=C3F)C=CC(NCCC(=O)OC3=CC=C(Cl)C=C3Cl)=C2)=C1: 0.1100
+2025-06-14 03:47:29 -   CC1=CC=CC=C1C(=O)NNC(=O)C[NH+]1CCCN(CC2=CC=CC(Cl)=C2)S1(=O)=O: 0.0400
+2025-06-14 03:47:29 -   CC1=CC=CC=C1C(=O)NC1=CCC(C2=NN(C(C)C)C=C2)=C1N(C)C: 0.0200
+2025-06-14 03:47:29 -   CC(=O)C1=CC=C(N[C@H]2CC(=O)N(NC3=NC=COC3[N+](=O)[O-])C2)C([N+](=O)[O-])=C1: 0.0600
+2025-06-14 03:47:29 -   O=[N+]([O-])C1OC=CN=C1NC1C=CC=C1: 0.0300
+2025-06-14 03:47:29 -   C[C@@H]1C=C([NH+]2CCCCC2)CCO1: 0.0100
+2025-06-14 03:47:29 -   CS[C@@H](C)C1=CC(NC(=O)C2=CN(C[C@H](C[NH3+])CO)N=C2C2=CC2=O)=CC=C1: 0.0400
+2025-06-14 03:47:29 -   O=[N+]([O-])NC1=CC=C(C2=NN=C3CCCCCN32)C=C1: 0.0400
+2025-06-14 03:47:29 -   COC1=NC=CC(C2=NOC(C3=CN=C(NC(=O)NC4=CC=CC(Cl)=C4)C=C3C)=N2)=C1: 0.1000
+2025-06-14 03:47:29 -   [NH3+]C[C@H](CO)CN1C=C(C(=O)NC2=CC=CC2)C(C2=CC=CC=C2)=N1: 0.0300
+2025-06-14 03:47:29 -   CC1=C(O)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.2100
+2025-06-14 03:47:29 -   CS(=O)(=O)[N-][N+](=O)C1=C(C[NH+]2CC=CCC2)C=C(O)C=C1: 0.0500
+2025-06-14 03:47:29 -   CCSC[C@@H](C)N(C)C(=O)NCC1=CC=C(NC(=O)C2=CC=CC=C2C)C1CC(C)(C)CO: 0.0200
+2025-06-14 03:47:29 -   CC1=C(CNC2=CC3=C(C=C2)C(N2CCCC2)=NC=N3)C(F)=CC1: 0.1200
+2025-06-14 03:47:29 -   O=C1C=CCN1C1CC1: 0.0000
+2025-06-14 03:47:29 -   CC1=CC=C(C2=NC=CO2)C=C1NC(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1200
+2025-06-14 03:47:29 -   CONC1=CCC([N+](=O)[O-])=C1: 0.0200
+2025-06-14 03:47:29 -   CCNC(=O)C1=CC=C(CN2C=C(Cl)C([N+](=O)[O-])=N2)C=C1: 0.0100
+2025-06-14 03:47:29 -   COC1=NC=CC(SC)=C1: 0.0000
+2025-06-14 03:47:29 -   COC1=CC2=C(C=C1)OC[C@H](C(=O)NCCC1=CSC(NC(=O)[C@@H](C)OC3=CC(C)=CC=C3Cl)=N1)C2: 0.0400
+2025-06-14 03:47:29 -   O=C1C[C@H](NC2OC=CN=C2[N+](=O)[O-])CN1CC(F)(F)F: 0.0500
+2025-06-14 03:47:29 -   COC1C=C(C2=NOC(C3=CCO[C@H](C)C3)=N2)C=CC1: 0.0200
+2025-06-14 03:47:29 -   COC1=CC2=C(C=C1)OC[C@H](C(=O)NC1=CC=C(N[C@H](C)C(=O)NC3=CC=C4OCOC4=C3)C=C1)C2: 0.0300
+2025-06-14 03:47:29 -   COC1=NC=CC(C2=NOC(NC3=CC=C4C(=C3)N=CN=C4N3CCCC3)=N2)=C1: 0.1700
+2025-06-14 03:47:29 -   C[C@@H](CO)CSC[C@@H]([NH3+])C1=CCC(C(=O)NC2=CC=C3C(=C2)N=CN=C3N2CCCC2)=CC1: 0.1900
+2025-06-14 03:47:29 -   COC1=NC=CC(C2=CC=CC2)=C1: 0.0000
+2025-06-14 03:47:29 -   COC1=CC(C[NH+](C)[C@H](C)CC2=CSC=C2)=CC=N1: 0.0200
+2025-06-14 03:47:29 -   C[C@@H]1CC(C2=NC(C3=CC=NC(C4=CC=C5OC(C[NH2+]C[C@@H]6CN7CCCC[C@@H]7CO6)=CC5=C4)=C3)=NO2)=CCO1: 0.1800
+2025-06-14 03:47:29 -   CC1=CN=C(C[NH+](C)CCCC2=NNC(C3=C(F)C=CC=C3)=C2)O1: 0.0400
+2025-06-14 03:47:29 -   COC1=CC([C@H](C)SC)=CC=C1: 0.0000
+2025-06-14 03:47:29 -   O=[N+]([O-])C1=CC=C2OC(C[NH2+]C[C@@H]3CN4CCCC[C@@H]4CO3)=CC2=C1: 0.0900
+2025-06-14 03:47:29 -   COC1=NC(N[C@@H]2C[NH+]3CCC2CC3)=C(C(=O)NN)C1N: 0.0200
+2025-06-14 03:47:29 -   O=[N+]([O-])C1OC=CN=C1N[C@H]1C=CCN(CC(F)(F)F)C1: 0.0300
+2025-06-14 03:47:29 -   CNC(=O)N[C@H]1C=C(C)N(C2CC2)C1: 0.0000
+2025-06-14 03:47:29 -   C[C@@H]1CC(C2=NC(CCC3=C([NH+]4CCCCC4)CC=C3)=NO2)=CCO1: 0.0200
+2025-06-14 03:47:29 -   C[C@@H](CO)CSC[C@@H]([NH3+])C1=C[NH+](CC2=CC=CN=C2)CC1: 0.0300
+2025-06-14 03:47:29 -   COC1=CC=CC(Cl)N1: 0.0100
+2025-06-14 03:47:29 -   CC(=O)NC1=CC(C2=NC=CO2)=CC=C1C: 0.0100
+2025-06-14 03:47:29 -   CC(C)N1C=C(C[NH+]2CC[C@@]3(CCC[NH+](CC4=CC(C[NH2+]C[C@@H]5CN6CCCC[C@@H]6CO5)=CC=C4)C3)C2)C=N1: 0.0500
+2025-06-14 03:47:29 -   C[C@H](C(=O)NC1=CC=C2OCOC2=C1)C1=CC=C2OC(C[NH2+]C[C@@H]3CN4CCCC[C@@H]4CO3)=CC2=C1: 0.0800
+2025-06-14 03:47:29 -   C[C@H](C[NH+](C)CC1=CN2C=CC=NC2=N1)NC(=O)C1=CC=CC=C1: 0.0000
+2025-06-14 03:47:29 -   C[C@H](CC1=CSC=C1)[NH+](C)CC1=CCCC1: 0.0000
+2025-06-14 03:47:29 -   CC1=C[NH+]2CCC1CC2: 0.0100
+2025-06-14 03:47:29 -   COC1=C(OC)C=C([N+](=O)[O-])C(C(=O)NCO)=C1: 0.0300
+2025-06-14 03:47:29 -   CNC1=C(C2=CC(C)=C(Br)C=N2)C=C(NC(C)=O)C=C1: 0.0500
+2025-06-14 03:47:29 -   C=C(C)CN(C)C(=O)CC1=NC(N2CCC(C(=O)NCC(C)(C)CO)CC2)=NC2=CC=C(C)C=C21: 0.0400
+2025-06-14 03:47:29 -   COC1=NC=CC(C2=NOC(NC(=O)C3=NC(Cl)=CC=C3[NH2+][C@@H](C)C3=CC=NC(Cl)=C3)=N2)=C1: 0.0200
+2025-06-14 03:47:29 -   O=C(NCC1CC[NH+](CC2=CC(=O)N(CC(F)(F)F)C2)CC1)C1=CNN=C1C1=CC=C(Cl)C=C1: 0.0700
+2025-06-14 03:47:29 -   O=C1CN=C[C@@H](NC2=NC=COC2[N+](=O)[O-])C1: 0.0100
+2025-06-14 03:47:29 -   C[C@@H](NC1=CC=C([N-]S(C)(=O)=O)C=C1)C(=O)NC1=CCCC=C1: 0.0000
+2025-06-14 03:47:29 -   COC1=C(C(=O)NC[C@@H](O)C(C)(C)C)SC(C2=CNC=C2)=C1: 0.0300
+2025-06-14 03:47:29 -   CC(C)C[C@H]1C[NH2+]CC[C@@H]1C1[NH2+]C=CC2=C1OC(C)(C)C2: 0.0000
+2025-06-14 03:47:29 -   O=[N+]([O-])C1=C(F)C=CC=C1Cl: 0.0400
+2025-06-14 03:47:29 -   CC(C)NC(=O)C1=CC=C(CN2CCOC[C@H]2C)N=C1: 0.0100
+2025-06-14 03:47:29 -   C[C@@H](NC=CC1=C([NH+]2CCCCC2)CC=C1)C(=O)NC1=CC=C2OCOC2=C1: 0.0100
+2025-06-14 03:47:29 -   FC=CC1=CCN2C[C@@H](C[NH2+]CC3=CC4=CC(F)=CC=C4O3)OC[C@@H]12: 0.0800
+2025-06-14 03:47:29 -   COC1=NC=CC(C2=NCC=N2)=C1: 0.0200
+2025-06-14 03:47:29 -   FC1=CC=C(C2=CC(CC(F)(F)F)=NN2)C=C1: 0.0200
+2025-06-14 03:47:29 -   CC1=CN=C(N2CC[NH+](C)CC2)N=C1: 0.0000
+2025-06-14 03:47:29 -   CC(=O)NC1=CC=C(N[C@H]2CC(=O)N(CC(F)(F)F)C2)C(C2=CC(C)=C(Br)C=N2)=C1: 0.0400
+2025-06-14 03:47:29 -   CC1=NON=C1CN[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O: 0.0000
+2025-06-14 03:47:29 -   O=[N+]([O-])C1=CC=CC=C1C[NH+]1CC=CCC1: 0.0500
+2025-06-14 03:47:29 -   COC1=CC=C(C[C@H](CC2=CC=C3NC=CC3=N2)C[NH+](C)CC2=CN3C=CC=NC3=N2)C=C1: 0.0000
+2025-06-14 03:47:29 - 
+--- Generation 2 Summary ---
+2025-06-14 03:47:29 - Population size: 120
+2025-06-14 03:47:29 - Score statistics - Mean: 0.0507, Max: 0.2100, Min: 0.0200, Std: 0.0413
+2025-06-14 03:47:29 - Best molecule this generation: CC1=C(O)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1 (score: 0.2100)
+2025-06-14 03:47:29 - Total oracle calls so far: 249
+2025-06-14 03:47:29 - Top 5 molecules:
+2025-06-14 03:47:29 -   1. CC1=C(O)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.2100
+2025-06-14 03:47:29 -   2. CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-14 03:47:29 -   3. C[C@@H](CO)CSC[C@@H]([NH3+])C1=CCC(C(=O)NC2=CC=C3C(=C2)N=CN=C3N2CCCC2)=CC1: 0.1900
+2025-06-14 03:47:29 -   4. C[C@@H]1CC(C2=NC(C3=CC=NC(C4=CC=C5OC(C[NH2+]C[C@@H]6CN7CCCC[C@@H]7CO6)=CC5=C4)=C3)=NO2)=CCO1: 0.1800
+2025-06-14 03:47:29 -   5. CC1=C([C@H]([NH3+])CSC[C@@H](C)CO)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1700
+2025-06-14 03:47:29 - 
+=== GENERATION 3 ===
+2025-06-14 03:47:29 - Generating 70 offspring using GPT-4...
+2025-06-14 03:47:29 - 
+  --- Offspring 1 ---

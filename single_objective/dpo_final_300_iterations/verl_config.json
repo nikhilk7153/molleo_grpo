@@ -1,0 +1,31 @@
+{
+  "model": {
+    "path": "Qwen/Qwen2.5-7B-Instruct",
+    "trust_remote_code": true
+  },
+  "training": {
+    "algorithm": "dpo",
+    "num_gpus": 2,
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 5e-07,
+    "num_epochs": 3,
+    "max_length": 2048,
+    "beta": 0.1
+  },
+  "data": {
+    "train_files": [
+      "./dpo_final_300_iterations/preference_pairs.json"
+    ],
+    "eval_files": [
+      "./dpo_final_300_iterations/preference_pairs.json"
+    ],
+    "prompt_key": "prompt",
+    "chosen_key": "chosen",
+    "rejected_key": "rejected"
+  },
+  "output": {
+    "save_dir": "./dpo_final_300_iterations/checkpoints",
+    "logging_dir": "./dpo_final_300_iterations/logs"
+  }
+}

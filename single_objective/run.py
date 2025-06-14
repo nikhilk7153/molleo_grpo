@@ -38,12 +38,15 @@ def main():
 
     sys.path.append(path_main)
     
-    print(args.method)
+    print(f"Running method: {args.method}")
+    print(f"Using molecular LM: {args.mol_lm if args.mol_lm else 'None (baseline)'}")
+    print(f"Optimizing oracles: {args.oracles}")
+    print(f"Seeds: {args.seed}")
+    print(f"Output saving: ENABLED - All generations, explanations, and results will be saved")
+    print("="*70)
+
     # Add method name here when adding new ones
-
     from main.molleo.run import GB_GA_Optimizer as Optimizer
-
-
 
     if args.output_dir is None:
         args.output_dir = os.path.join(path_main, "results")
@@ -55,6 +58,9 @@ def main():
         args.pickle_directory = path_main
     
     for oracle_name in args.oracles:
+        print(f"\n{'='*70}")
+        print(f"OPTIMIZING ORACLE: {oracle_name.upper()}")
+        print(f"{'='*70}")
 
         try:
             config_default = yaml.safe_load(open(args.config_default))
@@ -64,18 +70,36 @@ def main():
         optimizer = Optimizer(args=args)
         print(config_default)
 
-
-
         for seed in args.seed:
-            print('seed', seed)
+            print(f"\n{'-'*50}")
+            print(f"RUNNING SEED: {seed}")
+            print(f"{'-'*50}")
+            # Set current seed in args for output logging
+            args.current_seed = seed
             optimizer.optimize(oracle=oracle, config=config_default, seed=seed)
+            print(f"Completed seed {seed}")
 
-
+        print(f"\nCompleted oracle {oracle_name}")
 
     end_time = time()
     hours = (end_time - start_time) / 3600.0
+    
+    print(f"\n{'='*70}")
+    print(f"ALL RUNS COMPLETED")
+    print(f"{'='*70}")
     print('---- The whole process takes %.2f hours ----' % (hours))
-
+    print()
+    print("OUTPUT FILES CREATED:")
+    print("Each run creates a directory with the pattern:")
+    print("  evolutionary_output_{oracle}_{model}_seed{seed}_{timestamp}/")
+    print()
+    print("Each directory contains:")
+    print("  - generations.csv: Generation-by-generation data with all molecules and scores")
+    print("  - run_data.json: Complete run data in JSON format")
+    print("  - console_output.log: All console output including LLM explanations")
+    print("  - summary.txt: Run summary with final results")
+    print()
+    print("You can analyze the results using the CSV files or JSON data.")
 
 if __name__ == "__main__":
     main()

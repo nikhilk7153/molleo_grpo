@@ -1,0 +1,13 @@
+Evolutionary Algorithm Run Summary
+==================================
+
+Oracle: jnk3_current
+Model: baseline
+Seed: 1
+Start Time: 20250614_023423
+End Time: 20250614_024530
+Total Generations: 117
+Total Oracle Calls: 6703
+Final Best Score: 0.910000
+Final Best Molecule: C1=CC=C(NC2=NC=CC(C3=CC=NC(NC4=CC(NC5=CC=C(N6C=CC=C6)C=C5)=NC=C4)=C3)=C2)C=C1
+Convergence Reason: patience_exceeded

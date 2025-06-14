@@ -1,3 +1,39 @@
 # Exclude large training files
 single_objective/dpo_training_setup/dpo_training_1gpu/checkpoints_4gpu/
 single_objective/dpo_training_setup/dpo_training_1gpu/logs_4gpu/
+
+# Exclude fine-tuned models and training outputs
+*.bin
+*.safetensors
+**/checkpoints/
+**/fine_tuned_models/
+**/sft_models/
+**/model_outputs/
+
+# Exclude cache files
+*.pkl
+*.cache
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Exclude large data files
+*.h5
+*.hdf5
+*.parquet
+
+# Exclude temporary files
+*.tmp
+*.temp
+wandb/
+.wandb/
+
+
+# Exclude results directories that might contain large files
+single_objective/results_*/
+
+# Environment variables and API keys
+.env
+.env.local
+.env.*.local
+*.key

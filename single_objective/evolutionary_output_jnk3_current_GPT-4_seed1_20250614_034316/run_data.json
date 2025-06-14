@@ -1,0 +1,1868 @@
+{
+  "oracle_name": "jnk3_current",
+  "mol_lm": "GPT-4",
+  "seed": 1,
+  "start_time": "20250614_034316",
+  "config": {
+    "population_size": 120,
+    "offspring_size": 70,
+    "mutation_rate": 0.0
+  },
+  "generations": [
+    {
+      "generation": 0,
+      "population_size": 120,
+      "statistics": {
+        "mean": 0.016583333333333335,
+        "max": 0.19,
+        "min": 0.0,
+        "std": 0.024065737516690035
+      },
+      "molecules": [
+        {
+          "rank": 1,
+          "smiles": "O=C(CCn1nnc2cc(-c3noc(Cc4ccc(Cl)cc4)n3)ccc21)N1CCCC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 2,
+          "smiles": "O=C1N[C@@H](c2ccccc2F)c2c1oc1ccccc1c2=O",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 3,
+          "smiles": "Cc1nonc1CC(=O)N1CCC[C@H](C(=O)Nc2ccc(-c3ccn[nH]3)cc2)C1",
+          "score": 0.06,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 4,
+          "smiles": "CS(=O)(=O)N[C@H]1CCN(c2ccc(Cl)c(F)c2)C1=O",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 5,
+          "smiles": "C[C@H]([NH2+][C@H]1CCOC1)c1ccnc(Cl)c1",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 6,
+          "smiles": "CCC(C)(C)NC(=O)c1ccc(NC(=O)N[C@@H](C)[C@H]2CCCO2)cc1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 7,
+          "smiles": "CSCC[C@H](NC(=O)N[C@@H]1CCCCC1(C)C)C(=O)[O-]",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 8,
+          "smiles": "COc1cc(-c2noc(C3C[C@@H](C)O[C@@H](C)C3)n2)ccn1",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 9,
+          "smiles": "CCS(=O)(=O)c1ccc(C(=O)Nc2cc(C)nn2-c2nc3c(Cl)cccc3s2)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 10,
+          "smiles": "CCCCO[C@@H]1C[C@H](NC(=O)c2occc2Br)C1(C)C",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 11,
+          "smiles": "CC(C)C(=O)Nc1nc2ccc(CCC(=O)NCc3ccccc3Cl)cc2s1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 12,
+          "smiles": "NC(=O)c1cccc(CNC(=O)CSc2nc3ccccc3o2)c1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 13,
+          "smiles": "O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc([N+](=O)[O-])cc1)(C3)C2",
+          "score": 0.07,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 14,
+          "smiles": "Cc1nn(-c2ccccc2)c(C)c1NC(=O)CN1CCc2cc(F)ccc2C1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 15,
+          "smiles": "CC[NH2+][C@@H](C)[C@@H]1CCCC(C)(C)CC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 16,
+          "smiles": "C/C=C/C(=O)NCC(=O)Nc1cccc(C)c1C",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 17,
+          "smiles": "COc1ccc(CNC(=O)c2cc(OC)c(OC)cc2[N+](=O)[O-])cn1",
+          "score": 0.05,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 18,
+          "smiles": "CC(C)OCCS(=O)(=O)N1CC(N2CC[NH2+]CC2)C1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 19,
+          "smiles": "COc1ccc(C[C@H](C)C[NH+](C)Cc2cn3cccnc3n2)cc1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 20,
+          "smiles": "COc1ccc(CNC(=O)Nc2ccc(CC(N)=O)cc2)cc1OC",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 21,
+          "smiles": "CCC[C@@H](C(=O)N1CCN(CC(=O)Nc2c(C)cccc2C)CC1)c1ccccc1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 22,
+          "smiles": "Cc1nc2ccc(NC(=O)N3CCC[C@@H](C)CC3)cc2o1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 23,
+          "smiles": "COc1cc(C)c(CN2CCN(C(=O)c3ccc(N4CCCCC4)c([N+](=O)[O-])c3)CC2)cc1OC",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 24,
+          "smiles": "CCN(Cc1ccc(OC)cc1)C(=O)[C@H](C)Cc1ccccc1F",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 25,
+          "smiles": "CCc1nsc(NCC(=O)NC(C)(C)C)n1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 26,
+          "smiles": "Cc1ccc2nc(N3CCC(C(=O)NCC(C)(C)CO)CC3)nc(C)c2c1",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 27,
+          "smiles": "COc1ccc(Oc2ccc(Cl)nn2)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 28,
+          "smiles": "O=C(NCc1ccccc1)c1cccc(S(=O)(=O)N2CCCCCC2)c1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 29,
+          "smiles": "COc1ccc([C@H](NC(=O)c2ccc3nccnc3c2)C2CCOCC2)cc1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 30,
+          "smiles": "CCc1ccc(C(=O)OCC(=O)C2=c3ccccc3=[NH+]C2)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 31,
+          "smiles": "Cc1ccc(C(=O)CCC(=O)NCc2ccncc2)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 32,
+          "smiles": "COc1cc(-c2ccccc2)sc1C(=O)NC[C@@H](O)C(C)(C)C",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 33,
+          "smiles": "C[C@@H]1COCCN1Cc1ccc(C(=O)NN)cn1",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 34,
+          "smiles": "CC(C)CN1CCO[C@@H](CNC(=O)c2ccc3[nH]nnc3c2)C1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 35,
+          "smiles": "CCC(=O)Nc1ccc(C)c(NC(=O)C[C@@H]2CCCO2)c1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 36,
+          "smiles": "CS[C@@H](C)c1cccc(NC(=O)c2cn(C)nc2-c2ccccc2)c1",
+          "score": 0.05,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 37,
+          "smiles": "Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1",
+          "score": 0.19,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 38,
+          "smiles": "Cc1ccc(NC(=O)CN2C(=O)S/C(=C/c3c(F)cccc3Cl)C2=O)cc1",
+          "score": 0.04,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 39,
+          "smiles": "CCCN(C)c1nccn2c(=O)n(CC(=O)Nc3cccc(SC)c3)nc12",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 40,
+          "smiles": "O=C(Nc1ccc(-c2nnc3n2CCCCC3)cc1)c1ccccc1C(F)(F)F",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 41,
+          "smiles": "CC(C)c1cccc(C(C)C)c1NC(=O)CCN1C(=O)[C@H]2CC[C@@](C)(C1=O)C2(C)C",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 42,
+          "smiles": "C[C@H](SCCN1C(=O)NC(C)(C)C1=O)C(=O)NC1CCCCC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 43,
+          "smiles": "CC[C@@H](C)[C@H](C)[NH+](Cc1ccccc1NC(C)=O)C1CC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 44,
+          "smiles": "Cc1nn(C)cc1CNC(=O)c1ccc(Cn2cc(Cl)c([N+](=O)[O-])n2)cc1",
+          "score": 0.05,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 45,
+          "smiles": "Cc1cccc(CN(C(=O)c2cccc(N3CCNC3=O)c2)C(C)C)c1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 46,
+          "smiles": "O=C(NCCC(F)(F)F)N1CCOc2ccccc2C1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 47,
+          "smiles": "COc1ccc(C(=O)N2C[C@@H](C)[NH2+]C[C@H]2C)cc1O",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 48,
+          "smiles": "Cc1nn(C)cc1CN1C[C@H](CO)OC[C@@H]1C",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 49,
+          "smiles": "CC(=O)Nc1ccc(NCc2ccccc2F)c(C(F)(F)F)c1",
+          "score": 0.08,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 50,
+          "smiles": "CCC(=O)Oc1ccc2cc(C(=O)NCCc3ccccc3)c(=O)oc2c1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 51,
+          "smiles": "CCc1ccccc1NC(=O)CN(C)c1cnn(C)c(=O)c1Cl",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 52,
+          "smiles": "C[C@@](O)(CNC(=O)N[C@@H](c1ccccc1)C1CCCC1)CN1CCOCC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 53,
+          "smiles": "[NH3+]C[C@H](CO)Cc1cc(F)cc(Br)c1",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 54,
+          "smiles": "Cc1cc(NC(=O)Nc2cccc(Cl)c2)ncc1Br",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 55,
+          "smiles": "CCOC(=O)c1ccc(NS(=O)(=O)c2ccc3c(c2)N(C(C)=O)CCO3)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 56,
+          "smiles": "COc1ccc(C[C@H](C)CNC(=O)Cc2c(C)noc2C)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 57,
+          "smiles": "O=C(NC(=S)Nc1c(O)ccc2ccccc12)c1cccc(F)c1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 58,
+          "smiles": "CCSC[C@@H](C)N(C)C(=O)NCc1ccc(C)cc1N(C)C",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 59,
+          "smiles": "C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](c1ccc(Cl)cc1Cl)NC(=O)N2CC",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 60,
+          "smiles": "CC(=O)Nc1ccc(NC(=O)CCc2cnn(-c3ccccc3)c2)cc1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 61,
+          "smiles": "COc1ccc2c(c1)C[C@@H](C(=O)Nc1ccc(C(C)=O)c(C)c1)CO2",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 62,
+          "smiles": "C#CCN(CC(=O)[O-])C(=O)c1nc(CC)n[n-]1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 63,
+          "smiles": "COc1cccc(/C=C2\\SC(=S)N=C2[O-])c1OCc1ccc(Cl)cc1Cl",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 64,
+          "smiles": "C[C@@H](CO)CSC[C@@H]([NH3+])c1ccc2c(c1)OCCCO2",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 65,
+          "smiles": "O=C(Cc1ccc(Br)cc1)N/N=C/c1ccccc1O",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 66,
+          "smiles": "COc1cc(F)c(NC(=O)C=C2CN(C(=O)OC(C)(C)C)C2)cc1F",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 67,
+          "smiles": "Cc1ccc(CCC(=O)Nc2cc(S(C)(=O)=O)ccc2Cl)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 68,
+          "smiles": "COc1ccc(C[NH+]2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)cc3)CC2)cc1",
+          "score": 0.05,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 69,
+          "smiles": "Fc1ccc2oc(C[NH2+]C[C@@H]3CN4CCCC[C@@H]4CO3)cc2c1",
+          "score": 0.06,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 70,
+          "smiles": "Cc1ccc(-c2ncco2)cc1NC(=O)c1nc(Cl)ccc1Cl",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 71,
+          "smiles": "Cc1cccc(C)c1C[NH2+]CC(C)(C)C(N)=O",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 72,
+          "smiles": "C[C@H](NC(=O)CSc1nc2ccccc2c(=O)n1C[C@H]1CCCO1)c1ccc(F)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 73,
+          "smiles": "O=C(Nc1ccc2c(c1)CCO2)N1CCC[C@H]1c1nc2ccccc2[nH]1",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 74,
+          "smiles": "C[C@@H](Nc1ccc([N-]S(C)(=O)=O)cc1)C(=O)Nc1ccc2c(c1)OCO2",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 75,
+          "smiles": "Cc1[nH+]ccn1Cc1nnc([C@@H]2CCC[NH+](Cc3cccnc3)C2)n1C",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 76,
+          "smiles": "CC[C@H](OC(=O)c1cccc(C(F)(F)F)c1)C(=O)Nc1cc(C)on1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 77,
+          "smiles": "CCOc1ccc(-n2c(N)c(C(=O)OC(C)(C)C)c3nc4ccccc4nc32)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 78,
+          "smiles": "C[C@H](NC(=O)NCc1cccc2cccnc12)c1cnn(C)c1",
+          "score": 0.04,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 79,
+          "smiles": "COC[C@H](C)NC(=O)c1ccc(C(=O)OC)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 80,
+          "smiles": "CCC[C@@H]1C[C@@H](Nc2cc(OC)ccc2F)CCO1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 81,
+          "smiles": "CC(=O)c1ccc(N[C@H]2CC(=O)N(CC(F)(F)F)C2)c([N+](=O)[O-])c1",
+          "score": 0.04,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 82,
+          "smiles": "O=C(NCc1ccc(COCC(F)(F)F)cc1)c1cc(=O)c2ccccc2o1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 83,
+          "smiles": "Cc1ccc(S(=O)(=O)CCC(=O)Oc2ccc(Cl)cc2Cl)cc1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 84,
+          "smiles": "CCN(CC(=O)Nc1cccc(OC)c1)C(=O)c1ccc(F)cc1Br",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 85,
+          "smiles": "CCC1(CNC(=O)C(=O)Nc2ccc(OC)nc2Br)CC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 86,
+          "smiles": "CN(C(=O)N1CCCC1)C1CCC([NH3+])CC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 87,
+          "smiles": "C[C@@H](NC(=O)N[C@H]1C[C@@H]1c1cccc(Cl)c1)c1nnc2ccccn12",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 88,
+          "smiles": "COc1ccc([C@@H]2CC(=O)C3=C(C2)N[C@@H]2N=NC(O)=C2[C@H]3c2ccc(Cl)c(Cl)c2)cc1OC",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 89,
+          "smiles": "COC(=O)[C@@H]1CCCN(C(=O)NC2CCC([NH+]3CCCCC3)CC2)C1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 90,
+          "smiles": "O=C(C[NH+]1CCN(c2ccc(C(F)(F)F)cn2)CC1)N1CCC[C@H]1c1ccc2c(c1)OCCO2",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 91,
+          "smiles": "CC(C)C[C@H]1C[NH2+]CC[C@@H]1c1cccc2c1OC(C)(C)C2",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 92,
+          "smiles": "Cc1noc(CC[NH2+][C@@H](C)CC(=O)Nc2ccc(Br)cc2)n1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 93,
+          "smiles": "Cc1ccc([C@H](C)NC(=O)N[C@H]2CC(=O)N(C3CC3)C2)cc1[N+](=O)[O-]",
+          "score": 0.06,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 94,
+          "smiles": "CCOC(=O)N1CCN(C(=O)COc2ccc(S(=O)(=O)N3CCCCC3)cc2)CC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 95,
+          "smiles": "C[C@H]1Cc2cc([C@@H](Cl)C3(C)CCCC3)ccc2O1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 96,
+          "smiles": "Cc1cccc(C[NH+]2CCC[C@@]3(CC[NH+](Cc4cnn(C(C)C)c4)C3)C2)c1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 97,
+          "smiles": "C[NH+]1CCC(NC(=O)Nc2ncc(Cc3cccc(Cl)c3)s2)CC1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 98,
+          "smiles": "CC[S@](=O)[C@@H]1CCCC[C@@H]1NC(=O)N[C@@H]1CCC[C@H](C(F)(F)F)C1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 99,
+          "smiles": "N#CCSC1[NH+]=c2ccccc2=[NH+]1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 100,
+          "smiles": "O=C(NCC1CCN(C(=O)c2ccccn2)CC1)C(=O)NC1CCCC1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 101,
+          "smiles": "COc1ccc(N2CCN(C(=O)[C@@H](NC(N)=O)C(C)C)CC2)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 102,
+          "smiles": "C[C@H](Cc1ccsc1)[NH+](C)Cc1cnc(N2CC[NH+](C)CC2)nc1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 103,
+          "smiles": "COc1ccc(NC(=O)C[NH+]2CCCN(Cc3cccc(Cl)c3)S2(=O)=O)cc1",
+          "score": 0.02,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 104,
+          "smiles": "Cc1nn(C)c(C)c1NC(=O)CS[C@H]1CCCc2ccccc21",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 105,
+          "smiles": "Cn1nc(C2CCC2)cc1NC(=O)N[C@H](C(N)=O)C(C)(C)C",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 106,
+          "smiles": "COc1nc(N[C@@H]2C[NH+]3CCC2CC3)ccc1N",
+          "score": 0.06,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 107,
+          "smiles": "OCc1ccc(OCCC2OCCCO2)cc1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 108,
+          "smiles": "Cc1ccc(S(=O)(=O)/N=C([O-])/C=C/c2cccs2)cc1C",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 109,
+          "smiles": "Cc1cnc(C[NH+](C)CCCc2cc(-c3ccc(F)cc3)[nH]n2)o1",
+          "score": 0.04,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 110,
+          "smiles": "COc1ccc(S(=O)(=O)N(C)CC(=O)NC2CCCCC2)cc1C",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 111,
+          "smiles": "C[C@H](Oc1ccc(Cl)c(Cl)c1)C(=O)NC[C@H]1CCC[C@@H]1O",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 112,
+          "smiles": "CC1(C)CN(CCOc2ccc(S(C)(=O)=O)cc2)CC[S@@]1=O",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 113,
+          "smiles": "N#CCc1ccc2[nH]ccc2n1",
+          "score": 0.03,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 114,
+          "smiles": "O=C(NC[C@H]1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)c1ccccc1",
+          "score": 0.05,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 115,
+          "smiles": "CCC(CC)C(=O)N1CCC(NC(=O)Nc2cc(Cl)ccc2N2CCOCC2)CC1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 116,
+          "smiles": "CCOC(=O)[C@@H]1CCCN(C(=O)c2oc3ccccc3c2C)C1",
+          "score": 0.0,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 117,
+          "smiles": "CC(=O)N[C@H](C)c1ccc(-c2csc(NC(=O)[C@@H](C)Oc3cc(C)ccc3Cl)n2)cc1",
+          "score": 0.04,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 118,
+          "smiles": "O=C(NCc1ccc(N2CCC(O)CC2)c(F)c1)c1ccn(-c2ccc(F)cc2)n1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 119,
+          "smiles": "CC(C)n1ccc(CCNCc2cnc(-c3ccsc3)s2)n1",
+          "score": 0.04,
+          "is_offspring": null,
+          "explanation": ""
+        },
+        {
+          "rank": 120,
+          "smiles": "Cc1cc(/C=C(\\C#N)C(=O)Nc2ccccc2)c(C)n1-c1ccc(I)cc1",
+          "score": 0.01,
+          "is_offspring": null,
+          "explanation": ""
+        }
+      ],
+      "total_oracle_calls": 120,
+      "offspring_info": null
+    },
+    {
+      "generation": 1,
+      "population_size": 120,
+      "statistics": {
+        "mean": 0.03341666666666668,
+        "max": 0.19,
+        "min": 0.01,
+        "std": 0.0326214610681714
+      },
+      "molecules": [
+        {
+          "rank": 1,
+          "smiles": "CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1",
+          "score": 0.19,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 2,
+          "smiles": "CC1=C([C@H]([NH3+])CSC[C@@H](C)CO)CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1",
+          "score": 0.17,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 3,
+          "smiles": "CC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1C=C(C)C([N+](=O)[O-])=C1",
+          "score": 0.17,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 4,
+          "smiles": "CONC1=CC=C2C(=C1)N=CN=C2N1CCCC1",
+          "score": 0.14,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 5,
+          "smiles": "CC(C)N1C=CC(C2=CC=C3C(=C2)N=CN=C3N2CCCC2)=N1",
+          "score": 0.11,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 6,
+          "smiles": "CC(=O)NC1=CC=C(NCC2=CC=CC=C2F)C(C2=CC(C)=C(Br)C=N2)=C1",
+          "score": 0.11,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 7,
+          "smiles": "CC(=O)NC1=CC=C(NCC2=C(C)CC=C2F)C(C(F)(F)F)=C1",
+          "score": 0.09,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 8,
+          "smiles": "CC(=O)NC1=CC=C(NCC2=CC=CC=C2F)C(C(F)(F)F)=C1",
+          "score": 0.08,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 9,
+          "smiles": "CC(C)(C)OC(=O)N1CC(=CC(=O)NC2=CCN3C[C@@H](C[NH2+]CC4=CC5=CC(F)=CC=C5O4)OC[C@@H]23)C1",
+          "score": 0.08,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 10,
+          "smiles": "O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(C1=CC=C([N+](=O)[O-])C=C1)(C3)C2",
+          "score": 0.07,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 11,
+          "smiles": "O=[N+]([O-])C1=CC=C(O)C=C1C[NH+]1CC=CCC1",
+          "score": 0.07,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 12,
+          "smiles": "CC1=NON=C1CC(=O)N1CCC[C@H](C(=O)NC2=CC=C(C3=CC=NN3)C=C2)C1",
+          "score": 0.06,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 13,
+          "smiles": "FC1=CC=C2OC(C[NH2+]C[C@@H]3CN4CCCC[C@@H]4CO3)=CC2=C1",
+          "score": 0.06,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 14,
+          "smiles": "CC1=CC=C([C@H](C)NC(=O)N[C@H]2CC(=O)N(C3CC3)C2)C=C1[N+](=O)[O-]",
+          "score": 0.06,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 15,
+          "smiles": "COC1=NC(N[C@@H]2C[NH+]3CCC2CC3)=CC=C1N",
+          "score": 0.06,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 16,
+          "smiles": "CC(C)(C)[C@H](O)CNC1=CC(C[C@H](C[NH3+])CO)=CC(Br)=C1",
+          "score": 0.06,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 17,
+          "smiles": "O=C1C[C@H](NC2=NC=COC2[N+](=O)[O-])CN1CC(F)(F)F",
+          "score": 0.06,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 18,
+          "smiles": "COC1=CC=C(CNC(=O)C2=CC(OC)=C(OC)C=C2[N+](=O)[O-])C=N1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 19,
+          "smiles": "CS[C@@H](C)C1=CC=CC(NC(=O)C2=CN(C)N=C2C2=CC=CC=C2)=C1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 20,
+          "smiles": "CC1=NN(C)C=C1CNC(=O)C1=CC=C(CN2C=C(Cl)C([N+](=O)[O-])=N2)C=C1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 21,
+          "smiles": "COc1ccc(C[NH+]2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)cc3)CC2)cc1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 22,
+          "smiles": "O=C(NC[C@H]1CCC[NH+](CC2=CC(O)=CC=C2[N+](=O)[O-])C1)C1=CC=CC=C1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 23,
+          "smiles": "COC1=NC=CC(C2=NOC(C3=CCO[C@H](C)C3)=N2)=C1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 24,
+          "smiles": "O=[N+]([O-])C1=CC=C(O)C=C1C[NH+]1C=CC=CC1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 25,
+          "smiles": "C[C@H](CC1=CSC=C1)[NH+](C)CC1=CN=C(N2CC[NH+]([N+](=O)[O-])CC2)N=C1",
+          "score": 0.05,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 26,
+          "smiles": "CC1=CC=C(NC(=O)CN2C(=O)S/C(=C/C3=C(F)C=CC=C3Cl)C2=O)C=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 27,
+          "smiles": "C[C@H](NC(=O)NCC1=CC=CC2=CC=CN=C21)C1=CN(C)N=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 28,
+          "smiles": "CC(=O)C1=CC=C(N[C@H]2CC(=O)N(CC(F)(F)F)C2)C([N+](=O)[O-])=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 29,
+          "smiles": "CC1=CN=C(C[NH+](C)CCCC2=NNC(C3=CC=C(F)C=C3)=C2)O1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 30,
+          "smiles": "CC(=O)N[C@H](C)C1=CC=C(C2=CSC(NC(=O)[C@@H](C)OC3=CC(C)=CC=C3Cl)=N2)C=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 31,
+          "smiles": "CC(C)N1C=CC(CCNCC2=CN=C(C3=CSC=C3)S2)=N1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 32,
+          "smiles": "CC1=CC=C([N+](=O)[O-])C=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 33,
+          "smiles": "CC(=O)N[C@H](C)C1=CC=C(C2=CSC(NC(=O)[C@@H](C)OC3=C(Cl)C=CC(C)=C3)=N2)C=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 34,
+          "smiles": "CS[C@@H](C)C1=CC(NC(=O)C2=CN(C[C@H](C[NH3+])CO)N=C2C2=CC=CC=C2)=CC=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 35,
+          "smiles": "CC(=O)NC12C[C@H]3C[C@@H](C1)CC(C1=CC=C([N+](=O)[O-])C=C1)(C3)C2",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 36,
+          "smiles": "COC1=NC=CC(C2=NOC(C3C=C(C)O[C@H](C)C3)=N2)=C1",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 37,
+          "smiles": "CC1=CC=CC=C1N[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 38,
+          "smiles": "CC(C)C[C@H]1C[NH2+]CC[C@@H]1C1=C([C@H](NC(=O)C2=CC=C3N=CC=NC3=C2)C2CCOCC2)CC2=C1OC(C)(C)C2",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 39,
+          "smiles": "CC1=CC=CC=C1C(=O)C12C[C@H]3C[C@@H](C1)CC(C1=CC=C([N+](=O)[O-])C=C1)(C3)C2",
+          "score": 0.04,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 40,
+          "smiles": "C[C@H]([NH2+][C@H]1CCOC1)C1=CC=NC(Cl)=C1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 41,
+          "smiles": "COC1=CC(C2=NOC(C3C[C@@H](C)O[C@@H](C)C3)=N2)=CC=N1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 42,
+          "smiles": "COc1cc(C)c(CN2CCN(C(=O)c3ccc(N4CCCCC4)c([N+](=O)[O-])c3)CC2)cc1OC",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 43,
+          "smiles": "CC1=CC=C2N=C(N3CCC(C(=O)NCC(C)(C)CO)CC3)N=C(C)C2=C1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 44,
+          "smiles": "C[C@@H]1COCCN1Cc1ccc(C(=O)NN)cn1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 45,
+          "smiles": "[NH3+]C[C@H](CO)CC1=CC(F)=CC(Br)=C1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 46,
+          "smiles": "C[C@@H](CO)CSC[C@@H]([NH3+])C1=CC=C2OCCCOC2=C1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 47,
+          "smiles": "CC1=CC=C(C2=NC=CO2)C=C1NC(=O)C1=NC(Cl)=CC=C1Cl",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 48,
+          "smiles": "O=C(NC1=CC=C2OCCC2=C1)N1CCC[C@H]1C1=NC2=CC=CC=C2N1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 49,
+          "smiles": "N#CCC1=CC=C2NC=CC2=N1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 50,
+          "smiles": "C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(Cl)C=C1C(=O)NC1=CC=CC([C@H](C)SC)=C1)NC(=O)N2CC",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 51,
+          "smiles": "C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=COCC1)NC(=O)N2CC",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 52,
+          "smiles": "CC1=CC=C(C2=CC(CCC[NH+](C)CC3=NC=C(C)O3)=NN2)C=C1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 53,
+          "smiles": "O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(C1=CC(Cl)=NC=C1)(C3)C2",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 54,
+          "smiles": "CC1=NC(N2CCC(C(=O)NCC(C)(C)CO)CC2)=NC2=C1C=C(Cl)C=C2",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 55,
+          "smiles": "CC1=CC=C(C2=NC=CO2)C=C1NC(=O)C1=NC(Cl)=CC=C1[NH2+][C@@H](C)C1=CC=NC(Cl)=C1",
+          "score": 0.03,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 56,
+          "smiles": "CCCCO[C@@H]1C[C@H](NC(=O)c2occc2Br)C1(C)C",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 57,
+          "smiles": "NC(=O)C1=CC=CC(CNC(=O)CSC2=NC3=CC=CC=C3O2)=C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 58,
+          "smiles": "CCC[C@@H](C(=O)N1CCN(CC(=O)Nc2c(C)cccc2C)CC1)c1ccccc1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 59,
+          "smiles": "COC1=CC=C([C@H](NC(=O)C2=CC=C3N=CC=NC3=C2)C2CCOCC2)C=C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 60,
+          "smiles": "COC1=C(C(=O)NC[C@@H](O)C(C)(C)C)SC(C2=CC=CC=C2)=C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 61,
+          "smiles": "CC1=NN(C)C=C1CN1C[C@H](CO)OC[C@@H]1C",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 62,
+          "smiles": "CC1=CC(NC(=O)NC2=CC=CC(Cl)=C2)=NC=C1Br",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 63,
+          "smiles": "CCSC[C@@H](C)N(C)C(=O)NCC1=CC=C(C)C=C1N(C)C",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 64,
+          "smiles": "C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(Cl)C=C1Cl)NC(=O)N2CC",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 65,
+          "smiles": "COc1ccc2c(c1)C[C@@H](C(=O)Nc1ccc(C(C)=O)c(C)c1)CO2",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 66,
+          "smiles": "Cc1[nH+]ccn1Cc1nnc([C@@H]2CCC[NH+](Cc3cccnc3)C2)n1C",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 67,
+          "smiles": "COC1=CC=C([C@@H]2CC(=O)C3=C(C2)N[C@@H]2N=NC(O)=C2[C@H]3C2=CC=C(Cl)C(Cl)=C2)C=C1OC",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 68,
+          "smiles": "C[C@H]1Cc2cc([C@@H](Cl)C3(C)CCCC3)ccc2O1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 69,
+          "smiles": "C[NH+]1CCC(NC(=O)Nc2ncc(Cc3cccc(Cl)c3)s2)CC1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 70,
+          "smiles": "O=C(NCC1CCN(C(=O)c2ccccn2)CC1)C(=O)NC1CCCC1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 71,
+          "smiles": "C[C@H](CC1=CSC=C1)[NH+](C)CC1=CN=C(N2CC[NH+](C)CC2)N=C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 72,
+          "smiles": "COc1ccc(NC(=O)C[NH+]2CCCN(Cc3cccc(Cl)c3)S2(=O)=O)cc1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 73,
+          "smiles": "CC1=CC=C([C@H](C)NC(=O)N[C@H]2C=C(C)N(C3CC3)C2)C=C1[N+](=O)[O-]",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 74,
+          "smiles": "[O-]C1=CC=NC(Cl)=C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 75,
+          "smiles": "CC1=NON=C1CC(=O)N1CCC[C@H](C(=O)[C@@H]2CC(=O)C3=C(C2)N[C@@H]2N=NC(O)=C2[C@H]3C2=CC=C(Cl)C(Cl)=C2)C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 76,
+          "smiles": "CCN1C(=O)N[C@H](C2=CC=C(Cl)C=C2Cl)C2=C1C=NN(C)C2=O",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 77,
+          "smiles": "CCSC[C@@H](C)N(C)C(=O)NCC1=CC=C(NC(=O)C2=CC=CC=C2C)C1N(C)C",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 78,
+          "smiles": "COC1=CC=C(CC(=O)C2=CC=C(CN3C=C(Cl)C([N+](=O)[O-])=N3)C=C2)C=N1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 79,
+          "smiles": "C1=CN=C[NH2+]C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 80,
+          "smiles": "COC1=NC=CC(C=CF)=C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 81,
+          "smiles": "COC1=C(C(=O)NC[C@@H](O)C(C)(C)C)SC(C2=C([NH+]3CCCCC3)CC=C2)=C1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 82,
+          "smiles": "COC1=C[C@H](CO)OC1",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 83,
+          "smiles": "CC(C)C[C@H]1C[NH2+]CC[C@@H]1N[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O",
+          "score": 0.02,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 84,
+          "smiles": "O=C1N[C@@H](c2ccccc2F)c2c1oc1ccccc1c2=O",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 85,
+          "smiles": "CS(=O)(=O)N[C@H]1CCN(C2=CC=C(Cl)C(F)=C2)C1=O",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 86,
+          "smiles": "CCC(C)(C)NC(=O)c1ccc(NC(=O)N[C@@H](C)[C@H]2CCCO2)cc1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 87,
+          "smiles": "CSCC[C@H](NC(=O)N[C@@H]1CCCCC1(C)C)C(=O)[O-]",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 88,
+          "smiles": "CC(C)C(=O)NC1=NC2=CC=C(CCC(=O)NCC3=CC=CC=C3Cl)C=C2S1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 89,
+          "smiles": "Cc1nn(-c2ccccc2)c(C)c1NC(=O)CN1CCc2cc(F)ccc2C1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 90,
+          "smiles": "COC1=CC=C(C[C@H](C)C[NH+](C)CC2=CN3C=CC=NC3=N2)C=C1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 91,
+          "smiles": "CCC1=NSC(NCC(=O)NC(C)(C)C)=N1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 92,
+          "smiles": "CCCN(C)c1nccn2c(=O)n(CC(=O)Nc3cccc(SC)c3)nc12",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 93,
+          "smiles": "O=C(Nc1ccc(-c2nnc3n2CCCCC3)cc1)c1ccccc1C(F)(F)F",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 94,
+          "smiles": "CC(C)c1cccc(C(C)C)c1NC(=O)CCN1C(=O)[C@H]2CC[C@@](C)(C1=O)C2(C)C",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 95,
+          "smiles": "Cc1cccc(CN(C(=O)c2cccc(N3CCNC3=O)c2)C(C)C)c1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 96,
+          "smiles": "COc1ccc(C(=O)N2C[C@@H](C)[NH2+]C[C@H]2C)cc1O",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 97,
+          "smiles": "O=C(NC(=S)Nc1c(O)ccc2ccccc12)c1cccc(F)c1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 98,
+          "smiles": "CC(=O)NC1=CC=C(NC(=O)CCC2=CN(C3=CC=CC=C3)N=C2)C=C1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 99,
+          "smiles": "COC1=CC(F)=C(NC(=O)C=C2CN(C(=O)OC(C)(C)C)C2)C=C1F",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 100,
+          "smiles": "C[C@@H](Nc1ccc([N-]S(C)(=O)=O)cc1)C(=O)Nc1ccc2c(c1)OCO2",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 101,
+          "smiles": "CCC[C@@H]1C[C@@H](Nc2cc(OC)ccc2F)CCO1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 102,
+          "smiles": "Cc1ccc(S(=O)(=O)CCC(=O)Oc2ccc(Cl)cc2Cl)cc1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 103,
+          "smiles": "CCN(CC(=O)Nc1cccc(OC)c1)C(=O)c1ccc(F)cc1Br",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 104,
+          "smiles": "COC(=O)[C@@H]1CCCN(C(=O)NC2CCC([NH+]3CCCCC3)CC2)C1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 105,
+          "smiles": "O=C(C[NH+]1CCN(c2ccc(C(F)(F)F)cn2)CC1)N1CCC[C@H]1c1ccc2c(c1)OCCO2",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 106,
+          "smiles": "CC(C)C[C@H]1C[NH2+]CC[C@@H]1C1=CC=CC2=C1OC(C)(C)C2",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 107,
+          "smiles": "Cc1cccc(C[NH+]2CCC[C@@]3(CC[NH+](Cc4cnn(C(C)C)c4)C3)C2)c1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 108,
+          "smiles": "Cc1nn(C)c(C)c1NC(=O)CS[C@H]1CCCc2ccccc21",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 109,
+          "smiles": "CC1(C)CN(CCOc2ccc(S(C)(=O)=O)cc2)CC[S@@]1=O",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 110,
+          "smiles": "O=C(NCc1ccc(N2CCC(O)CC2)c(F)c1)c1ccn(-c2ccc(F)cc2)n1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 111,
+          "smiles": "Cc1cc(/C=C(\\C#N)C(=O)Nc2ccccc2)c(C)n1-c1ccc(I)cc1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": ""
+        },
+        {
+          "rank": 112,
+          "smiles": "CC(=O)[C@@H]1CCCN(C(=O)NC2CCC([NH+]3CCCCC3)CC2)C1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 113,
+          "smiles": "C[NH2+]C[C@@H]1CN2CCCC[C@@H]2CO1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 114,
+          "smiles": "CC(N)C[C@H]1C[NH2+]CC[C@@H]1C1=CC=CC2=C1OC(C)(C)C2",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 115,
+          "smiles": "CC(=O)NC1=C(C)C(CN2C[C@H](CO)OC[C@@H]2C)=CC1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 116,
+          "smiles": "O=[N+]([O-])C1=NN(CC2=CC=C(CN3C=C(Cl)C([N+](=O)[O-])=N3)C2)C=C1Cl",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 117,
+          "smiles": "CC(C)(C)NC(=O)CNC1=NCC=[SH]1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 118,
+          "smiles": "O=C1C=C(C2=CC=C(F)C=C2)CN1C1CC1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 119,
+          "smiles": "COC1=CC=C(CNC(=O)[C@H]2CCOC2)C=N1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        },
+        {
+          "rank": 120,
+          "smiles": "CCSC[C@@H](C)N(C(=O)NCC1=CC=C(C)C=C1N(C)C)C1=CC=C(Cl)C(F)=C1",
+          "score": 0.01,
+          "is_offspring": false,
+          "explanation": "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        }
+      ],
+      "total_oracle_calls": 185,
+      "offspring_info": {
+        "offspring_indices": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189
+        ],
+        "parent_info": {},
+        "explanations": [
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+          "Fallback to genetic operations due to LLM error: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+        ]
+      }
+    }
+  ],
+  "final_results": {}
+}

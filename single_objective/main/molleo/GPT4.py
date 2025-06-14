@@ -1,38 +1,41 @@
-import openai
+from openai import OpenAI
 import re
 from rdkit import Chem
 import main.molleo.crossover as co, main.molleo.mutate as mu
-openai.api_type = "azure"
-openai.api_base = "https://your-resource-name.openai.azure.com/"  # Replace with your Azure OpenAI endpoint
-openai.api_version = "2023-07-01-preview"
-openai.api_key = "your-api-key-here"  # Replace with your API key
 import random
+import os
+
+# Initialize OpenAI client
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
+
 MINIMUM = 1e-10
 
-def query_LLM(question, model="gpt-4", temperature=0.0):
+def query_LLM(question, model="gpt-4.1-mini", temperature=0.0):
     message = [{"role": "system", "content": "You are a helpful agent who can answer the question based on your molecule knowledge."}]
 
     prompt1 = question
     message.append({"role": "user", "content": prompt1})
 
-    params = {
-        "engine": "your-deployment-name",  # Replace with your Azure OpenAI deployment name
-        "max_tokens": 2048,
-        "temperature": temperature,
-        "messages": message
-    }
-
     for retry in range(3):
         try:
-            response = openai.ChatCompletion.create(**params)["choices"][0]["message"]["content"]
-            message.append({"role": "assistant", "content": response})
+            response = client.chat.completions.create(
+                model=model,
+                max_tokens=2048,
+                temperature=temperature,
+                messages=message
+            )
+            response_content = response.choices[0].message.content
+            message.append({"role": "assistant", "content": response_content})
             break
         except Exception as e:
             print(f"{type(e).__name__} {e}")
-
+            if retry == 2:  # Last retry
+                raise e
 
     print("=>")
-    return message, response
+    return message, response_content
 
 class GPT4:
     def __init__(self):
@@ -82,19 +85,34 @@ class GPT4:
                 mol_tuple = mol_tuple + tu
             prompt = task_definition + mol_tuple + task_objective + self.requirements
             _, r = query_LLM(prompt)
+            
+            # Extract explanation and molecule
+            explanation = ""
+            try:
+                explanation_match = re.search(r'<<<Explaination>>>:\s*(.*?)<<<Molecule>>>', r, re.DOTALL)
+                if explanation_match:
+                    explanation = explanation_match.group(1).strip()
+                else:
+                    # Fallback: use the full response as explanation if format not found
+                    explanation = r
+            except:
+                explanation = r
+            
             proposed_smiles = re.search(r'\\box\{(.*?)\}', r).group(1)
             proposed_smiles = sanitize_smiles(proposed_smiles)
             print(proposed_smiles)
             assert proposed_smiles != None
             new_child = Chem.MolFromSmiles(proposed_smiles)
 
-            return new_child
+            # Return both molecule and explanation
+            return new_child, explanation
         except Exception as e:
             print(f"{type(e).__name__} {e}")
             new_child = co.crossover(parent_mol[0], parent_mol[1])
             if new_child is not None:
                 new_child = mu.mutate(new_child, mutation_rate)
-            return new_child
+            # Return molecule with fallback explanation
+            return new_child, f"Fallback to genetic operations due to LLM error: {e}"
     
 def sanitize_smiles(smi):
     """

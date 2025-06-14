@@ -1,0 +1,65 @@
+2025-06-14 03:48:28 - 
+=== INITIAL POPULATION ===
+2025-06-14 03:48:28 - Population size: 120
+2025-06-14 03:48:28 - Initial scores - Mean: 0.0166, Max: 0.1900, Min: 0.0000
+2025-06-14 03:48:28 - Best initial molecule: Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.1900)
+2025-06-14 03:48:28 - 
+=== GENERATION 1 ===
+2025-06-14 03:48:28 - Generating 70 offspring using GPT-4...
+2025-06-14 03:48:28 - 
+  --- Offspring 1 ---
+2025-06-14 03:49:13 -   LLM Explanation: Fallback to genetic operations due to LLM error: 'NoneType' object has no attribute 'group'
+2025-06-14 03:49:13 -   Generated SMILES: CC1=CC=C([N+](=O)[O-])C=C1
+2025-06-14 03:49:13 -   Score: 0.0400
+2025-06-14 03:49:13 - 
+  --- Offspring 2 ---
+2025-06-14 03:49:25 -   LLM Explanation: $We combined key fragments from the two molecules to design a hybrid expected to have stronger JNK3 inhibition. From the second molecule we took the chiral acetamide side chain attached to a substituted benzene, while from the first molecule we incorporated its heterocyclic moiety bearing the bicyclic ether fragment. In addition, we included a chlorine substituent on the benzene ring (which is known to sometimes boost binding affinity) to further improve activity. Overall, this crossover design is anticipated to result in a molecule with higher JNK3 score than 0.04.,
+2025-06-14 03:49:25 -   Generated SMILES: CC(=O)NC(C)c1cc(Cl)ccc1-c1noc(C2CC(C)OC(C)C2)n1
+2025-06-14 03:49:25 -   Score: 0.0300
+2025-06-14 03:49:25 - 
+  --- Offspring 3 ---
+2025-06-14 03:49:54 -   LLM Explanation: {<<<Explanation>>>: $We designed a hybrid molecule by merging the key fragments of the two given molecules. From molecule2, we retained the fused aromatic-heterocycle core that may support effective binding and activity, including the tertiary amine ring. From molecule1, we incorporated the benzyl amide bearing a chloro‐substituted phenyl group, which may strengthen interactions via hydrophobic contacts and halogen bonding. The result is a new scaffold that builds on the features likely contributing to higher JNK3 activity., <<<Molecule>>>: \box{Cc1ccc2nc(N3CCC(C(=O)NCc4ccc(Cl)cc4)CC3)nc(C)c2c1}}
+2025-06-14 03:49:54 -   Generated SMILES: Cc1ccc2nc(N3CCC(C(=O)NCc4ccc(Cl)cc4)CC3)nc(C)c2c1
+2025-06-14 03:49:54 -   Score: 0.0000
+2025-06-14 03:49:54 - 
+  --- Offspring 4 ---
+2025-06-14 03:50:20 -   LLM Explanation: $We combined features from the higher‐scoring Molecule1 with a subtle modification to potentially enhance binding. In this design, the small acetyl group is replaced by a bulkier isobutyryl moiety (CC(C)C(=O)N–) to boost hydrophobic interactions, and the terminal chloro substituent is swapped to a fluoro substituent, which can favorably tune electronic and steric interactions in the binding pocket. This crossover modification is intended to raise the JNK3 inhibitory activity over that of the original molecules.,
+2025-06-14 03:50:20 -   Generated SMILES: Cc1ccc(F)c(OC(C)C(=O)Nc2nc(-c3ccc(C(C)NC(=O)C(C)C)cc3)cs2)c1
+2025-06-14 03:50:20 -   Score: 0.0700
+2025-06-14 03:50:20 - 
+  --- Offspring 5 ---
+2025-06-14 03:50:34 -   LLM Explanation: Fallback to genetic operations due to LLM error: 'NoneType' object has no attribute 'group'
+2025-06-14 03:50:34 -   Generated SMILES: O=C(Cl)N[C@H]1CC(=O)N(C2CC2)C1
+2025-06-14 03:50:34 -   Score: 0.0000
+2025-06-14 03:50:34 - 
+  --- Offspring 6 ---
+2025-06-14 03:50:46 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-14 03:50:46 -   Generated SMILES: CC1=CC=C(Cl)C(O[C@H](C)C(=O)NC2=NC(C3=CCCC=C3)=CS2)=C1
+2025-06-14 03:50:46 -   Score: 0.0500
+2025-06-14 03:50:46 - 
+  --- Offspring 7 ---
+2025-06-14 03:50:58 -   LLM Explanation: $We designed a hybrid molecule by merging key features from both parent molecules. From the first molecule, we preserved the fluorophenyl-oxacyclic core, known for its favorable binding conformation, and replaced the charged alkyl‐amine tail with an amide linkage. This amide now connects to a pyrimidine ring substituted with a methyl group and further extended by a phenyl ring – a motif derived from the second molecule that is common in kinase inhibitors. This new combination is expected to improve hydrogen‐bonding interactions in the kinase active site and overall binding affinity, potentially leading to a higher JNK3 score.,
+2025-06-14 03:50:58 -   Generated SMILES: Cn1cc(C(=O)NCc2cc3cc(F)ccc3o2)c(-c2ccccc2)n1
+2025-06-14 03:50:58 -   Score: 0.0900
+2025-06-14 03:50:58 - 
+  --- Offspring 8 ---
+2025-06-14 03:51:11 -   LLM Explanation: Fallback to genetic operations due to LLM error: 'NoneType' object has no attribute 'group'
+2025-06-14 03:51:11 -   Generated SMILES: CC1=CC=C(C2=NC=CO2)C=C1NC(=O)C1=NC(Cl)=CC=C1C(C)(C)C
+2025-06-14 03:51:11 -   Score: 0.0500
+2025-06-14 03:51:11 - 
+  --- Offspring 9 ---
+2025-06-14 03:51:19 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-14 03:51:19 -   Generated SMILES: [NH3+]C[C@H](CO)CC1=CC(Br)=CC(Cl)=C1
+2025-06-14 03:51:19 -   Score: 0.0100
+2025-06-14 03:51:19 - 
+  --- Offspring 10 ---
+2025-06-14 03:51:33 -   LLM Explanation: Fallback to genetic operations due to LLM error: 'NoneType' object has no attribute 'group'
+2025-06-14 03:51:33 -   Generated SMILES: CC1=CC=C(Cl)C(O[C@H](C)C(=O)NC2=NC(C3=CCCCC3(C)C)=CS2)=C1
+2025-06-14 03:51:33 -   Score: 0.0400
+2025-06-14 03:51:33 - 
+  --- Offspring 11 ---
+2025-06-14 03:53:22 -   LLM Explanation: $I combined key features from both starting structures. The new molecule retains the chiral thioether fragment and the amide-linked pyrimidine from the second molecule while incorporating a brominated aromatic ring inspired by the first molecule. This hybrid design is expected to improve hydrophobic and potential halogen bonding interactions with the JNK3 active site, leading to an enhanced biological activity, i.e. a higher JNK3 score.,
+2025-06-14 03:53:22 -   Generated SMILES: CSC(C)c1ccc(NC(=O)c2cn(C)nc2-c2ccc(Br)cc2)cc1
+2025-06-14 03:53:22 -   Score: 0.0400
+2025-06-14 03:53:22 - 
+  --- Offspring 12 ---

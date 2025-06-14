@@ -330,10 +330,11 @@ class BaseOptimizer:
         torch.manual_seed(seed)
         random.seed(seed)
         self.seed = seed
-        self.oracle.task_label = self.args.mol_lm + "_" + oracle.name + "_" + str(seed)
+        mol_lm_name = self.args.mol_lm if self.args.mol_lm else "baseline"
+        self.oracle.task_label = mol_lm_name + "_" + oracle.name + "_" + str(seed)
         self._optimize(oracle, config)
         if self.args.log_results:
             self.log_result()
-        self.save_result(self.args.mol_lm + "_" + oracle.name + "_" + str(seed))
+        self.save_result(mol_lm_name + "_" + oracle.name + "_" + str(seed))
         self.reset()
 
