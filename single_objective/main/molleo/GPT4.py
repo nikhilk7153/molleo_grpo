@@ -52,16 +52,16 @@ class GPT4:
                 'mestranol_similarity': 'I have two molecules and their mestranol similarity scores. The mestranol similarity score measures a molecule\'s Tanimoto similarity with Mestranol.\n\n',
                 }
         self.task2objective = {
-                'qed': 'Please propose a new molecule that has a higher QED score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'jnk3': 'Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'drd2': 'Please propose a new molecule that has a higher DRD2 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'gsk3b': 'Please propose a new molecule that has a higher GSK3$\beta$ score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'isomers_C9H10N2O2PF2Cl': 'Please propose a new molecule that has a higher isomer score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'perindopril_mpo': 'Please propose a new molecule that has a higher perindopril multiproperty objective score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'sitagliptin_mpo': 'Please propose a new molecule that has a higher sitagliptin multiproperty objective score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'ranolazine_mpo': 'Please propose a new molecule that has a higher ranolazine multiproperty objective score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'thiothixene_rediscovery': 'Please propose a new molecule that has a higher thiothixene rediscovery score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
-                'mestranol_similarity': 'Please propose a new molecule that has a higher mestranol similarity score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.\n\n',
+                'qed': 'Please propose a new molecule that has a higher QED score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'jnk3': 'Please propose a new molecule that has a higher JNK3 score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'drd2': 'Please propose a new molecule that has a higher DRD2 score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'gsk3b': 'Please propose a new molecule that has a higher GSK3$\beta$ score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'isomers_C9H10N2O2PF2Cl': 'Please propose a new molecule that has a higher isomer score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'perindopril_mpo': 'Please propose a new molecule that has a higher perindopril multiproperty objective score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'sitagliptin_mpo': 'Please propose a new molecule that has a higher sitagliptin multiproperty objective score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'ranolazine_mpo': 'Please propose a new molecule that has a higher ranolazine multiproperty objective score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'thiothixene_rediscovery': 'Please propose a new molecule that has a higher thiothixene rediscovery score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
+                'mestranol_similarity': 'Please propose a new molecule that has a higher mestranol similarity score. You should make crossover and mutations based on the given molecules, using your molecular knowledge to guide the modifications.\n\n',
                 }
         self.requirements = """\n\nYour output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \\box{$Molecule}}. Here are the requirements:\n
         \n\n1. $EXPLANATION should be your analysis.\n2. The $Molecule should be the smiles of your propsosed molecule.\n3. The molecule should be valid.
@@ -83,7 +83,17 @@ class GPT4:
             for i in range(2):
                 tu = '\n[' + Chem.MolToSmiles(parent_mol[i]) + ',' + str(parent_scores[i]) + ']'
                 mol_tuple = mol_tuple + tu
-            prompt = task_definition + mol_tuple + task_objective + self.requirements
+            
+            # Add LLM-driven mutation instructions
+            mutation_instructions = """\n\nMolecular Design Strategy:
+            - Analyze the parent molecules and identify structural features that contribute to their scores
+            - Create a new molecule through intelligent crossover and mutation of the parent structures
+            - Focus on functional group modifications, ring changes, side chain alterations, and stereochemical changes
+            - Use your molecular knowledge to guide modifications that are likely to improve the target property
+            - Ensure all proposed molecules remain chemically valid and synthesizable
+            - Aim for meaningful structural diversity while building upon successful molecular features. Ensure that the molecule is valid in structure and can be parsed.\n\n"""
+                        
+            prompt = task_definition + mol_tuple + task_objective + mutation_instructions + self.requirements
             _, r = query_LLM(prompt)
             
             # Extract explanation and molecule
@@ -104,15 +114,22 @@ class GPT4:
             assert proposed_smiles != None
             new_child = Chem.MolFromSmiles(proposed_smiles)
 
-            # Return both molecule and explanation
-            return new_child, explanation
+            # Return molecule, explanation, and prompt as a tuple
+            return new_child, explanation, prompt
         except Exception as e:
             print(f"{type(e).__name__} {e}")
+            # Fallback: Always do crossover + mutation since LLM should handle all mutations
             new_child = co.crossover(parent_mol[0], parent_mol[1])
             if new_child is not None:
                 new_child = mu.mutate(new_child, mutation_rate)
-            # Return molecule with fallback explanation
-            return new_child, f"Fallback to genetic operations due to LLM error: {e}"
+            else:
+                # If crossover fails, just mutate one parent
+                new_child = mu.mutate(random.choice(parent_mol), mutation_rate)
+            
+            # Return molecule with fallback explanation and prompt
+            fallback_explanation = f"Fallback genetic crossover + mutation due to LLM error: {e}"
+            fallback_prompt = f"Fallback genetic operation for parents: {[Chem.MolToSmiles(mol) for mol in parent_mol]}"
+            return new_child, fallback_explanation, fallback_prompt
     
 def sanitize_smiles(smi):
     """

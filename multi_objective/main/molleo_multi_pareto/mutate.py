@@ -5,7 +5,7 @@ from rdkit import Chem, rdBase
 from rdkit.Chem import AllChem
 
 import main.molleo_multi_pareto.crossover as co
-from utils import get_fp_scores
+from main.molleo_multi_pareto.utils import get_fp_scores
 from network import obtain_model_pred
 
 rdBase.DisableLog('rdApp.error')

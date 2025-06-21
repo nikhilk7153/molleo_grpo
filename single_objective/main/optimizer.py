@@ -97,7 +97,7 @@ class Oracle:
             temp_top100 = list(self.mol_buffer.items())[:100]
             smis = [item[0] for item in temp_top100]
             scores = [item[1][0] for item in temp_top100]
-            n_calls = self.max_oracle_calls
+            n_calls = len(self.mol_buffer)  # Use actual oracle calls, not max_oracle_calls
         else:
             if mols is None and scores is None:
                 if len(self.mol_buffer) <= self.max_oracle_calls:

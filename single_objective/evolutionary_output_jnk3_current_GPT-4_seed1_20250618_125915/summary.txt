@@ -1,0 +1,13 @@
+Evolutionary Algorithm Run Summary
+==================================
+
+Oracle: jnk3_current
+Model: GPT-4
+Seed: 1
+Start Time: 20250618_125915
+End Time: 20250618_133152
+Total Generations: 68
+Total Oracle Calls: 443
+Final Best Score: 0.310000
+Final Best Molecule: COC1=CC=C(C2CCCN2C(=O)NC2=CC=C3C(=C2)N=CN=C3N2CCOCC2)C=C1OC
+Convergence Reason: patience_exceeded

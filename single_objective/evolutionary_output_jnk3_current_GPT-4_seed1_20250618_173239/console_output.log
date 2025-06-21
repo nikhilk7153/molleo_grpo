@@ -1,0 +1,10 @@
+2025-06-18 17:32:42 - 
+=== INITIAL POPULATION ===
+2025-06-18 17:32:42 - Population size: 120
+2025-06-18 17:32:42 - Initial scores - Mean: 0.0166, Max: 0.1900, Min: 0.0000
+2025-06-18 17:32:42 - Best initial molecule: Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.1900)
+2025-06-18 17:32:42 - 
+=== GENERATION 1 ===
+2025-06-18 17:32:42 - Generating 5 offspring using GPT-4...
+2025-06-18 17:32:42 - 
+  --- Offspring 1 ---

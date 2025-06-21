@@ -1,38 +1,41 @@
-import openai
+from openai import OpenAI
 import re
 from rdkit import Chem
 import main.molleo_multi.crossover as co, main.molleo_multi.mutate as mu
-openai.api_type = "azure"
-openai.api_base = "https://your-resource-name.openai.azure.com/"  # Replace with your Azure OpenAI endpoint
-openai.api_version = "2023-07-01-preview"
-openai.api_key = "your-api-key-here"  # Replace with your API key
 import random
+import os
+
+# Initialize OpenAI client
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
+
 MINIMUM = 1e-10
 
-def query_LLM(question, model="gpt-4", temperature=0.0):
+def query_LLM(question, model="gpt-4.1-mini", temperature=0.0):
     message = [{"role": "system", "content": "You are a helpful agent who can answer the question based on your molecule knowledge."}]
 
     prompt1 = question
     message.append({"role": "user", "content": prompt1})
 
-    params = {
-        "engine": "your-deployment-name",  # Replace with your Azure OpenAI deployment name
-        "max_tokens": 2048,
-        "temperature": temperature,
-        "messages": message
-    }
-
     for retry in range(3):
         try:
-            response = openai.ChatCompletion.create(**params)["choices"][0]["message"]["content"]
-            message.append({"role": "assistant", "content": response})
+            response = client.chat.completions.create(
+                model=model,
+                max_tokens=2048,
+                temperature=temperature,
+                messages=message
+            )
+            response_content = response.choices[0].message.content
+            message.append({"role": "assistant", "content": response_content})
             break
         except Exception as e:
             print(f"{type(e).__name__} {e}")
-
+            if retry == 2:  # Last retry
+                raise e
 
     print("=>")
-    return message, response
+    return message, response_content
 
 class GPT4:
     def __init__(self):

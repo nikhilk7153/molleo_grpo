@@ -1,0 +1,2131 @@
+2025-06-18 13:44:13 - 
+=== INITIAL POPULATION ===
+2025-06-18 13:44:13 - Population size: 120
+2025-06-18 13:44:13 - Initial scores - Mean: 0.0166, Max: 0.1900, Min: 0.0000
+2025-06-18 13:44:13 - Best initial molecule: Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.1900)
+2025-06-18 13:44:13 - 
+=== GENERATION 1 ===
+2025-06-18 13:44:13 - Generating 5 offspring using GPT-4...
+2025-06-18 13:44:13 - 
+  --- Offspring 1 ---
+2025-06-18 13:44:17 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc([N+](=O)[O-])cc1)(C3)C2,0.07]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:17 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.07 and contains a bicyclic scaffold with a morpholine amide and a nitrophenyl group. The second molecule has a higher score of 0.19 and features a benzamide linked to a fused bicyclic heterocycle with a piperidine substituent. To design a molecule with a potentially higher JNK3 score, I propose combining the favorable features of both: the benzamide motif from the second molecule, which may enhance binding affinity, and the bicyclic scaffold from the first molecule, which provides rigidity and spatial orientation. Additionally, replacing the nitro group (which can be metabolically unstable and toxic) with a less reactive electron-withdrawing group such as a cyano group could improve activity and drug-likeness. Therefore, I propose a molecule with a benzamide linked to the bicyclic scaffold, incorporating a cyano-substituted phenyl ring instead of the nitro group, and retaining the morpholine amide to maintain solubility and binding interactions. This hybrid design aims to improve binding affinity and biological activity against JNK3. 
+
+<<<Molecule>>>: \box{O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc(C#N)cc1)(C3)C2} }
+2025-06-18 13:44:17 -   Generated SMILES: N#Cc1ccc(C23CC4CC(CC(C(=O)N5CCOCC5)(C4)C2)C3)cc1
+2025-06-18 13:44:17 -   Score: 0.0000
+2025-06-18 13:44:17 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:44:17 - 
+  --- Offspring 2 ---
+2025-06-18 13:44:21 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CCSC[C@@H](C)N(C)C(=O)NCc1ccc(C)cc1N(C)C,0.02]
+[CC(C)C[C@H]1C[NH2+]CC[C@@H]1c1cccc2c1OC(C)(C)C2,0.01]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:21 -   LLM Explanation: Both given molecules have very low JNK3 scores (0.02 and 0.01), indicating weak activity. The first molecule features a peptide-like backbone with an amide linkage and aromatic substitution, while the second has a bicyclic system with a positively charged amine and a bulky tert-butyl ether group. To improve JNK3 activity, it is often beneficial to combine features that enhance binding affinity, such as maintaining the amide linkage for hydrogen bonding and incorporating aromatic or heteroaromatic rings for π-π stacking interactions. Additionally, reducing steric hindrance and optimizing the basic amine groups can improve binding. I propose a molecule that merges the amide backbone and aromatic substitution from the first molecule with a less bulky, more planar bicyclic aromatic system inspired by the second molecule, replacing the bulky tert-butyl group with a simpler methoxy group to reduce steric hindrance and maintain polarity. This hybrid molecule should have improved binding potential and thus a higher JNK3 score.
+2025-06-18 13:44:21 -   Generated SMILES: CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C
+2025-06-18 13:44:21 -   Score: 0.0900
+2025-06-18 13:44:21 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:44:21 - 
+  --- Offspring 3 ---
+2025-06-18 13:44:24 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccc([C@@H]2CC(=O)C3=C(C2)N[C@@H]2N=NC(O)=C2[C@H]3c2ccc(Cl)c(Cl)c2)cc1OC,0.02]
+[C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](c1ccc(Cl)cc1Cl)NC(=O)N2CC,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:24 -   LLM Explanation: Both given molecules have the same JNK3 score of 0.02, indicating low activity. To improve the JNK3 score, I will combine favorable features from both molecules: the bicyclic core with nitrogen heterocycles from the first molecule, which may provide good binding interactions, and the amide-linked chlorophenyl group from the second molecule, which could enhance binding affinity through hydrophobic and halogen bonding interactions. Additionally, I will introduce a small alkene side chain (from the second molecule) to increase molecular flexibility and potential interactions. This hybrid molecule maintains key pharmacophores and adds diversity to improve activity.
+2025-06-18 13:44:24 -   Generated SMILES: COc1ccc(C2CC(=O)N3NC(=O)N(C=C(C)CN)C3C2c2ccc(Cl)cc2Cl)cc1OC
+2025-06-18 13:44:24 -   Score: 0.0100
+2025-06-18 13:44:24 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:44:24 - 
+  --- Offspring 4 ---
+2025-06-18 13:44:28 -   LLM Prompt: Fallback genetic operation for parents: ['CC1=CC=C(NC(=O)CN2C(=O)S/C(=C/C3=C(F)C=CC=C3Cl)C2=O)C=C1', 'C[C@@H](CO)CSC[C@@H]([NH3+])C1=CC=C2OCCCOC2=C1']
+2025-06-18 13:44:28 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:44:28 -   Generated SMILES: C[C@@H](CO)CSC[C@@H](Cl)C1=CC=C2OCCCOC2=C1
+2025-06-18 13:44:28 -   Score: 0.0000
+2025-06-18 13:44:28 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:44:28 - 
+  --- Offspring 5 ---
+2025-06-18 13:44:32 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](c1ccc(Cl)cc1Cl)NC(=O)N2CC,0.02]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:32 -   LLM Explanation: The first molecule has a very low JNK3 score (0.02), while the second molecule has a higher score (0.19). The second molecule contains a fused bicyclic system with a purine-like scaffold and a piperidine ring, which might contribute to better binding affinity. The first molecule has a different scaffold with a bicyclic lactam and dichlorophenyl group but lower activity. To design a molecule with potentially higher JNK3 activity, I propose combining the purine-like bicyclic core and the piperidine ring from the second molecule with the dichlorophenyl substituent from the first molecule, as halogenated aromatic rings often enhance binding through hydrophobic and halogen bonding interactions. Additionally, I will keep the amide linkage to maintain hydrogen bonding potential. This hybrid molecule might improve binding affinity and thus increase the JNK3 score.
+2025-06-18 13:44:32 -   Generated SMILES: Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1-c1cc(Cl)cc(Cl)c1
+2025-06-18 13:44:32 -   Score: 0.0500
+2025-06-18 13:44:32 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:44:32 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:44:32 - 
+New offspring scores:
+2025-06-18 13:44:32 -   N#Cc1ccc(C23CC4CC(CC(C(=O)N5CCOCC5)(C4)C2)C3)cc1: 0.0000
+2025-06-18 13:44:32 -   CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C: 0.0900
+2025-06-18 13:44:32 -   COc1ccc(C2CC(=O)N3NC(=O)N(C=C(C)CN)C3C2c2ccc(Cl)cc2Cl)cc1OC: 0.0100
+2025-06-18 13:44:32 -   C[C@@H](CO)CSC[C@@H](Cl)C1=CC=C2OCCCOC2=C1: 0.0000
+2025-06-18 13:44:32 -   Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1-c1cc(Cl)cc(Cl)c1: 0.0500
+2025-06-18 13:44:32 - 
+--- Generation 1 Summary ---
+2025-06-18 13:44:32 - Population size: 120
+2025-06-18 13:44:32 - Score statistics - Mean: 0.0178, Max: 0.1900, Min: 0.0000, Std: 0.0250
+2025-06-18 13:44:32 - Best molecule this generation: Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.1900)
+2025-06-18 13:44:32 - Total oracle calls so far: 125
+2025-06-18 13:44:32 - Top 5 molecules:
+2025-06-18 13:44:32 -   1. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:44:32 -   2. CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C: 0.0900
+2025-06-18 13:44:32 -   3. CC(=O)Nc1ccc(NCc2ccccc2F)c(C(F)(F)F)c1: 0.0800
+2025-06-18 13:44:32 -   4. O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc([N+](=O)[O-])cc1)(C3)C2: 0.0700
+2025-06-18 13:44:32 -   5. Cc1nonc1CC(=O)N1CCC[C@H](C(=O)Nc2ccc(-c3ccn[nH]3)cc2)C1: 0.0600
+2025-06-18 13:44:33 - 
+=== GENERATION 2 ===
+2025-06-18 13:44:33 - Generating 5 offspring using GPT-4...
+2025-06-18 13:44:33 - 
+  --- Offspring 1 ---
+2025-06-18 13:44:37 -   LLM Prompt: Fallback genetic operation for parents: ['CCC[C@@H](C(=O)N1CCN(CC(=O)NC2=C(C)C=CC=C2C)CC1)C1=CC=CC=C1', 'C[C@@H](CO)CSC[C@@H]([NH3+])C1=CC=C2OCCCOC2=C1']
+2025-06-18 13:44:37 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:44:37 -   Generated SMILES: C[C@@H](CO)CSC[C@@H]([NH3+])C1=CC=CCC1
+2025-06-18 13:44:37 -   Score: 0.0100
+2025-06-18 13:44:37 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:44:37 - 
+  --- Offspring 2 ---
+2025-06-18 13:44:40 -   LLM Prompt: Fallback genetic operation for parents: ['CS[C@@H](C)C1=CC=CC(NC(=O)C2=CN(C)N=C2C2=CC=CC=C2)=C1', 'C[C@H](NC(=O)NCC1=CC=CC2=CC=CN=C21)C1=CN(C)N=C1']
+2025-06-18 13:44:40 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:44:40 -   Generated SMILES: CS[C@@H](C)C1=CC(NC(=O)C2=CN(C)N=C2NC(=O)NCC2=CC=CC3=CC=CN=C32)=CC=C1
+2025-06-18 13:44:41 -   Score: 0.0400
+2025-06-18 13:44:41 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:44:41 - 
+  --- Offspring 3 ---
+2025-06-18 13:44:45 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1cc(F)c(NC(=O)C=C2CN(C(=O)OC(C)(C)C)C2)cc1F,0.01]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:45 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a very low JNK3 score (0.01), while the second molecule has a higher score (0.19). The second molecule contains a fused bicyclic system with a purine-like scaffold (ncnc) and a piperidine ring, which might contribute to better binding affinity. The first molecule has a simpler aromatic system with fluorines and a substituted azetidine ring. To improve the JNK3 score, I propose combining the bicyclic purine-like core from the second molecule with some features from the first molecule that might enhance binding, such as the fluorine substitutions on the aromatic ring, which can improve binding through electronic effects and metabolic stability. Also, replacing the piperidine ring with the azetidine ring from the first molecule might improve binding by reducing steric hindrance and increasing conformational rigidity. Therefore, I propose a molecule with the purine-like bicyclic core, an aniline bearing fluorines, and an azetidine ring attached via an amide linker, combining beneficial features from both molecules. This hybrid should have improved binding and thus a higher JNK3 score. 
+
+<<<Molecule>>>: \box{COc1cc(F)c(NC(=O)C=C2CN(C(=O)Nc3ncnc4c3CCC4)C2)cc1F}}
+2025-06-18 13:44:45 -   Generated SMILES: COc1cc(F)c(NC(=O)C=C2CN(C(=O)Nc3ncnc4c3CCC4)C2)cc1F
+2025-06-18 13:44:45 -   Score: 0.0300
+2025-06-18 13:44:45 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:44:45 - 
+  --- Offspring 4 ---
+2025-06-18 13:44:48 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CS[C@@H](C)C1=CC=CC(NC(=O)C2=CN(C)N=C2C2=CC=CC=C2)=C1,0.05]
+[O=C(NC(=S)Nc1c(O)ccc2ccccc12)c1cccc(F)c1,0.01]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:48 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.05) compared to the second (0.01), indicating that the scaffold with the substituted aniline linked to a methylated purine-like heterocycle is more active. The second molecule contains a thiosemicarbazide moiety attached to a hydroxy-biphenyl system with a fluorophenyl amide, which shows lower activity. To improve activity, I propose combining the key features of the first molecule (the aniline-purine amide scaffold) with a fluorine substituent on the phenyl ring to potentially enhance binding affinity and metabolic stability. Introducing a fluorine on the phenyl ring of the first molecule may increase lipophilicity and binding interactions, potentially increasing the JNK3 score. This is a mutation of the first molecule by adding a fluorine substituent on the phenyl ring para to the amide linkage.
+
+<<<Molecule>>>: \box{CS[C@@H](C)C1=CC=C(C=C1F)NC(=O)C2=CN(C)N=C2C3=CC=CC=C3}}
+2025-06-18 13:44:48 -   Generated SMILES: CSC(C)c1ccc(NC(=O)c2cn(C)nc2-c2ccccc2)cc1F
+2025-06-18 13:44:48 -   Score: 0.0500
+2025-06-18 13:44:48 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:44:48 - 
+  --- Offspring 5 ---
+2025-06-18 13:44:53 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1-c1cc(Cl)cc(Cl)c1,0.05]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:53 -   LLM Explanation: The first molecule has a JNK3 score of 0.19, which is higher than the second molecule's 0.05. The main difference is that the second molecule has an additional dichlorophenyl group attached, which seems to reduce activity. To improve the JNK3 score, I propose to keep the core structure of the first molecule (which has better activity) and introduce a small, less bulky, and potentially beneficial substituent that can enhance binding without steric hindrance. For example, replacing the methyl group on the phenyl ring with a methoxy group (-OCH3) might improve interactions through hydrogen bonding or electronic effects, potentially increasing activity. This is a common strategy in medicinal chemistry to improve potency. Therefore, I propose the molecule: COC1=CC=CC=C1C(=O)Nc2ccc3c(N4CCCC4)ncnc3c2, which is the first molecule but with the methyl group replaced by a methoxy group. This molecule is valid and may have a higher JNK3 score. ,
+2025-06-18 13:44:53 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+2025-06-18 13:44:53 -   Score: 0.2000
+2025-06-18 13:44:53 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:44:53 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:44:53 - 
+New offspring scores:
+2025-06-18 13:44:53 -   C[C@@H](CO)CSC[C@@H]([NH3+])C1=CC=CCC1: 0.0100
+2025-06-18 13:44:53 -   CS[C@@H](C)C1=CC(NC(=O)C2=CN(C)N=C2NC(=O)NCC2=CC=CC3=CC=CN=C32)=CC=C1: 0.0400
+2025-06-18 13:44:53 -   COc1cc(F)c(NC(=O)C=C2CN(C(=O)Nc3ncnc4c3CCC4)C2)cc1F: 0.0300
+2025-06-18 13:44:53 -   CSC(C)c1ccc(NC(=O)c2cn(C)nc2-c2ccccc2)cc1F: 0.0500
+2025-06-18 13:44:53 -   COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:44:53 - 
+--- Generation 2 Summary ---
+2025-06-18 13:44:53 - Population size: 120
+2025-06-18 13:44:53 - Score statistics - Mean: 0.0206, Max: 0.2000, Min: 0.0000, Std: 0.0299
+2025-06-18 13:44:53 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:44:53 - Total oracle calls so far: 130
+2025-06-18 13:44:53 - Top 5 molecules:
+2025-06-18 13:44:53 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:44:53 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:44:53 -   3. CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C: 0.0900
+2025-06-18 13:44:53 -   4. CC(=O)Nc1ccc(NCc2ccccc2F)c(C(F)(F)F)c1: 0.0800
+2025-06-18 13:44:53 -   5. O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc([N+](=O)[O-])cc1)(C3)C2: 0.0700
+2025-06-18 13:44:53 - 
+=== GENERATION 3 ===
+2025-06-18 13:44:53 - Generating 5 offspring using GPT-4...
+2025-06-18 13:44:53 - 
+  --- Offspring 1 ---
+2025-06-18 13:44:58 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.2]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:44:58 -   LLM Explanation: {<<<Explanation>>>: Both given molecules share a common scaffold: a benzamide linked to a fused bicyclic system containing a piperidine ring. The difference lies in the substituent on the benzene ring attached to the amide: one has a methyl group (–CH3) and the other a methoxy group (–OCH3). The methoxy substituent (electron-donating and capable of hydrogen bonding) slightly improves the JNK3 score (0.2 vs 0.19). To further enhance activity, I propose introducing a stronger electron-donating group that can also engage in hydrogen bonding, such as a hydroxyl group (–OH), which often improves binding affinity by forming additional hydrogen bonds with the target. Additionally, placing the hydroxyl group para to the amide linkage on the benzene ring could optimize interactions. Therefore, I propose replacing the methyl/methoxy substituent with a para-hydroxy group on the benzamide phenyl ring, keeping the rest of the molecule intact. This modification is likely to increase the JNK3 score by improving binding interactions.
+
+<<<Molecule>>>: \box{Oc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1}}
+2025-06-18 13:44:58 -   Generated SMILES: O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O
+2025-06-18 13:44:58 -   Score: 0.1800
+2025-06-18 13:44:58 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:44:58 - 
+  --- Offspring 2 ---
+2025-06-18 13:45:02 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(Nc1ccc2c(c1)CCO2)N1CCC[C@H]1c1nc2ccccc2[nH]1,0.03]
+[COc1cc(F)c(NC(=O)C=C2CN(C(=O)Nc3ncnc4c3CCC4)C2)cc1F,0.03]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:02 -   LLM Explanation: {<<<Explanation>>>: Both given molecules have a low JNK3 score of 0.03, indicating weak activity. The first molecule features a tetrahydroisoquinoline moiety fused with a piperidine and an amide linkage to an indole-like system, while the second molecule contains a difluorophenyl group linked via an acrylamide to a bicyclic purine-like scaffold. To improve JNK3 activity, I propose combining the bicyclic purine-like core from the second molecule, known for kinase inhibition, with the tetrahydroisoquinoline moiety from the first molecule, which may enhance binding affinity through additional hydrophobic and hydrogen bonding interactions. Additionally, introducing a methoxy group on the phenyl ring (from the second molecule) and maintaining the acrylamide warhead could improve covalent or reversible binding to the kinase active site. This hybrid molecule aims to leverage the kinase-targeting purine scaffold and the isoquinoline's favorable interactions to increase JNK3 inhibition. 
+
+<<<Molecule>>>: \box{COc1cc(F)c(NC(=O)C=C2CN(C(=O)Nc3ccc4c(c3)CCO4)C2)cc1F}}
+2025-06-18 13:45:02 -   Generated SMILES: COc1cc(F)c(NC(=O)C=C2CN(C(=O)Nc3ccc4c(c3)CCO4)C2)cc1F
+2025-06-18 13:45:02 -   Score: 0.0000
+2025-06-18 13:45:02 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:45:02 - 
+  --- Offspring 3 ---
+2025-06-18 13:45:07 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccc([C@H](C)NC(=O)N[C@H]2CC(=O)N(C3CC3)C2)cc1[N+](=O)[O-],0.06]
+[COc1ccc2c(c1)C[C@@H](C(=O)Nc1ccc(C(C)=O)c(C)c1)CO2,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:07 -   LLM Explanation: Both given molecules have relatively low JNK3 scores (0.06 and 0.02), indicating modest activity. The first molecule features a nitro-substituted phenyl ring linked to a chiral amide-containing bicyclic lactam, while the second has a methoxy-substituted bicyclic ether with an amide linked to a substituted phenyl ring. To potentially increase JNK3 activity, I propose combining favorable features: the nitro group from the first molecule (which can enhance binding through electronic effects) and the bicyclic ether scaffold from the second molecule (which may provide conformational rigidity and better fit in the binding site). Additionally, replacing the acetyl group on the phenyl ring with a less electron-withdrawing methyl group might improve binding affinity by modulating electronic properties. This hybrid molecule maintains key hydrogen bonding capabilities and introduces structural elements that could enhance interaction with JNK3, potentially leading to a higher score.
+2025-06-18 13:45:07 -   Generated SMILES: Cc1ccc(C(C)NC(=O)N2[CH]OCC2)c([N+](=O)[O-])c1
+2025-06-18 13:45:07 -   Score: 0.0400
+2025-06-18 13:45:07 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:45:07 - 
+  --- Offspring 4 ---
+2025-06-18 13:45:11 -   LLM Prompt: Fallback genetic operation for parents: ['COC1=CC(F)=C(NC(=O)C=C2CN(C(=O)NC3=NC=NC4=C3CCC4)C2)C=C1F', 'C[NH+]1CCC(NC(=O)NC2=NC=C(CC3=CC=CC(Cl)=C3)S2)CC1']
+2025-06-18 13:45:11 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:45:11 -   Generated SMILES: COC1=CC(F)=C(NC(=O)C=C2CN(C(=O)NC3=NC=C(CC4=CC=CC(Cl)=C4)S3)C2)C=C1F
+2025-06-18 13:45:11 -   Score: 0.0600
+2025-06-18 13:45:11 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:45:11 - 
+  --- Offspring 5 ---
+2025-06-18 13:45:15 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1nonc1CC(=O)N1CCC[C@H](C(=O)Nc2ccc(-c3ccn[nH]3)cc2)C1,0.06]
+[COc1ccc(CNC(=O)c2cc(OC)c(OC)cc2[N+](=O)[O-])cn1,0.05]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:15 -   LLM Explanation: Both given molecules have relatively low JNK3 scores (0.06 and 0.05), indicating modest activity. The first molecule features a piperidine ring linked to an amide and a substituted phenyl ring with a pyrazole moiety, while the second molecule contains a methoxy-substituted aromatic system with a nitro group and an amide linkage. To potentially increase JNK3 activity, I propose combining the amide-linked aromatic system from the first molecule with the electron-donating methoxy groups from the second molecule to enhance binding affinity and improve interactions with the JNK3 active site. Additionally, replacing the pyrazole ring with a more planar heterocycle like a pyridine could improve stacking interactions. Therefore, I propose a molecule with a piperidine ring linked via an amide to a methoxy-substituted phenyl ring, which is further connected to a pyridine ring. This hybrid design aims to improve binding affinity and thus increase the JNK3 score.
+2025-06-18 13:45:15 -   Generated SMILES: COc1ccc(C(=O)N2CCCC(C(=O)Nc3ccc(-c4ccncc4)cc3)C2)cc1
+2025-06-18 13:45:15 -   Score: 0.1200
+2025-06-18 13:45:15 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:45:15 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:45:15 - 
+New offspring scores:
+2025-06-18 13:45:15 -   O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:45:15 -   COc1cc(F)c(NC(=O)C=C2CN(C(=O)Nc3ccc4c(c3)CCO4)C2)cc1F: 0.0000
+2025-06-18 13:45:15 -   Cc1ccc(C(C)NC(=O)N2[CH]OCC2)c([N+](=O)[O-])c1: 0.0400
+2025-06-18 13:45:15 -   COC1=CC(F)=C(NC(=O)C=C2CN(C(=O)NC3=NC=C(CC4=CC=CC(Cl)=C4)S3)C2)C=C1F: 0.0600
+2025-06-18 13:45:15 -   COc1ccc(C(=O)N2CCCC(C(=O)Nc3ccc(-c4ccncc4)cc3)C2)cc1: 0.1200
+2025-06-18 13:45:15 - 
+--- Generation 3 Summary ---
+2025-06-18 13:45:15 - Population size: 120
+2025-06-18 13:45:15 - Score statistics - Mean: 0.0239, Max: 0.2000, Min: 0.0000, Std: 0.0344
+2025-06-18 13:45:15 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:45:15 - Total oracle calls so far: 135
+2025-06-18 13:45:15 - Top 5 molecules:
+2025-06-18 13:45:15 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:45:15 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:45:15 -   3. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:45:15 -   4. COc1ccc(C(=O)N2CCCC(C(=O)Nc3ccc(-c4ccncc4)cc3)C2)cc1: 0.1200
+2025-06-18 13:45:15 -   5. CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C: 0.0900
+2025-06-18 13:45:15 - 
+=== GENERATION 4 ===
+2025-06-18 13:45:15 - Generating 5 offspring using GPT-4...
+2025-06-18 13:45:15 - 
+  --- Offspring 1 ---
+2025-06-18 13:45:19 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CS[C@@H](C)C1=CC=CC(NC(=O)C2=CN(C)N=C2C2=CC=CC=C2)=C1,0.05]
+[CCC(C)(C)NC(=O)c1ccc(NC(=O)N[C@@H](C)[C@H]2CCCO2)cc1,0.01]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:19 -   LLM Explanation: The first molecule has a JNK3 score of 0.05, which is higher than the second molecule's 0.01. The first molecule features a substituted aniline linked to a methylated purine-like heterocycle, while the second molecule has a bulky tert-butyl group and a morpholine ring. To improve the JNK3 score, I propose combining the key amide linkage and aromatic system from the first molecule with the morpholine ring from the second molecule, which may enhance solubility and binding interactions. Additionally, introducing a small alkyl substitution on the aromatic ring could improve hydrophobic interactions. This hybrid molecule maintains the core amide and aromatic system from the first molecule but replaces the purine moiety with a morpholine-containing amide, potentially increasing activity against JNK3.
+2025-06-18 13:45:19 -   Generated SMILES: CSC(C)c1cccc(NC(=O)NC(C)COC2CCOCC2)c1
+2025-06-18 13:45:19 -   Score: 0.0200
+2025-06-18 13:45:19 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:45:19 - 
+  --- Offspring 2 ---
+2025-06-18 13:45:22 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[[NH3+]C[C@H](CO)Cc1cc(F)cc(Br)c1,0.03]
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.2]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:22 -   LLM Explanation: {<<<Explanation>>>: The first molecule is a small amino alcohol derivative with a fluorobromo-substituted phenyl ring and a very low JNK3 score (0.03). The second molecule is a more complex heterocyclic compound with a methoxyphenyl group, an amide linkage, and a fused bicyclic system containing a piperidine ring, showing a higher JNK3 score (0.2). To improve the JNK3 score, it is beneficial to retain the heterocyclic core and amide linkage from the second molecule, which likely contribute to binding affinity, while introducing a halogen substitution on the phenyl ring to enhance interactions and possibly improve potency. I propose a molecule that combines the methoxyphenyl amide and fused bicyclic system of the second molecule, but with a fluorine substituent on the phenyl ring to potentially increase binding affinity and activity against JNK3.
+
+<<<Molecule>>>: \box{COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1}}
+2025-06-18 13:45:22 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+2025-06-18 13:45:22 -   Score: 0.1400
+2025-06-18 13:45:22 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:45:22 - 
+  --- Offspring 3 ---
+2025-06-18 13:45:28 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccc(C[NH+]2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)cc3)CC2)cc1,0.05]
+[Cc1nn(C)cc1CNC(=O)c1ccc(Cn2cc(Cl)c([N+](=O)[O-])n2)cc1,0.05]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:28 -   LLM Explanation: {<<<Explanation>>>: Both given molecules have a JNK3 score of 0.05, indicating relatively low activity. They share some common features: an amide linkage connected to heterocyclic systems and aromatic rings with electron-withdrawing groups (Cl, NO2). To potentially increase JNK3 activity, I propose combining favorable features from both molecules: the pyrazole-based heterocycle from the first molecule and the nitro-substituted chlorinated aromatic ring from the second molecule. Additionally, introducing a methoxy group on the aromatic ring (as in the first molecule) may enhance binding through electronic effects. I also suggest replacing the piperidinium ring (positively charged nitrogen in the first molecule) with a neutral piperidine to reduce potential off-target interactions and improve membrane permeability. This crossover and mutation aim to improve binding affinity and biological activity against JNK3. 
+
+<<<Molecule>>>: \box{COc1ccc(CN2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)c([N+](=O)[O-])c3)CC2)cc1}}}
+2025-06-18 13:45:28 -   Generated SMILES: COc1ccc(CN2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)c([N+](=O)[O-])c3)CC2)cc1
+2025-06-18 13:45:28 -   Score: 0.1100
+2025-06-18 13:45:28 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:45:28 - 
+  --- Offspring 4 ---
+2025-06-18 13:45:33 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C,0.09]
+[COc1nc(N[C@@H]2C[NH+]3CCC2CC3)ccc1N,0.06]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:33 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.09 and contains a bis-thiol (CCSCC) moiety linked to a substituted aniline with dimethylamino groups and a methoxyphenyl group, suggesting some affinity for JNK3. The second molecule has a score of 0.06 and features a methoxy-substituted pyrimidine ring linked to a chiral azetidine-like structure with a positive charge, indicating a different scaffold with moderate activity.
+
+To improve the JNK3 score, I propose combining the key features of both molecules: the bis-thiol moiety from the first molecule, which might contribute to binding via sulfur interactions, and the methoxy-substituted heterocycle from the second molecule, which may enhance binding affinity and specificity. Additionally, I will introduce a piperazine ring as a linker to improve solubility and flexibility, and maintain the dimethylamino substitution to preserve the basicity and potential hydrogen bonding.
+
+This hybrid molecule is expected to have improved interactions with JNK3 due to the combination of sulfur-containing groups and heterocyclic aromatic systems, potentially increasing the JNK3 score beyond 0.09.
+
+<<<Molecule>>>: \box{CCSCCN1CCN(c2nc(OC)ccc2N)CC1C(=O)NCc3ccc(N(C)C)cc3} }
+2025-06-18 13:45:33 -   Generated SMILES: CCSCCN1CCN(c2nc(OC)ccc2N)CC1C(=O)NCc1ccc(N(C)C)cc1
+2025-06-18 13:45:33 -   Score: 0.0100
+2025-06-18 13:45:33 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:45:33 - 
+  --- Offspring 5 ---
+2025-06-18 13:45:36 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.2]
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.2]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:36 -   LLM Explanation: {<<<Explanation>>>: Both given molecules are identical and have a JNK3 score of 0.2, indicating moderate activity. The structure features a methoxyphenyl group linked via an amide to a bicyclic heterocycle containing a piperidine ring fused to a pyrimidine. To improve JNK3 activity, modifications known to enhance kinase inhibition can be considered. For example, introducing a fluorine atom on the phenyl ring can increase binding affinity by improving metabolic stability and interactions with the kinase active site. Additionally, replacing the piperidine ring with a morpholine ring can enhance solubility and potentially improve binding through additional hydrogen bonding. Therefore, I propose a molecule where the methoxy group is replaced by a 3-fluoro-4-methoxy substitution on the phenyl ring, and the piperidine ring is replaced by morpholine. This modification aims to increase JNK3 binding affinity and thus the score.
+
+<<<Molecule>>>: \box{COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1}}
+2025-06-18 13:45:36 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1
+2025-06-18 13:45:36 -   Score: 0.1400
+2025-06-18 13:45:36 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:45:36 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:45:36 - 
+New offspring scores:
+2025-06-18 13:45:36 -   CSC(C)c1cccc(NC(=O)NC(C)COC2CCOCC2)c1: 0.0200
+2025-06-18 13:45:36 -   COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1400
+2025-06-18 13:45:36 -   COc1ccc(CN2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)c([N+](=O)[O-])c3)CC2)cc1: 0.1100
+2025-06-18 13:45:36 -   CCSCCN1CCN(c2nc(OC)ccc2N)CC1C(=O)NCc1ccc(N(C)C)cc1: 0.0100
+2025-06-18 13:45:36 -   COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1: 0.1400
+2025-06-18 13:45:36 - 
+--- Generation 4 Summary ---
+2025-06-18 13:45:36 - Population size: 120
+2025-06-18 13:45:36 - Score statistics - Mean: 0.0274, Max: 0.2000, Min: 0.0000, Std: 0.0378
+2025-06-18 13:45:36 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:45:36 - Total oracle calls so far: 140
+2025-06-18 13:45:36 - Top 5 molecules:
+2025-06-18 13:45:36 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:45:36 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:45:36 -   3. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:45:36 -   4. COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1400
+2025-06-18 13:45:36 -   5. COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1: 0.1400
+2025-06-18 13:45:36 - 
+=== GENERATION 5 ===
+2025-06-18 13:45:36 - Generating 5 offspring using GPT-4...
+2025-06-18 13:45:36 - 
+  --- Offspring 1 ---
+2025-06-18 13:45:41 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC(=O)Nc1ccc(NC(=O)CCc2cnn(-c3ccccc3)c2)cc1,0.01]
+[Cc1ccc(-c2ncco2)cc1NC(=O)c1nc(Cl)ccc1Cl,0.03]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:41 -   LLM Explanation: Both given molecules have low JNK3 scores (0.01 and 0.03), indicating weak activity. The first molecule features an acetamide linked to a phenyl ring and a substituted pyrazole, while the second has a methylphenyl linked to a chlorinated pyrimidine via an amide and a furan ring. To improve activity, I propose combining the key features: the acetamide-phenyl amide motif from the first molecule and the heteroaromatic system from the second, but replacing the less active furan and pyrazole rings with a more common kinase hinge-binding motif such as a pyridine or pyrimidine ring with appropriate substitutions to enhance binding. Additionally, introducing a small hydrophobic group (like a methyl) on the phenyl ring may improve affinity. Therefore, I propose a molecule with an acetamide-phenyl linked via amide to a chlorinated pyrimidine ring, similar to the second molecule but incorporating the acetamide group from the first, and replacing the furan with a pyridine ring to improve kinase binding. This hybrid design aims to increase JNK3 activity by combining favorable features from both molecules and known kinase inhibitor motifs.
+2025-06-18 13:45:41 -   Generated SMILES: CC(=O)Nc1ccc(NC(=O)c2nc(Cl)ccc2Cl)cc1-c1ccncc1
+2025-06-18 13:45:41 -   Score: 0.0300
+2025-06-18 13:45:41 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:45:41 - 
+  --- Offspring 2 ---
+2025-06-18 13:45:44 -   LLM Prompt: Fallback genetic operation for parents: ['CC1=NN(C)C(C)=C1NC(=O)CS[C@H]1CCCC2=CC=CC=C21', '[NH3+]C[C@H](CO)CC1=CC(F)=CC(Br)=C1']
+2025-06-18 13:45:44 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:45:44 -   Generated SMILES: [NH3+]C[C@H](CO)CC1=CC(Br)=CC(NC(=O)CS[C@H]2CCCC3=C2C=CC=C3)=C1
+2025-06-18 13:45:44 -   Score: 0.0400
+2025-06-18 13:45:44 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:45:44 - 
+  --- Offspring 3 ---
+2025-06-18 13:45:47 -   LLM Prompt: Fallback genetic operation for parents: ['CC(C)N1C=CC(CCNCC2=CN=C(C3=CSC=C3)S2)=N1', 'COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1']
+2025-06-18 13:45:47 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:45:47 -   Generated SMILES: COC1=CC(F)=CC=C1C(=O)NCC1=NN(C(C)C)C=C1
+2025-06-18 13:45:47 -   Score: 0.0000
+2025-06-18 13:45:47 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:45:47 - 
+  --- Offspring 4 ---
+2025-06-18 13:45:53 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(NC[C@H]1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)c1ccccc1,0.05]
+[Cc1nn(C)cc1CNC(=O)c1ccc(Cn2cc(Cl)c([N+](=O)[O-])n2)cc1,0.05]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:53 -   LLM Explanation: {<<<Explanation>>>: Both given molecules have low JNK3 scores (0.05), indicating weak activity. To improve activity, we can combine favorable features from both molecules. The first molecule has a chiral piperidine ring linked to a phenol substituted with a nitro group, while the second molecule contains a pyrazole ring with a nitro and chloro substitution and an amide linkage to a methylated pyrazole. Nitro groups and halogens often enhance binding affinity through electronic effects and interactions with the kinase active site. To propose a molecule with potentially higher JNK3 activity, I suggest a hybrid structure that retains the piperidine ring from the first molecule (important for conformational rigidity and binding) and incorporates the pyrazole ring with chloro and nitro substituents from the second molecule, connected via an amide linker to a phenyl ring. This design aims to combine the key pharmacophores and improve binding interactions with JNK3. The proposed molecule is: O=C(NC[C@H]1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)Nc3ccc(Cn4cc(Cl)c([N+](=O)[O-])n4)cc3. This molecule is valid and merges the structural motifs that may enhance JNK3 inhibition. , <<<Molecule>>>: \box{O=C(NC[C@H]1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)Nc3ccc(Cn4cc(Cl)c([N+](=O)[O-])n4)cc3}}
+2025-06-18 13:45:53 -   Generated SMILES: O=C(NCC1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)Nc1ccc(Cn2cc(Cl)c([N+](=O)[O-])n2)cc1
+2025-06-18 13:45:53 -   Score: 0.0700
+2025-06-18 13:45:53 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:45:53 - 
+  --- Offspring 5 ---
+2025-06-18 13:45:57 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.2]
+[Cc1[nH+]ccn1Cc1nnc([C@@H]2CCC[NH+](Cc3cccnc3)C2)n1C,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:45:58 -   LLM Explanation: The first molecule has a higher JNK3 score (0.2) compared to the second (0.02), indicating that the scaffold and substituents in the first molecule are more favorable for JNK3 activity. The first molecule features a methoxyphenyl group linked via an amide to a bicyclic heterocycle containing a piperidine ring fused to a purine-like system. The second molecule has a charged imidazole and a piperidine linked to a substituted pyrazole, but with lower activity.
+
+To improve activity, I propose combining the favorable amide linkage and methoxyphenyl group from the first molecule with the bicyclic heterocycle and piperidine ring from the second molecule, but modifying the heterocycle to include nitrogen atoms that may enhance binding. Additionally, adding a methoxy group to the phenyl ring may improve interactions.
+
+Thus, I propose a molecule with a methoxyphenyl amide linked to a fused bicyclic system containing a piperidine and a purine-like heterocycle, incorporating the chiral center from the second molecule to potentially improve binding affinity.
+2025-06-18 13:45:58 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1
+2025-06-18 13:45:58 -   Score: 0.1500
+2025-06-18 13:45:58 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:45:58 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:45:58 - 
+New offspring scores:
+2025-06-18 13:45:58 -   CC(=O)Nc1ccc(NC(=O)c2nc(Cl)ccc2Cl)cc1-c1ccncc1: 0.0300
+2025-06-18 13:45:58 -   [NH3+]C[C@H](CO)CC1=CC(Br)=CC(NC(=O)CS[C@H]2CCCC3=C2C=CC=C3)=C1: 0.0400
+2025-06-18 13:45:58 -   COC1=CC(F)=CC=C1C(=O)NCC1=NN(C(C)C)C=C1: 0.0000
+2025-06-18 13:45:58 -   O=C(NCC1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)Nc1ccc(Cn2cc(Cl)c([N+](=O)[O-])n2)cc1: 0.0700
+2025-06-18 13:45:58 -   COc1ccccc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1: 0.1500
+2025-06-18 13:45:58 - 
+--- Generation 5 Summary ---
+2025-06-18 13:45:58 - Population size: 120
+2025-06-18 13:45:58 - Score statistics - Mean: 0.0298, Max: 0.2000, Min: 0.0000, Std: 0.0393
+2025-06-18 13:45:58 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:45:58 - Total oracle calls so far: 145
+2025-06-18 13:45:58 - Top 5 molecules:
+2025-06-18 13:45:58 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:45:58 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:45:58 -   3. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:45:58 -   4. COc1ccccc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1: 0.1500
+2025-06-18 13:45:58 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1400
+2025-06-18 13:45:58 - 
+=== GENERATION 6 ===
+2025-06-18 13:45:58 - Generating 5 offspring using GPT-4...
+2025-06-18 13:45:58 - 
+  --- Offspring 1 ---
+2025-06-18 13:46:03 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccccc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1,0.15]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:03 -   LLM Explanation: {<<<Explanation>>>: Both given molecules share a common scaffold: a benzamide linked to a bicyclic system containing a substituted pyrimidine fused to a phenyl ring, with a piperidine or azetidine ring attached to the nitrogen. The difference lies in the ring size and substitution on the nitrogen-containing ring: one has a 4-membered azetidine ring with a methylene bridge ([CH]CCC) and a methoxy group on the phenyl ring (score 0.15), the other has a 5-membered piperidine ring (CCCC) and a methyl group on the phenyl ring (score 0.19). The piperidine ring and methyl substitution seem to improve activity.
+
+To propose a molecule with potentially higher JNK3 activity, I will combine the beneficial features: keep the piperidine ring (which gave a higher score) and introduce a methoxy group on the phenyl ring (which might enhance binding via electronic effects or H-bonding). Additionally, I will replace the methyl group on the phenyl ring with a methoxy group to increase polarity and potential interactions. This hybrid molecule might have improved binding affinity and thus a higher JNK3 score.
+
+<<<Molecule>>>: \box{COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1}}
+2025-06-18 13:46:03 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+2025-06-18 13:46:03 -   Score: 0.2000
+2025-06-18 13:46:03 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:46:03 - 
+  --- Offspring 2 ---
+2025-06-18 13:46:07 -   LLM Prompt: Fallback genetic operation for parents: ['CC(=O)NC1=CC=C(NC(=O)C2=NC(Cl)=CC=C2Cl)C=C1C1=CC=NC=C1', 'C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(Cl)C=C1Cl)NC(=O)N2CC']
+2025-06-18 13:46:07 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:46:07 -   Generated SMILES: CC(=O)NC1=CC=C(Cl)C1C1=CC=NC=C1
+2025-06-18 13:46:07 -   Score: 0.0400
+2025-06-18 13:46:07 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:46:07 - 
+  --- Offspring 3 ---
+2025-06-18 13:46:14 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O,0.18]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:14 -   LLM Explanation: {<<<Explanation>>>: Both given molecules share a common core structure: a substituted aminopyrimidine fused to a phenyl ring with a piperidine (N3CCCC3) substituent. The main difference lies in the acyl substituent attached to the aniline nitrogen: one has a salicylamide moiety (O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O) and the other has a methylphenylacetamide (Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1). The second molecule has a slightly higher JNK3 score (0.19 vs 0.18), suggesting that the methylphenylacetamide substitution might be more favorable.
+
+To improve the JNK3 score, I propose combining features from both molecules and introducing a small modification to enhance binding affinity or activity. Specifically, I will:
+
+- Retain the aminopyrimidine-piperidine core.
+- Use the methylphenylacetamide moiety from the second molecule, as it has a higher score.
+- Introduce a hydroxyl group on the phenyl ring of the methylphenylacetamide to mimic the salicylamide's hydroxyl, potentially improving hydrogen bonding and solubility.
+- This hybrid approach may increase interactions with JNK3 and improve activity.
+
+The proposed molecule SMILES is: Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+
+This is a methyl-4-hydroxyphenylacetamide attached to the same core, combining beneficial features from both molecules.
+
+<<<Molecule>>>: \box{Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1}}
+2025-06-18 13:46:14 -   Generated SMILES: Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+2025-06-18 13:46:14 -   Score: 0.1900
+2025-06-18 13:46:14 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:46:14 - 
+  --- Offspring 4 ---
+2025-06-18 13:46:20 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1,0.14]
+[Cc1ccc2nc(N3CCC(C(=O)NCC(C)(C)CO)CC3)nc(C)c2c1,0.03]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:20 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.14, which is higher than the second molecule's 0.03. The first molecule features a methoxy-substituted fluorophenyl amide linked to a bicyclic heteroaromatic system with a morpholine ring, while the second molecule has a methyl-substituted bicyclic heteroaromatic core with a piperidine amide side chain bearing a bulky tertiary alcohol. To improve the JNK3 score, I propose combining the favorable features of both molecules: retain the bicyclic heteroaromatic core and piperidine ring from the second molecule (which may improve binding affinity due to the basic nitrogen and conformational rigidity), but replace the bulky tertiary alcohol side chain with the simpler methoxy-fluorophenyl amide moiety from the first molecule, which might enhance interactions with the JNK3 active site. This crossover aims to balance potency and molecular size, potentially increasing biological activity against JNK3. 
+
+<<<Molecule>>>: \box{COc1cc(F)ccc1C(=O)Nc1ccc2nc(N3CCC(CC(=O)N)c3)nc(C)c2c1}}.}
+2025-06-18 13:46:20 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2nc(N3CCC(CC(N)=O)C3)nc(C)c2c1
+2025-06-18 13:46:20 -   Score: 0.0000
+2025-06-18 13:46:20 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:46:20 - 
+  --- Offspring 5 ---
+2025-06-18 13:46:23 -   LLM Prompt: Fallback genetic operation for parents: ['COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCOCC1', 'CCC[C@@H](C(=O)N1CCN(CC(=O)NC2=C(C)C=CC=C2C)CC1)C1=CC=CC=C1']
+2025-06-18 13:46:23 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:46:23 -   Generated SMILES: COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1
+2025-06-18 13:46:23 -   Score: 0.1800
+2025-06-18 13:46:23 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:46:23 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:46:23 - 
+New offspring scores:
+2025-06-18 13:46:23 -   CC(=O)NC1=CC=C(Cl)C1C1=CC=NC=C1: 0.0400
+2025-06-18 13:46:23 -   Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:46:23 -   COc1cc(F)ccc1C(=O)Nc1ccc2nc(N3CCC(CC(N)=O)C3)nc(C)c2c1: 0.0000
+2025-06-18 13:46:23 -   COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:46:23 - 
+--- Generation 6 Summary ---
+2025-06-18 13:46:23 - Population size: 120
+2025-06-18 13:46:23 - Score statistics - Mean: 0.0333, Max: 0.2000, Min: 0.0000, Std: 0.0437
+2025-06-18 13:46:23 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:46:23 - Total oracle calls so far: 149
+2025-06-18 13:46:23 - Top 5 molecules:
+2025-06-18 13:46:23 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:46:23 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:46:23 -   3. Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:46:23 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:46:23 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:46:23 - 
+=== GENERATION 7 ===
+2025-06-18 13:46:23 - Generating 5 offspring using GPT-4...
+2025-06-18 13:46:23 - 
+  --- Offspring 1 ---
+2025-06-18 13:46:29 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccccc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1,0.15]
+[CC(=O)c1ccc(N[C@H]2CC(=O)N(CC(F)(F)F)C2)c([N+](=O)[O-])c1,0.04]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:29 -   LLM Explanation: The first molecule has a higher JNK3 score (0.15) compared to the second (0.04), indicating better activity. The first molecule features a methoxyphenyl group linked via an amide to a bicyclic heterocycle containing a nitrogen-rich fused ring system, which likely contributes to its higher activity. The second molecule has a nitro-substituted phenyl ring and a trifluoromethyl group on a lactam ring, but its activity is lower.
+
+To improve activity, I propose combining the favorable features of both molecules: retain the bicyclic heterocycle and amide linkage from the first molecule, but introduce the trifluoromethyl group from the second molecule to enhance binding affinity and metabolic stability. Specifically, I will modify the first molecule by adding a trifluoromethyl group on the phenyl ring (para to the methoxy group) to potentially increase hydrophobic interactions and improve activity.
+
+This hybrid approach leverages the higher activity scaffold of the first molecule and the beneficial trifluoromethyl substitution from the second.
+2025-06-18 13:46:29 -   Generated SMILES: COc1ccc(C(F)(F)F)cc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1
+2025-06-18 13:46:29 -   Score: 0.1400
+2025-06-18 13:46:29 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:46:29 - 
+  --- Offspring 2 ---
+2025-06-18 13:46:34 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccccc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1,0.15]
+[O=C(NCC1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)Nc1ccc(Cn2cc(Cl)c([N+](=O)[O-])n2)cc1,0.07]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:34 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.15, which is higher than the second molecule's 0.07. The first molecule features a methoxyphenyl group linked to a bicyclic heterocycle containing a nitrogen bridge, while the second molecule has a more complex structure with nitro groups and a charged amine. Nitro groups and charged groups often reduce cell permeability and can negatively impact activity. To improve the JNK3 score, I propose to combine the favorable features of the first molecule (the methoxyphenyl and bicyclic heterocycle) with a less polar, less charged substituent inspired by the second molecule's amine side chain but without the nitro groups. Specifically, I will replace the nitro-substituted aromatic amine in the second molecule with a simpler, neutral amine side chain attached to the bicyclic core of the first molecule, maintaining the methoxyphenyl group and the amide linkage. This hybrid should improve binding affinity and biological activity by preserving key interactions and reducing polarity and charge that may hinder activity.
+
+<<<Molecule>>>: \box{COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1} }
+2025-06-18 13:46:34 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1
+2025-06-18 13:46:34 -   Score: 0.1400
+2025-06-18 13:46:34 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:46:34 - 
+  --- Offspring 3 ---
+2025-06-18 13:46:39 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COC1=CC(F)=C(NC(=O)C=C2CN(C(=O)NC3=NC=C(CC4=CC=CC(Cl)=C4)S3)C2)C=C1F,0.06]
+[CC(=O)Nc1ccc(NCc2ccccc2F)c(C(F)(F)F)c1,0.08]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:39 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.06 and contains a complex bicyclic system with a chlorophenyl-thiazole moiety and fluorinated aromatic rings, suggesting that halogenation and heterocyclic structures contribute to activity. The second molecule has a slightly higher score of 0.08 and features an acetamide linked to a trifluoromethyl-substituted aromatic ring and a fluorobenzyl amine, indicating that electron-withdrawing groups like CF3 and fluorine on aromatic rings may enhance activity. To propose a molecule with a potentially higher JNK3 score, I will combine features from both molecules: retain the acetamide and trifluoromethyl-substituted aromatic ring from the second molecule for potency, and introduce a heterocyclic thiazole ring with a chlorophenyl substituent from the first molecule to enhance binding affinity. Additionally, I will keep fluorine substituents to maintain electron-withdrawing effects. This hybrid molecule is expected to have improved interactions with JNK3, potentially increasing the score beyond 0.08. 
+
+<<<Molecule>>>: \box{CC(=O)Nc1ccc(NCc2csc(n2)C3=CC=CC(Cl)=C3)c(C(F)(F)F)c1}}
+2025-06-18 13:46:39 -   Generated SMILES: CC(=O)Nc1ccc(NCc2csc(-c3cccc(Cl)c3)n2)c(C(F)(F)F)c1
+2025-06-18 13:46:39 -   Score: 0.1100
+2025-06-18 13:46:39 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:46:39 - 
+  --- Offspring 4 ---
+2025-06-18 13:46:45 -   LLM Prompt: Fallback genetic operation for parents: ['CC(=O)N[C@H](C)C1=CC=C(C2=CSC(NC(=O)[C@@H](C)OC3=CC(C)=CC=C3Cl)=N2)C=C1', 'O=C(NC[C@H]1CCC[NH+](CC2=CC(O)=CC=C2[N+](=O)[O-])C1)C1=CC=CC=C1']
+2025-06-18 13:46:45 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:46:45 -   Generated SMILES: CC1=CC=C(Cl)C(O[C@H](C)C(=O)NC2=NC(C3=CC=C([C@@H](C)CC4=CC(O)=CC=C4[N+](=O)[O-])C=C3)=CS2)=C1
+2025-06-18 13:46:45 -   Score: 0.0900
+2025-06-18 13:46:45 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:46:45 - 
+  --- Offspring 5 ---
+2025-06-18 13:46:49 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccc(C(=O)N2CCCC(C(=O)Nc3ccc(-c4ccncc4)cc3)C2)cc1,0.12]
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.2]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:49 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.12 and features a piperidine ring linked to an amide and a methoxyphenyl group, with an additional amide connected to a biphenyl-pyridine moiety. The second molecule has a higher score of 0.2 and contains a methoxyphenyl group connected via an amide to a fused bicyclic system with a piperidine ring incorporated in the structure. The second molecule’s fused bicyclic system with a nitrogen heterocycle likely contributes to better binding affinity.
+
+To propose a molecule with a potentially higher JNK3 score, I will combine the favorable features of both molecules: the methoxyphenyl amide from the second molecule and the biphenyl-pyridine moiety from the first molecule, while maintaining the piperidine ring that may enhance binding. Specifically, I will design a molecule where the methoxyphenyl amide is connected to a piperidine ring, which is further connected via an amide to the biphenyl-pyridine fragment. This hybrid should retain key pharmacophores and possibly improve activity.
+
+<<<Molecule>>>: \box{COc1ccccc1C(=O)N2CCCC(C(=O)Nc3ccc(-c4ccncc4)cc3)C2}}}
+2025-06-18 13:46:49 -   Generated SMILES: COc1ccccc1C(=O)N1CCCC(C(=O)Nc2ccc(-c3ccncc3)cc2)C1
+2025-06-18 13:46:49 -   Score: 0.1000
+2025-06-18 13:46:49 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:46:49 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:46:49 - 
+New offspring scores:
+2025-06-18 13:46:49 -   COc1ccc(C(F)(F)F)cc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1: 0.1400
+2025-06-18 13:46:49 -   COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1: 0.1400
+2025-06-18 13:46:49 -   CC(=O)Nc1ccc(NCc2csc(-c3cccc(Cl)c3)n2)c(C(F)(F)F)c1: 0.1100
+2025-06-18 13:46:49 -   CC1=CC=C(Cl)C(O[C@H](C)C(=O)NC2=NC(C3=CC=C([C@@H](C)CC4=CC(O)=CC=C4[N+](=O)[O-])C=C3)=CS2)=C1: 0.0900
+2025-06-18 13:46:49 -   COc1ccccc1C(=O)N1CCCC(C(=O)Nc2ccc(-c3ccncc3)cc2)C1: 0.1000
+2025-06-18 13:46:49 - 
+--- Generation 7 Summary ---
+2025-06-18 13:46:49 - Population size: 120
+2025-06-18 13:46:49 - Score statistics - Mean: 0.0381, Max: 0.2000, Min: 0.0000, Std: 0.0463
+2025-06-18 13:46:49 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:46:49 - Total oracle calls so far: 154
+2025-06-18 13:46:49 - Top 5 molecules:
+2025-06-18 13:46:49 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:46:49 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:46:49 -   3. Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:46:49 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:46:49 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:46:49 - 
+=== GENERATION 8 ===
+2025-06-18 13:46:49 - Generating 5 offspring using GPT-4...
+2025-06-18 13:46:49 - 
+  --- Offspring 1 ---
+2025-06-18 13:46:52 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC(=O)Nc1ccc(NCc2csc(-c3cccc(Cl)c3)n2)c(C(F)(F)F)c1,0.11]
+[CCC[C@@H]1C[C@@H](Nc2cc(OC)ccc2F)CCO1,0.01]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:52 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.11) compared to the second (0.01), indicating that the acetamide-substituted aromatic ring with a trifluoromethyl group and a thiazole linked to a chlorophenyl group contributes positively to activity. The second molecule, a chiral tetrahydrofuran with a methoxy-fluoro-substituted phenyl, shows low activity. To improve activity, I propose combining the acetamide and trifluoromethyl-substituted aromatic system from the first molecule with the tetrahydrofuran ring from the second molecule, replacing the thiazole-chlorophenyl moiety with the tetrahydrofuran ring to potentially enhance binding and solubility. This hybrid molecule maintains key pharmacophores from the first molecule while introducing the tetrahydrofuran ring to improve interactions and possibly increase the JNK3 score. 
+
+<<<Molecule>>>: \box{CC(=O)Nc1ccc(NCC2CO[C@@H]([C@@H]2C)N)c(C(F)(F)F)c1}}
+2025-06-18 13:46:52 -   Generated SMILES: CC(=O)Nc1ccc(NCC2COC(N)C2C)c(C(F)(F)F)c1
+2025-06-18 13:46:52 -   Score: 0.0800
+2025-06-18 13:46:52 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:46:52 - 
+  --- Offspring 2 ---
+2025-06-18 13:46:58 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]
+[O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc([N+](=O)[O-])cc1)(C3)C2,0.07]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:46:58 -   LLM Explanation: The first molecule has a higher JNK3 score (0.19) compared to the second (0.07), indicating that the amide-linked aromatic system with a fused bicyclic heterocycle (a purine-like structure with a piperidine substituent) is more favorable for activity. The second molecule has a rigid bicyclic scaffold with a nitro-substituted phenyl ring, which might contribute less to activity. To improve the score, I propose combining the amide linkage and aromatic system from the first molecule with a modification to increase binding affinity: replacing the piperidine ring with a morpholine ring (which can improve solubility and hydrogen bonding) and adding a small electron-withdrawing group (like fluorine) on the phenyl ring to enhance interactions. This hybrid approach aims to retain the favorable scaffold of the first molecule while introducing beneficial mutations to improve activity against JNK3.
+2025-06-18 13:46:58 -   Generated SMILES: Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1
+2025-06-18 13:46:58 -   Score: 0.1200
+2025-06-18 13:46:58 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:46:58 - 
+  --- Offspring 3 ---
+2025-06-18 13:47:02 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COC1=CC(F)=C(NC(=O)C=C2CN(C(=O)NC3=NC=C(CC4=CC=CC(Cl)=C4)S3)C2)C=C1F,0.06]
+[COc1ccccc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1,0.15]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:02 -   LLM Explanation: The first molecule has a JNK3 score of 0.06 and features a fluorinated aromatic ring with an amide-linked heterocyclic system containing a thiazole ring and a chlorophenyl substituent. The second molecule has a higher score of 0.15 and contains a methoxyphenyl group linked via an amide to a fused bicyclic purine-like system with a piperidine ring. To design a molecule with a potentially higher JNK3 score, I propose combining the favorable features of both molecules: the methoxyphenyl amide moiety from the second molecule, which may enhance binding affinity, and the heterocyclic system from the first molecule that includes the thiazole and chlorophenyl substituent, which might contribute to specificity and potency. Additionally, I will introduce a fluorine atom on the phenyl ring to potentially improve metabolic stability and binding interactions. This hybrid molecule aims to leverage the higher activity scaffold of the second molecule while incorporating the heterocyclic complexity and halogenation of the first, potentially resulting in improved JNK3 inhibition.
+2025-06-18 13:47:02 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1C(=O)NC1=NC=C(Cc2cccc(Cl)c2)[SH]1F
+2025-06-18 13:47:02 -   Score: 0.0500
+2025-06-18 13:47:02 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:47:02 - 
+  --- Offspring 4 ---
+2025-06-18 13:47:07 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(NC[C@H]1CCC[NH+](CC2=CC(O)=CC=C2[N+](=O)[O-])C1)C1=CC=CC=C1,0.05]
+[Cc1nonc1CC(=O)N1CCC[C@H](C(=O)Nc2ccc(-c3ccn[nH]3)cc2)C1,0.06]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:07 -   LLM Explanation: Both given molecules have relatively low JNK3 scores (0.05 and 0.06). The first molecule features a phenyl amide linked to a chiral piperidine ring with a nitrophenol substituent, while the second molecule has a chiral piperidine amide linked to a substituted phenyl ring with a pyridyl-triazole moiety. To improve JNK3 activity, I propose combining the nitrophenol moiety from the first molecule, which may contribute to binding via hydrogen bonding and electronic effects, with the heteroaryl substitution from the second molecule, which can enhance specificity and interactions with the kinase active site. Additionally, replacing the nitro group with a less electron-withdrawing but still polar group like a cyano or hydroxyl might improve binding affinity and reduce potential toxicity. I will propose a molecule that retains the chiral piperidine amide core, attaches a phenyl ring bearing a hydroxyl group (instead of nitro) and a pyridyl-triazole substituent to enhance interactions and potentially increase the JNK3 score. This crossover and mutation strategy aims to combine favorable features from both molecules to improve biological activity.
+2025-06-18 13:47:07 -   Generated SMILES: O=C(NCC1CCC[NH+](Cc2cccc(O)c2)C1)c1ccccc1-c1cnn[nH]1
+2025-06-18 13:47:07 -   Score: 0.0100
+2025-06-18 13:47:07 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:47:07 - 
+  --- Offspring 5 ---
+2025-06-18 13:47:12 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccc(C[NH+]2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)cc3)CC2)cc1,0.05]
+[Cc1ccc2nc(N3CCC(C(=O)NCC(C)(C)CO)CC3)nc(C)c2c1,0.03]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:12 -   LLM Explanation: {<<<Explanation>>>: Both given molecules have relatively low JNK3 scores (0.05 and 0.03), indicating modest activity. The first molecule features a methoxyphenyl group linked to a piperidinium ring with an amide connected to a substituted pyrazole and chlorophenyl moiety. The second molecule contains a methyl-substituted fused heterocycle with a piperazine ring bearing an amide linked to a tertiary alcohol side chain. To improve JNK3 activity, I propose combining favorable features: the aromatic substitution pattern from the first molecule (methoxyphenyl) and the piperazine ring with an amide and hydroxyl group from the second molecule, as hydroxyl groups can enhance binding via hydrogen bonding. Additionally, replacing the chlorophenyl group with a less bulky substituent may reduce steric hindrance. Introducing a fluorine atom on the aromatic ring can improve metabolic stability and binding affinity. Therefore, I propose a molecule with a methoxyphenyl group attached to a piperazine ring bearing an amide linked to a tertiary alcohol side chain, and a fluorine substituent on the aromatic ring to enhance activity. This hybrid design aims to increase JNK3 binding affinity and thus the score. <<<Molecule>>>: \box{COc1ccc(N2CCN(C(=O)C(C)(C)CO)CC2)c(F)c1}}
+2025-06-18 13:47:12 -   Generated SMILES: COc1ccc(N2CCN(C(=O)C(C)(C)CO)CC2)c(F)c1
+2025-06-18 13:47:12 -   Score: 0.0000
+2025-06-18 13:47:12 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:47:12 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:47:12 - 
+New offspring scores:
+2025-06-18 13:47:12 -   CC(=O)Nc1ccc(NCC2COC(N)C2C)c(C(F)(F)F)c1: 0.0800
+2025-06-18 13:47:12 -   Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1: 0.1200
+2025-06-18 13:47:12 -   COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1C(=O)NC1=NC=C(Cc2cccc(Cl)c2)[SH]1F: 0.0500
+2025-06-18 13:47:12 -   O=C(NCC1CCC[NH+](Cc2cccc(O)c2)C1)c1ccccc1-c1cnn[nH]1: 0.0100
+2025-06-18 13:47:12 -   COc1ccc(N2CCN(C(=O)C(C)(C)CO)CC2)c(F)c1: 0.0000
+2025-06-18 13:47:12 - 
+--- Generation 8 Summary ---
+2025-06-18 13:47:12 - Population size: 120
+2025-06-18 13:47:12 - Score statistics - Mean: 0.0403, Max: 0.2000, Min: 0.0000, Std: 0.0466
+2025-06-18 13:47:12 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:47:12 - Total oracle calls so far: 159
+2025-06-18 13:47:12 - Top 5 molecules:
+2025-06-18 13:47:12 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:47:12 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:47:12 -   3. Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:47:12 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:47:12 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:47:12 - 
+=== GENERATION 9 ===
+2025-06-18 13:47:12 - Generating 5 offspring using GPT-4...
+2025-06-18 13:47:12 - 
+  --- Offspring 1 ---
+2025-06-18 13:47:16 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C,0.09]
+[O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O,0.18]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:16 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.09 and features a thiol-containing moiety (CCSCC) linked to a substituted aniline with methoxy and dimethylamino groups. The second molecule has a higher score of 0.18 and contains a fused bicyclic system with a piperidine ring and a phenol group, suggesting that rigid bicyclic scaffolds and hydrogen bonding groups may enhance activity. To propose a molecule with a potentially higher JNK3 score, I will combine the bicyclic fused heterocycle and piperidine ring from the second molecule with the methoxy-substituted aniline from the first molecule, aiming to retain beneficial hydrogen bonding and hydrophobic interactions. Additionally, I will replace the thiol-containing chain with a more stable amide linker to improve binding affinity and metabolic stability. This hybrid molecule should have improved interactions with JNK3 and thus a higher predicted score. 
+
+<<<Molecule>>>: \box{O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)NCc1ccc(Nc2ccccc2OC)cc1} }
+2025-06-18 13:47:16 -   Generated SMILES: COc1ccccc1Nc1ccc(CNC(=O)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1
+2025-06-18 13:47:16 -   Score: 0.1800
+2025-06-18 13:47:17 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:47:17 - 
+  --- Offspring 2 ---
+2025-06-18 13:47:21 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC1=CC=C(Cl)C(O[C@H](C)C(=O)NC2=NC(C3=CC=C([C@@H](C)CC4=CC(O)=CC=C4[N+](=O)[O-])C=C3)=CS2)=C1,0.09]
+[COc1cc(-c2ccccc2)sc1C(=O)NC[C@@H](O)C(C)(C)C,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:21 -   LLM Explanation: The first molecule has a higher JNK3 score (0.09) compared to the second (0.02), indicating that its structural features contribute more effectively to JNK3 activity. Key features in the first molecule include a chlorophenyl group, a chiral center with an amide linkage to a thiazole ring, and a nitrophenol moiety, which may contribute to binding affinity through hydrogen bonding and electronic effects. The second molecule has a methoxy-thiophene core with a bulky tert-butyl group and a chiral alcohol, but lower activity.
+
+To design a molecule with potentially higher JNK3 activity, I propose combining the chlorophenyl and nitrophenol features from the first molecule with the thiophene core from the second molecule, which may enhance binding through aromatic and heterocyclic interactions. Additionally, I will retain the amide linkage and chiral center to preserve key interactions. I will replace the bulky tert-butyl group with a smaller isopropyl group to reduce steric hindrance and potentially improve fit in the binding site.
+
+This hybrid molecule aims to integrate favorable features from both molecules to increase JNK3 activity.
+2025-06-18 13:47:21 -   Generated SMILES: Cc1ccc(Cl)c(OC(C)C(=O)Nc2cccs2)c1-c1ccc(C(C)Cc2cc(O)ccc2[N+](=O)[O-])cc1
+2025-06-18 13:47:21 -   Score: 0.0900
+2025-06-18 13:47:21 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:47:21 - 
+  --- Offspring 3 ---
+2025-06-18 13:47:26 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]
+[C[C@@H]1COCCN1Cc1ccc(C(=O)NN)cn1,0.03]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:26 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.19) compared to the second (0.03), indicating that the core structure of the first molecule is more favorable for JNK3 activity. The first molecule features a benzamide linked to a fused bicyclic system containing a nitrogen heterocycle and a piperidine ring, which likely contributes to binding affinity. The second molecule has a morpholine ring and a hydrazide group, which may not be as effective.
+
+To propose a molecule with potentially higher JNK3 activity, I will combine the favorable benzamide and bicyclic heterocycle core from the first molecule with a modification inspired by the second molecule's morpholine ring, replacing the piperidine ring in the first molecule with a morpholine ring to improve solubility and possibly binding interactions. Additionally, I will replace the amide NH with a hydrazide (C(=O)NN) group from the second molecule, which might enhance hydrogen bonding and activity.
+
+This hybrid molecule keeps the key bicyclic heterocycle and benzamide core from the first molecule but introduces the hydrazide and morpholine features from the second molecule, potentially increasing JNK3 activity beyond 0.19.
+
+<<<Molecule>>>: \box{Cc1ccccc1C(=O)NNc1ccc2c(n3OCCC3)ncnc2c1}}
+2025-06-18 13:47:26 -   Generated SMILES: Cc1ccccc1C(=O)NNc1ccc2c(N3CCCO3)ncnc2c1
+2025-06-18 13:47:26 -   Score: 0.0900
+2025-06-18 13:47:26 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:47:26 - 
+  --- Offspring 4 ---
+2025-06-18 13:47:30 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]
+[Cc1cc(NC(=O)Nc2cccc(Cl)c2)ncc1Br,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:30 -   LLM Explanation: The first molecule has a higher JNK3 score (0.19) compared to the second (0.02), suggesting that the core structure with the fused bicyclic system containing the pyrazolopyrimidine moiety and the piperidine ring (N3CCCC3) contributes positively to activity. The second molecule has a simpler aniline derivative with halogen substitutions (Br and Cl) but much lower activity. To improve activity, I propose to combine the favorable features: retain the bicyclic pyrazolopyrimidine core and piperidine ring from the first molecule, and introduce a halogen substitution (like Br) on the phenyl ring to potentially enhance binding through halogen bonding or hydrophobic interactions. Additionally, I will keep the amide linkage for stability. This hybrid approach aims to increase the JNK3 score by combining beneficial structural elements from both molecules.
+2025-06-18 13:47:30 -   Generated SMILES: Cc1cc(Br)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+2025-06-18 13:47:30 -   Score: 0.1600
+2025-06-18 13:47:30 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:47:30 - 
+  --- Offspring 5 ---
+2025-06-18 13:47:38 -   LLM Prompt: Fallback genetic operation for parents: ['COC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1[CH]CCC1', 'CS[C@@H](C)C1=CC=CC(NC(=O)C2=CN(C)N=C2C2=CC=CC=C2)=C1']
+2025-06-18 13:47:38 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:47:38 -   Generated SMILES: COC1=CC=CC=C1C(=O)NC1=CC=C(C2=NN(C)C=C2C(=O)NC2=CC=CC([C@H](C)SC)=C2)C1
+2025-06-18 13:47:38 -   Score: 0.0300
+2025-06-18 13:47:38 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:47:38 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:47:38 - 
+New offspring scores:
+2025-06-18 13:47:38 -   COc1ccccc1Nc1ccc(CNC(=O)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1: 0.1800
+2025-06-18 13:47:38 -   Cc1ccc(Cl)c(OC(C)C(=O)Nc2cccs2)c1-c1ccc(C(C)Cc2cc(O)ccc2[N+](=O)[O-])cc1: 0.0900
+2025-06-18 13:47:38 -   Cc1ccccc1C(=O)NNc1ccc2c(N3CCCO3)ncnc2c1: 0.0900
+2025-06-18 13:47:38 -   Cc1cc(Br)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1600
+2025-06-18 13:47:38 -   COC1=CC=CC=C1C(=O)NC1=CC=C(C2=NN(C)C=C2C(=O)NC2=CC=CC([C@H](C)SC)=C2)C1: 0.0300
+2025-06-18 13:47:38 - 
+--- Generation 9 Summary ---
+2025-06-18 13:47:38 - Population size: 120
+2025-06-18 13:47:38 - Score statistics - Mean: 0.0448, Max: 0.2000, Min: 0.0000, Std: 0.0491
+2025-06-18 13:47:38 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:47:38 - Total oracle calls so far: 164
+2025-06-18 13:47:38 - Top 5 molecules:
+2025-06-18 13:47:38 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:47:38 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:47:38 -   3. Cc1ccc(O)cc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:47:38 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:47:38 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:47:38 - 
+=== GENERATION 10 ===
+2025-06-18 13:47:38 - Generating 5 offspring using GPT-4...
+2025-06-18 13:47:38 - 
+  --- Offspring 1 ---
+2025-06-18 13:47:45 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccc(C[NH+]2CCC(CNC(=O)c3c[nH]nc3-c3ccc(Cl)cc3)CC2)cc1,0.05]
+[Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1,0.12]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:45 -   LLM Explanation: The first molecule has a JNK3 score of 0.05 and contains a methoxyphenyl group linked to a piperidinium ring with a substituted pyrazole and chlorophenyl moiety. The second molecule has a higher score of 0.12 and features a fluoromethylphenyl amide linked to a fused bicyclic system with a morpholine substituent. To design a molecule with a potentially higher JNK3 score, I propose combining favorable features from both molecules: the fluoromethylphenyl amide group from the second molecule (which may enhance binding through hydrogen bonding and hydrophobic interactions) and the pyrazole-chlorophenyl moiety from the first molecule (which may contribute to specificity and potency). Additionally, replacing the piperidinium ring with a morpholine ring (as in the second molecule) could improve solubility and binding. Thus, the proposed molecule is a fluoromethylphenyl amide linked to a morpholine ring, which is further connected via an amide bond to a pyrazole ring substituted with a chlorophenyl group. This hybrid design aims to combine the beneficial structural motifs to increase biological activity against JNK3.
+2025-06-18 13:47:45 -   Generated SMILES: Cc1cc(F)ccc1C(=O)N1CCOCC1CNC(=O)c1c[nH]nc1-c1ccc(Cl)cc1
+2025-06-18 13:47:45 -   Score: 0.0400
+2025-06-18 13:47:45 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:47:45 - 
+  --- Offspring 2 ---
+2025-06-18 13:47:50 -   LLM Prompt: Fallback genetic operation for parents: ['C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(Cl)C=C1Cl)NC(=O)N2CC', 'CC1=CC=C(NC(=O)CN2C(=O)S/C(=C/C3=C(F)C=CC=C3Cl)C2=O)C=C1']
+2025-06-18 13:47:50 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:47:50 -   Generated SMILES: C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(C)C1Cl)NC(=O)N2CC
+2025-06-18 13:47:50 -   Score: 0.0200
+2025-06-18 13:47:50 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:47:50 - 
+  --- Offspring 3 ---
+2025-06-18 13:47:54 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccc(S(=O)(=O)CCC(=O)Oc2ccc(Cl)cc2Cl)cc1,0.01]
+[CS[C@@H](C)C1=CC=CC(NC(=O)C2=CN(C)N=C2C2=CC=CC=C2)=C1,0.05]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:47:54 -   LLM Explanation: {<<<Explanation>>>: The first molecule is a sulfonyl-containing aromatic compound with a low JNK3 score of 0.01, and the second molecule is a chiral thioether linked to a substituted aniline and a heterocyclic amide with a slightly higher score of 0.05. To improve the JNK3 activity, I propose combining features from both molecules: retaining the thioether and chiral center from the second molecule, which may contribute to binding specificity, and introducing a sulfonyl group similar to the first molecule to enhance interactions with the kinase active site. Additionally, I will replace the chlorinated phenyl ester in the first molecule with a heteroaromatic ring to improve binding affinity and solubility. The proposed molecule includes a chiral thioether linked to a phenyl ring bearing a sulfonyl group and an amide linked to a purine-like heterocycle, which is known to interact well with kinases. This hybrid design aims to increase the JNK3 score beyond 0.05. <<<Molecule>>>: \box{CS[C@@H](C)C1=CC=CC(NC(=O)C2=NC=NC3=C2N=CN3S(=O)(=O)C4=CC=CC=C4)=C1}}
+2025-06-18 13:47:54 -   Generated SMILES: CSC(C)c1cccc(NC(=O)c2ncnc3c2ncn3S(=O)(=O)c2ccccc2)c1
+2025-06-18 13:47:54 -   Score: 0.0400
+2025-06-18 13:47:54 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:47:54 - 
+  --- Offspring 4 ---
+2025-06-18 13:48:00 -   LLM Prompt: Fallback genetic operation for parents: ['COC1=CC=CC=C1NC1=CC=C(CNC(=O)NC2=CC=C3C(=C2)N=CN=C3N2CCCC2)C=C1', 'C[C@H](NC(=O)NCC1=CC=CC2=CC=CN=C21)C1=CN(C)N=C1']
+2025-06-18 13:48:00 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:48:00 -   Generated SMILES: C1=CCNC=C1
+2025-06-18 13:48:00 -   Score: 0.0000
+2025-06-18 13:48:00 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:48:00 - 
+  --- Offspring 5 ---
+2025-06-18 13:48:05 -   LLM Prompt: Fallback genetic operation for parents: ['CS[C@@H](C)C1=CC(NC(=O)C2=CN(C)N=C2NC(=O)NCC2=CC=CC3=CC=CN=C32)=CC=C1', 'CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1']
+2025-06-18 13:48:05 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:48:05 -   Generated SMILES: CS[C@@H](C)C1=CC=C2C(=C1)N=CN=C2N1CCCC1
+2025-06-18 13:48:05 -   Score: 0.0900
+2025-06-18 13:48:05 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:48:05 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:48:05 - 
+New offspring scores:
+2025-06-18 13:48:05 -   Cc1cc(F)ccc1C(=O)N1CCOCC1CNC(=O)c1c[nH]nc1-c1ccc(Cl)cc1: 0.0400
+2025-06-18 13:48:05 -   C=C(C)CN(C)C(=O)CN1CC2=C(C1=O)[C@@H](C1=CC=C(C)C1Cl)NC(=O)N2CC: 0.0200
+2025-06-18 13:48:05 -   CSC(C)c1cccc(NC(=O)c2ncnc3c2ncn3S(=O)(=O)c2ccccc2)c1: 0.0400
+2025-06-18 13:48:05 -   C1=CCNC=C1: 0.0000
+2025-06-18 13:48:05 -   CS[C@@H](C)C1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.0900
+2025-06-18 13:48:05 - 
+--- Generation 10 Summary ---
+2025-06-18 13:48:05 - Population size: 120
+2025-06-18 13:48:05 - Score statistics - Mean: 0.0464, Max: 0.2000, Min: 0.0000, Std: 0.0486
+2025-06-18 13:48:05 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:48:05 - Total oracle calls so far: 169
+2025-06-18 13:48:05 - Top 5 molecules:
+2025-06-18 13:48:05 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:48:05 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:48:05 -   3. CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-18 13:48:05 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:48:05 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:48:05 - 
+=== GENERATION 11 ===
+2025-06-18 13:48:05 - Generating 5 offspring using GPT-4...
+2025-06-18 13:48:05 - 
+  --- Offspring 1 ---
+2025-06-18 13:48:11 -   LLM Prompt: Fallback genetic operation for parents: ['CC1=NN(C)C=C1CNC(=O)C1=CC=C(CN2C=C(Cl)C([N+](=O)[O-])=N2)C=C1', 'CC1=CN=C(C[NH+](C)CCCC2=NNC(C3=CC=C(F)C=C3)=C2)O1']
+2025-06-18 13:48:11 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:48:11 -   Generated SMILES: CC1=CN=C(C[NH+](C)CCCC2=NNC(CN3C=C(Cl)C([N+](=O)[O-])=N3)=C2)O1
+2025-06-18 13:48:11 -   Score: 0.0300
+2025-06-18 13:48:11 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:48:11 - 
+  --- Offspring 2 ---
+2025-06-18 13:48:16 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1[CH]CCC1,0.15]
+[COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1,0.18]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:16 -   LLM Explanation: Both given molecules share a core structure involving a methoxyphenyl group linked via an amide bond to a fused bicyclic system containing a pyrimidine ring. The second molecule has a slightly higher JNK3 score (0.18 vs 0.15), possibly due to the presence of a fluorine substituent on the phenyl ring and an additional phenyl ring attached to the fused bicyclic system, which may enhance binding affinity through hydrophobic interactions or electronic effects.
+
+To propose a molecule with a potentially higher JNK3 score, I will combine beneficial features from both molecules and introduce a small mutation to improve binding. Specifically:
+
+- Retain the methoxy group on the phenyl ring for favorable electronic effects.
+- Keep the fluorine substituent to maintain or enhance binding.
+- Maintain the fused bicyclic pyrimidine core.
+- Replace the phenyl ring attached to the bicyclic system with a pyridine ring to introduce a nitrogen atom that can form additional hydrogen bonds or coordinate with the kinase active site.
+- Replace the flexible aliphatic ring in the first molecule with a more rigid piperidine ring to improve binding affinity by reducing entropy loss.
+
+This crossover and mutation strategy aims to combine hydrophobic, electronic, and hydrogen bonding interactions to increase the JNK3 score.
+2025-06-18 13:48:16 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2c(-c3ccncc3N3CCCC3)ncnc2c1
+2025-06-18 13:48:16 -   Score: 0.1400
+2025-06-18 13:48:16 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:48:16 - 
+  --- Offspring 3 ---
+2025-06-18 13:48:21 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1,0.18]
+[COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1,0.18]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:21 -   LLM Explanation: Both given molecules are identical, with a JNK3 score of 0.18, indicating moderate activity. To improve the JNK3 score, we can consider structural modifications known to enhance kinase inhibition, such as introducing additional hydrogen bond donors or acceptors, or adding groups that increase binding affinity. The current molecule has a methoxy group (COC) and a fluorophenyl ring. One common strategy is to replace the fluorine with a hydroxyl group to increase hydrogen bonding potential or add a small polar substituent on the phenyl ring to improve interactions. Alternatively, adding a methyl group on the pyrazolopyrimidine core can enhance hydrophobic interactions. Here, I propose replacing the fluorine atom with a hydroxyl group on the phenyl ring to potentially increase binding affinity and thus the JNK3 score.
+2025-06-18 13:48:21 -   Generated SMILES: COc1cc(O)ccc1C(=O)Nc1ccc2c(-c3ccccc3)ncnc2c1
+2025-06-18 13:48:21 -   Score: 0.1800
+2025-06-18 13:48:21 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:48:21 - 
+  --- Offspring 4 ---
+2025-06-18 13:48:25 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC1=CN=C(C[NH+](C)CCCC2=NNC(C3=CC=C(F)C=C3)=C2)O1,0.04]
+[O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O,0.18]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:25 -   LLM Explanation: The first molecule has a low JNK3 score (0.04) and contains a positively charged amine linked to a fluorophenyl-substituted heterocycle. The second molecule has a higher score (0.18) and features a urea linkage connecting a hydroxyphenyl group and a bicyclic purine-like system with a piperidine ring. To improve the JNK3 score, I propose combining the urea linkage and bicyclic purine scaffold from the second molecule with the fluorophenyl group from the first molecule, as fluorine substitution often enhances binding affinity and metabolic stability. Additionally, replacing the piperidine ring with a smaller azetidine ring may improve binding by reducing steric hindrance and increasing conformational rigidity. This hybrid molecule maintains key pharmacophores from the higher scoring molecule while incorporating beneficial features from the first molecule, potentially increasing JNK3 activity.
+2025-06-18 13:48:25 -   Generated SMILES: O=C(Nc1ccc2c(N3CNC3)ncnc2c1)c1ccccc1F
+2025-06-18 13:48:25 -   Score: 0.1300
+2025-06-18 13:48:25 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:48:25 - 
+  --- Offspring 5 ---
+2025-06-18 13:48:30 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1,0.18]
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.2]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:30 -   LLM Explanation: {<<<Explanation>>>: The two given molecules have JNK3 scores of 0.18 and 0.2, respectively. Both share a common motif of a benzamide linked to a bicyclic heterocycle containing nitrogen atoms, which likely contributes to JNK3 binding. The second molecule has a slightly higher score, possibly due to the presence of the piperidine ring (N3CCCC3) fused to the bicyclic system, which may enhance binding affinity or improve molecular interactions.
+
+To propose a molecule with a potentially higher JNK3 score, I will combine favorable features from both molecules: the fluorine substitution on the phenyl ring from the first molecule (which can improve binding through electronic effects) and the piperidine-containing bicyclic heterocycle from the second molecule. Additionally, I will add a methoxy group on the phenyl ring to increase polarity and potential hydrogen bonding, which can improve activity.
+
+This new molecule will have a 3-fluoro-4-methoxybenzamide linked to the bicyclic heterocycle with the piperidine ring, aiming to enhance binding affinity and thus increase the JNK3 score.
+
+<<<Molecule>>>: \box{COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1}}
+2025-06-18 13:48:30 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+2025-06-18 13:48:30 -   Score: 0.1400
+2025-06-18 13:48:30 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:48:30 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:48:30 - 
+New offspring scores:
+2025-06-18 13:48:30 -   CC1=CN=C(C[NH+](C)CCCC2=NNC(CN3C=C(Cl)C([N+](=O)[O-])=N3)=C2)O1: 0.0300
+2025-06-18 13:48:30 -   COc1cc(F)ccc1C(=O)Nc1ccc2c(-c3ccncc3N3CCCC3)ncnc2c1: 0.1400
+2025-06-18 13:48:30 -   COc1cc(O)ccc1C(=O)Nc1ccc2c(-c3ccccc3)ncnc2c1: 0.1800
+2025-06-18 13:48:30 -   O=C(Nc1ccc2c(N3CNC3)ncnc2c1)c1ccccc1F: 0.1300
+2025-06-18 13:48:30 -   COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1400
+2025-06-18 13:48:30 - 
+--- Generation 11 Summary ---
+2025-06-18 13:48:30 - Population size: 120
+2025-06-18 13:48:30 - Score statistics - Mean: 0.0516, Max: 0.2000, Min: 0.0100, Std: 0.0510
+2025-06-18 13:48:30 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:48:30 - Total oracle calls so far: 173
+2025-06-18 13:48:30 - Top 5 molecules:
+2025-06-18 13:48:30 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:48:30 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:48:30 -   3. CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-18 13:48:30 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:48:30 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:48:31 - 
+=== GENERATION 12 ===
+2025-06-18 13:48:31 - Generating 5 offspring using GPT-4...
+2025-06-18 13:48:31 - 
+  --- Offspring 1 ---
+2025-06-18 13:48:35 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC(C)C(=O)Nc1nc2ccc(CCC(=O)NCc3ccccc3Cl)cc2s1,0.01]
+[COC1=CC=CC=C1NC1=CC=C(CNC(=O)NC2=CC=C3C(=C2)N=CN=C3N2CCCC2)C=C1,0.18]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:35 -   LLM Explanation: The first molecule has a very low JNK3 score (0.01), indicating weak activity, while the second molecule has a higher score (0.18), suggesting better activity. The second molecule contains a methoxyphenyl group and a fused heterocyclic system with a piperidine ring, which might contribute to better binding affinity. To improve the JNK3 score further, I propose combining the amide linkage and the chlorophenyl moiety from the first molecule (which might enhance binding through hydrophobic or halogen interactions) with the heterocyclic core and methoxyphenyl group from the second molecule. Additionally, introducing a small alkyl substitution (like isopropyl) on the amide nitrogen could improve lipophilicity and binding. This hybrid molecule aims to retain key pharmacophores from both molecules to enhance activity against JNK3.
+2025-06-18 13:48:35 -   Generated SMILES: COc1ccccc1Nc1ccc(CNC(=O)NC(C)C2=CC=C(CCC(=O)NCc3ccc(Cl)cc3)SN=C2)cc1
+2025-06-18 13:48:35 -   Score: 0.0500
+2025-06-18 13:48:35 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:48:35 - 
+  --- Offspring 2 ---
+2025-06-18 13:48:39 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC(=O)Nc1ccc(NCc2csc(-c3cccc(Cl)c3)n2)c(C(F)(F)F)c1,0.11]
+[CSCC[C@H](NC(=O)N[C@@H]1CCCCC1(C)C)C(=O)[O-],0.01]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:39 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.11) compared to the second (0.01), indicating that the acetamide-substituted aromatic system with a trifluoromethyl group and a chlorophenyl-thiazole moiety contributes positively to activity. The second molecule is a peptide-like structure with low activity. To improve the JNK3 score, I propose to retain the key pharmacophore features from the first molecule—namely, the acetamide group, the trifluoromethyl-substituted aromatic ring, and the chlorophenyl-thiazole moiety—but introduce a small modification to enhance binding, such as replacing the acetamide NH with a methylated amide (N-methylacetamide) to potentially improve metabolic stability and binding affinity. This mutation keeps the core scaffold intact but may improve activity. 
+
+<<<Molecule>>>: \box{CC(=O)N(C)c1ccc(NCc2csc(-c3cccc(Cl)c3)n2)c(C(F)(F)F)c1}}
+2025-06-18 13:48:39 -   Generated SMILES: CC(=O)N(C)c1ccc(NCc2csc(-c3cccc(Cl)c3)n2)c(C(F)(F)F)c1
+2025-06-18 13:48:39 -   Score: 0.0900
+2025-06-18 13:48:39 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:48:39 - 
+  --- Offspring 3 ---
+2025-06-18 13:48:43 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccc(C(F)(F)F)cc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1,0.14]
+[CCSC[C@@H](C)N(C)C(=O)NCc1ccc(C)cc1N(C)C,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:43 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.14) compared to the second (0.02), indicating that the scaffold containing the trifluoromethyl-substituted aromatic ring linked to a fused bicyclic heterocycle (likely a purine or similar) is more active. The second molecule is a simpler amide with alkyl and methyl substitutions and shows lower activity. To improve activity, I propose to combine the trifluoromethyl-substituted aromatic ring and amide linkage from the first molecule with the methylated amine substitution from the second molecule to enhance binding and possibly improve pharmacokinetics. Additionally, introducing a small alkyl substitution on the nitrogen of the amide may increase lipophilicity and binding affinity. This hybrid molecule retains the key trifluoromethyl aromatic motif and fused bicyclic heterocycle for activity, while incorporating beneficial substitutions from the second molecule to potentially increase the JNK3 score. 
+
+<<<Molecule>>>: \box{COc1ccc(C(F)(F)F)cc1C(=O)N(C)Cc2ccc3c(N4CCC4)ncnc3c2}}
+2025-06-18 13:48:43 -   Generated SMILES: COc1ccc(C(F)(F)F)cc1C(=O)N(C)Cc1ccc2c(N3CCC3)ncnc2c1
+2025-06-18 13:48:43 -   Score: 0.1200
+2025-06-18 13:48:43 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:48:43 - 
+  --- Offspring 4 ---
+2025-06-18 13:48:46 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1cc(F)ccc1C(=O)Nc1ccc2c(-c3ccncc3N3CCCC3)ncnc2c1,0.14]
+[COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCOCC1,0.14]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:46 -   LLM Explanation: Both given molecules have a JNK3 score of 0.14, indicating moderate activity. They share some common features: a methoxy-substituted aromatic ring and a heterocyclic system with nitrogen atoms, which are likely important for binding to JNK3. To improve the score, I propose combining the key features of both molecules: the fluorinated methoxyphenyl amide from the first molecule and the fused heterocyclic system from the second molecule, while introducing a small mutation to enhance binding affinity. Specifically, I will replace the piperidine ring in the first molecule with the morpholine ring from the second molecule, as morpholine can improve solubility and potentially enhance interactions. Additionally, I will keep the fluorine substituent on the aromatic ring to maintain electronic effects favorable for binding. This crossover and mutation aim to create a molecule with better binding properties and thus a higher JNK3 score.
+2025-06-18 13:48:46 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2c(-c3ccncc3N3CCOCC3)ncnc2c1
+2025-06-18 13:48:46 -   Score: 0.1800
+2025-06-18 13:48:46 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:48:46 - 
+  --- Offspring 5 ---
+2025-06-18 13:48:52 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC(=O)Nc1ccc(NCC2COC(N)C2C)c(C(F)(F)F)c1,0.08]
+[CC(=O)Nc1ccc(NCC2COC(N)C2C)c(C(F)(F)F)c1,0.08]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:52 -   LLM Explanation: {<<<Explanation>>>: Both given molecules are identical, with a JNK3 score of 0.08, indicating relatively low activity. The structure features an acetamide group (CC(=O)N-) attached to a phenyl ring substituted with a trifluoromethyl group (C(F)(F)F) and a side chain containing a morpholine-like ring (COC(N)C). To improve JNK3 activity, modifications known to enhance kinase inhibition can be considered. For example, introducing a hydrogen bond donor or acceptor to better interact with the kinase hinge region, or adding a heterocyclic moiety known to improve binding affinity. 
+
+One common strategy is to replace the acetamide group with a urea or sulfonamide, which can form stronger hydrogen bonds. Also, replacing the trifluoromethyl group with a cyano group (–CN) can sometimes improve binding by acting as a hydrogen bond acceptor. Additionally, extending the side chain to include a pyrrolidine or piperazine ring can improve solubility and binding.
+
+Therefore, I propose replacing the acetamide with a sulfonamide (–SO2NH–) and the trifluoromethyl group with a cyano group, while keeping the morpholine-like ring to maintain the original scaffold. This modification is expected to increase hydrogen bonding and improve JNK3 binding affinity, thus increasing the JNK3 score.
+
+<<<Molecule>>>: \box{CS(=O)(=O)Nc1ccc(NCC2COC(N)C2C)c(C#N)c1}}
+2025-06-18 13:48:52 -   Generated SMILES: CC1C(CNc2ccc(NS(C)(=O)=O)cc2C#N)COC1N
+2025-06-18 13:48:52 -   Score: 0.0300
+2025-06-18 13:48:52 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:48:52 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:48:52 - 
+New offspring scores:
+2025-06-18 13:48:52 -   COc1ccccc1Nc1ccc(CNC(=O)NC(C)C2=CC=C(CCC(=O)NCc3ccc(Cl)cc3)SN=C2)cc1: 0.0500
+2025-06-18 13:48:52 -   CC(=O)N(C)c1ccc(NCc2csc(-c3cccc(Cl)c3)n2)c(C(F)(F)F)c1: 0.0900
+2025-06-18 13:48:52 -   COc1ccc(C(F)(F)F)cc1C(=O)N(C)Cc1ccc2c(N3CCC3)ncnc2c1: 0.1200
+2025-06-18 13:48:52 -   COc1cc(F)ccc1C(=O)Nc1ccc2c(-c3ccncc3N3CCOCC3)ncnc2c1: 0.1800
+2025-06-18 13:48:52 -   CC1C(CNc2ccc(NS(C)(=O)=O)cc2C#N)COC1N: 0.0300
+2025-06-18 13:48:52 - 
+--- Generation 12 Summary ---
+2025-06-18 13:48:52 - Population size: 120
+2025-06-18 13:48:52 - Score statistics - Mean: 0.0551, Max: 0.2000, Min: 0.0100, Std: 0.0520
+2025-06-18 13:48:52 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:48:52 - Total oracle calls so far: 178
+2025-06-18 13:48:52 - Top 5 molecules:
+2025-06-18 13:48:52 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:48:52 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:48:52 -   3. CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-18 13:48:52 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:48:52 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:48:52 - 
+=== GENERATION 13 ===
+2025-06-18 13:48:52 - Generating 5 offspring using GPT-4...
+2025-06-18 13:48:52 - 
+  --- Offspring 1 ---
+2025-06-18 13:48:56 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]
+[O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O,0.18]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:48:56 -   LLM Explanation: {<<<Explanation>>>: Both given molecules share a common core structure: a substituted aminopyrimidine fused to a phenyl ring, with a piperidine ring attached to the pyrimidine nitrogen. The difference lies in the amide substituent: one has a methylphenyl group (Cc1ccccc1C(=O)N...), and the other has a hydroxyphenyl group (O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O). Their JNK3 scores are close (0.19 and 0.18), suggesting similar activity.
+
+To improve the JNK3 score, I propose combining features from both molecules and introducing a small mutation to enhance binding affinity. Specifically, I will:
+
+1. Retain the aminopyrimidine-piperidine core, as it is common and likely essential.
+2. Use the hydroxyphenyl amide substituent, as the hydroxyl group can form hydrogen bonds, potentially improving activity.
+3. Add a fluorine atom to the phenyl ring of the amide substituent to increase binding affinity and metabolic stability, as fluorine often enhances biological activity.
+4. Keep the piperidine ring intact.
+
+This new molecule is expected to have improved interactions with JNK3 due to the hydroxyl and fluorine substituents, potentially increasing the JNK3 score.
+
+<<<Molecule>>>: \box{O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccc(F)cc1O}}
+2025-06-18 13:48:56 -   Generated SMILES: O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccc(F)cc1O
+2025-06-18 13:48:56 -   Score: 0.1300
+2025-06-18 13:48:56 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:48:56 - 
+  --- Offspring 2 ---
+2025-06-18 13:49:00 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc([N+](=O)[O-])cc1)(C3)C2,0.07]
+[O=C(N1CCOCC1)C12C[C@H]3C[C@@H](C1)CC(c1ccc([N+](=O)[O-])cc1)(C3)C2,0.07]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:00 -   LLM Explanation: {<<<Explanation>>>: Both given molecules are identical and have a low JNK3 score of 0.07. The structure features a bicyclic core with a morpholine amide and a para-nitrophenyl substituent. The nitro group is electron-withdrawing and may reduce binding affinity. To potentially increase JNK3 activity, I propose replacing the nitro group with a less electron-withdrawing and more hydrogen-bond-accepting group such as a cyano (-CN) group, which can improve interactions with the kinase active site. Additionally, introducing a hydroxyl group on the morpholine ring could enhance solubility and binding through hydrogen bonding. These modifications aim to improve molecular interactions and thus increase the JNK3 score. <<<Molecule>>>: \box{O=C(N1CCOCC1O)C12C[C@H]3C[C@@H](C1)CC(c1ccc(C#N)cc1)(C3)C2}}
+2025-06-18 13:49:00 -   Generated SMILES: N#Cc1ccc(C23CC4CC(CC(C(=O)N5CCOCC5O)(C4)C2)C3)cc1
+2025-06-18 13:49:00 -   Score: 0.0100
+2025-06-18 13:49:00 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:49:00 - 
+  --- Offspring 3 ---
+2025-06-18 13:49:05 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC1(C)CN(CCOc2ccc(S(C)(=O)=O)cc2)CC[S@@]1=O,0.01]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:05 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a very low JNK3 score (0.01), while the second molecule has a higher score (0.19). The second molecule contains a fused bicyclic system with a purine-like scaffold and an amide linkage, which likely contributes to better binding affinity to JNK3. The first molecule has a sulfonyl group attached to a phenyl ring and a chiral sulfoxide, but its activity is low. To improve the JNK3 score, I propose to combine the amide linkage and bicyclic purine-like core from the second molecule with a sulfonyl group on the phenyl ring to potentially enhance interactions with the kinase active site. This hybrid molecule keeps the bicyclic core and amide for binding, and adds the sulfonyl substituent to increase polarity and possible hydrogen bonding, which may improve activity. 
+
+<<<Molecule>>>: \box{Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1S(=O)(=O)C} }
+2025-06-18 13:49:05 -   Generated SMILES: Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1S(C)(=O)=O
+2025-06-18 13:49:05 -   Score: 0.0700
+2025-06-18 13:49:05 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:49:05 - 
+  --- Offspring 4 ---
+2025-06-18 13:49:08 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C,0.09]
+[COc1ccc(C(F)(F)F)cc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1,0.14]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:08 -   LLM Explanation: {<<<Explanation>>>: The second molecule has a higher JNK3 score (0.14) compared to the first (0.09), likely due to its trifluoromethyl group (C(F)(F)F) and the fused bicyclic heteroaromatic system, which may enhance binding affinity and metabolic stability. To design a molecule with potentially higher activity, I propose combining the trifluoromethyl-substituted aromatic ring from the second molecule with the amide-linked aniline moiety bearing the methoxyphenyl group from the first molecule. Additionally, introducing a methyl substitution on the nitrogen of the amide (as in the first molecule) may improve binding interactions. This hybrid molecule retains key pharmacophores from both molecules that contribute to activity, potentially increasing the JNK3 score.
+
+<<<Molecule>>>: \box{COc1ccc(C(F)(F)F)cc1C(=O)Nc1ccc(Nc2ccccc2OC)cc1N} }
+2025-06-18 13:49:08 -   Generated SMILES: COc1ccccc1Nc1ccc(NC(=O)c2cc(C(F)(F)F)ccc2OC)c(N)c1
+2025-06-18 13:49:08 -   Score: 0.0900
+2025-06-18 13:49:08 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:49:08 - 
+  --- Offspring 5 ---
+2025-06-18 13:49:13 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1cc(O)ccc1C(=O)Nc1ccc2c(-c3ccccc3)ncnc2c1,0.18]
+[Cc1cc(Br)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.16]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:13 -   LLM Explanation: {<<<Explanation>>>: Both given molecules share a common scaffold: a substituted benzamide linked to a fused bicyclic system containing a pyrimidine ring. The first molecule has a methoxy and hydroxy substitution on the phenyl ring and a phenyl substituent on the fused bicyclic system, with a JNK3 score of 0.18. The second molecule has a methyl and bromo substitution on the phenyl ring and a piperidine substituent on the fused bicyclic system, with a slightly lower score of 0.16.
+
+To improve the JNK3 score, I propose combining favorable features from both molecules and introducing a small mutation to enhance binding affinity. The hydroxy group in the first molecule may contribute to hydrogen bonding, and the piperidine ring in the second molecule may improve solubility and binding through additional interactions. The phenyl substituent in the first molecule could be replaced by a smaller, more polar group to reduce steric hindrance and improve fit.
+
+Therefore, I propose a molecule that retains the hydroxy group on the phenyl ring (from molecule 1), keeps the piperidine substituent on the fused bicyclic system (from molecule 2), and replaces the phenyl substituent with a hydroxymethyl group (-CH2OH) to maintain polarity but reduce bulk. This hybrid and mutation approach aims to improve binding interactions and increase the JNK3 score.
+
+<<<Molecule>>>: \box{COc1cc(O)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1C(O)C} }
+2025-06-18 13:49:13 -   Generated SMILES: COc1cc(O)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1C(C)O
+2025-06-18 13:49:13 -   Score: 0.0500
+2025-06-18 13:49:13 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:49:13 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:49:13 - 
+New offspring scores:
+2025-06-18 13:49:13 -   O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccc(F)cc1O: 0.1300
+2025-06-18 13:49:13 -   N#Cc1ccc(C23CC4CC(CC(C(=O)N5CCOCC5O)(C4)C2)C3)cc1: 0.0100
+2025-06-18 13:49:13 -   Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1S(C)(=O)=O: 0.0700
+2025-06-18 13:49:13 -   COc1ccccc1Nc1ccc(NC(=O)c2cc(C(F)(F)F)ccc2OC)c(N)c1: 0.0900
+2025-06-18 13:49:13 -   COc1cc(O)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1C(C)O: 0.0500
+2025-06-18 13:49:13 - 
+--- Generation 13 Summary ---
+2025-06-18 13:49:13 - Population size: 120
+2025-06-18 13:49:13 - Score statistics - Mean: 0.0576, Max: 0.2000, Min: 0.0100, Std: 0.0519
+2025-06-18 13:49:13 - Best molecule this generation: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1 (score: 0.2000)
+2025-06-18 13:49:13 - Total oracle calls so far: 183
+2025-06-18 13:49:13 - Top 5 molecules:
+2025-06-18 13:49:13 -   1. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:49:13 -   2. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:49:13 -   3. CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-18 13:49:13 -   4. O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccccc1O: 0.1800
+2025-06-18 13:49:13 -   5. COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2C1=CC=CC=C1: 0.1800
+2025-06-18 13:49:13 - 
+=== GENERATION 14 ===
+2025-06-18 13:49:13 - Generating 5 offspring using GPT-4...
+2025-06-18 13:49:13 - 
+  --- Offspring 1 ---
+2025-06-18 13:49:17 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccc(C(F)(F)F)cc1C(=O)Nc1ccc2c(N3[CH]CCC3)ncnc2c1,0.14]
+[COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1,0.14]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:17 -   LLM Explanation: {<<<Explanation>>>: Both given molecules share a common core structure: a methoxyphenyl group linked via an amide bond to a bicyclic system containing a substituted piperidine or pyrrolidine ring fused to a purine-like scaffold. The JNK3 scores for both are low (0.14), indicating modest activity. To improve activity, I propose combining features from both molecules and introducing a small modification known to enhance kinase binding: replacing the trifluoromethyl group (C(F)(F)F) in the first molecule with a cyano group (–CN), which is a strong electron-withdrawing group that can improve binding affinity by forming additional interactions. Additionally, I will keep the piperidine ring from the second molecule, which is more flexible and may better fit the binding pocket than the constrained pyrrolidine ring in the first molecule. This hybrid molecule maintains the methoxyphenyl amide core, replaces the trifluoromethyl with a cyano group, and retains the piperidine ring fused to the purine scaffold. This combination is expected to increase the JNK3 score by improving binding interactions and molecular flexibility.
+
+<<<Molecule>>>: \box{COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1C#N}}
+2025-06-18 13:49:17 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1C#N
+2025-06-18 13:49:17 -   Score: 0.0400
+2025-06-18 13:49:17 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:49:17 - 
+  --- Offspring 2 ---
+2025-06-18 13:49:22 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC(=O)Nc1ccc(NCc2ccccc2F)c(C(F)(F)F)c1,0.08]
+[O=C(Nc1ccc(-c2nnc3n2CCCCC3)cc1)c1ccccc1C(F)(F)F,0.01]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:22 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.08) compared to the second (0.01). Both molecules contain an amide linkage and aromatic rings with trifluoromethyl groups, which may contribute to activity. The first molecule has a para-substituted aniline with a fluoro-phenylmethyl amine side chain and a trifluoromethyl group on the aromatic ring, while the second has a more complex heterocyclic system but lower activity.
+
+To improve activity, I propose combining the amide and trifluoromethyl aromatic core of the first molecule with the heterocyclic moiety from the second molecule, which might enhance binding through additional interactions. Specifically, I will replace the fluoro-phenylmethyl amine side chain in the first molecule with the heterocyclic piperidine-fused pyrazole ring from the second molecule, maintaining the trifluoromethyl group and amide linkage.
+
+This hybrid molecule could potentially have improved JNK3 activity due to the combination of favorable features from both molecules.
+
+<<<Molecule>>>: \box{CC(=O)Nc1ccc(NCc2nnc3n2CCCCC3)c(C(F)(F)F)c1}}
+2025-06-18 13:49:22 -   Generated SMILES: CC(=O)Nc1ccc(NCc2nnc3n2CCCCC3)c(C(F)(F)F)c1
+2025-06-18 13:49:22 -   Score: 0.0700
+2025-06-18 13:49:22 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:49:22 - 
+  --- Offspring 3 ---
+2025-06-18 13:49:27 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1,0.19]
+[CCSC[C@@H](C)N(C)C(=O)NCc1ccc(C)cc1N(C)C,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:27 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.19) compared to the second (0.02), indicating that its scaffold and functional groups are more favorable for JNK3 activity. The first molecule contains a fused bicyclic system with a pyrimidine ring and a piperidine ring, along with a phenol group and an amide linkage. The second molecule is simpler, with a thioether and a dimethylamino group attached to an aromatic ring.
+
+To design a molecule with potentially higher JNK3 activity, I propose to combine the favorable bicyclic pyrimidine-piperidine scaffold from the first molecule with some features from the second molecule that might improve binding or solubility, such as the methylated amine on the aromatic ring. Additionally, introducing a methoxy group on the phenol ring (instead of the hydroxyl) could improve membrane permeability and metabolic stability while maintaining hydrogen bonding capability.
+
+Therefore, the proposed molecule retains the bicyclic pyrimidine-piperidine core and amide linkage, replaces the phenol OH with a methoxy group, and adds a dimethylamino substituent on the aromatic ring to enhance interactions and solubility. This hybrid design aims to increase the JNK3 score beyond 0.19.
+
+<<<Molecule>>>: \box{CC1=CC=C(OC)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1} }
+2025-06-18 13:49:27 -   Generated SMILES: COc1ccc(C)c(C(=O)Nc2ccc3c(N4CCCC4)ncnc3c2)c1
+2025-06-18 13:49:27 -   Score: 0.2100
+2025-06-18 13:49:27 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:49:27 - 
+  --- Offspring 4 ---
+2025-06-18 13:49:31 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccccc1Nc1ccc(NC(=O)c2cc(C(F)(F)F)ccc2OC)c(N)c1,0.09]
+[Cc1ccccc1C(=O)NNc1ccc2c(N3CCCO3)ncnc2c1,0.09]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:31 -   LLM Explanation: {<<<Explanation>>>: Both given molecules have a low JNK3 score of 0.09, indicating weak activity. The first molecule features a methoxyphenyl group and a trifluoromethyl-substituted aromatic amide, while the second contains a hydrazide linked to a fused bicyclic heteroaromatic system with a morpholine ring. To improve JNK3 activity, I propose combining the key features: the trifluoromethyl group (which can enhance binding through hydrophobic and electronic effects) and the bicyclic heteroaromatic system (which may improve specificity and binding affinity). Additionally, replacing the hydrazide linker with a more stable amide bond and retaining the morpholine ring for solubility and interaction could enhance activity. This hybrid molecule merges beneficial elements from both structures, potentially increasing JNK3 inhibition. 
+
+<<<Molecule>>>: \box{COc1ccccc1Nc1ccc(NC(=O)c2cc(C(F)(F)F)ccc2OCC3CNCCO3)c(N)c1}}
+2025-06-18 13:49:31 -   Generated SMILES: COc1ccccc1Nc1ccc(NC(=O)c2cc(C(F)(F)F)ccc2OCC2CNCCO2)c(N)c1
+2025-06-18 13:49:31 -   Score: 0.1600
+2025-06-18 13:49:31 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:49:31 - 
+  --- Offspring 5 ---
+2025-06-18 13:49:34 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COC1=CC=CC=C1NC1=CC=C(CNC(=O)NC2=CC=C3C(=C2)N=CN=C3N2CCCC2)C=C1,0.18]
+[[NH3+]C[C@H](CO)CC1=CC(Br)=CC(NC(=O)CS[C@H]2CCCC3=C2C=CC=C3)=C1,0.04]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:34 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.18) compared to the second (0.04), indicating better activity. The first molecule features a methoxyphenyl group linked to a bicyclic heteroaromatic system with an amide linkage, while the second has a bromophenyl group attached to a thioether and a piperidine-containing bicyclic system. To improve activity, I propose combining the methoxyphenyl and bicyclic heteroaromatic core from the first molecule with the thioether linkage from the second molecule, as sulfur linkages can enhance binding through increased lipophilicity and potential interactions. Additionally, replacing the amide linkage in the first molecule with a thioamide might improve binding affinity. This hybrid molecule maintains key pharmacophores from the first molecule but incorporates the thioether and thioamide features from the second, potentially increasing JNK3 activity beyond 0.18. 
+
+<<<Molecule>>>: \box{COC1=CC=CC=C1NC1=CC=C(CSC(=S)NC2=CC=C3C(=C2)N=CN=C3N2CCCC2)C=C1}}
+2025-06-18 13:49:34 -   Generated SMILES: COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1
+2025-06-18 13:49:34 -   Score: 0.2200
+2025-06-18 13:49:34 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:49:34 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:49:34 - 
+New offspring scores:
+2025-06-18 13:49:34 -   COc1ccccc1C(=O)Nc1ccc2c(N3CCCN3)ncnc2c1C#N: 0.0400
+2025-06-18 13:49:34 -   CC(=O)Nc1ccc(NCc2nnc3n2CCCCC3)c(C(F)(F)F)c1: 0.0700
+2025-06-18 13:49:34 -   COc1ccc(C)c(C(=O)Nc2ccc3c(N4CCCC4)ncnc3c2)c1: 0.2100
+2025-06-18 13:49:34 -   COc1ccccc1Nc1ccc(NC(=O)c2cc(C(F)(F)F)ccc2OCC2CNCCO2)c(N)c1: 0.1600
+2025-06-18 13:49:34 -   COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1: 0.2200
+2025-06-18 13:49:34 - 
+--- Generation 14 Summary ---
+2025-06-18 13:49:34 - Population size: 120
+2025-06-18 13:49:34 - Score statistics - Mean: 0.0630, Max: 0.2200, Min: 0.0100, Std: 0.0554
+2025-06-18 13:49:34 - Best molecule this generation: COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1 (score: 0.2200)
+2025-06-18 13:49:34 - Total oracle calls so far: 188
+2025-06-18 13:49:34 - Top 5 molecules:
+2025-06-18 13:49:34 -   1. COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1: 0.2200
+2025-06-18 13:49:34 -   2. COc1ccc(C)c(C(=O)Nc2ccc3c(N4CCCC4)ncnc3c2)c1: 0.2100
+2025-06-18 13:49:34 -   3. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:49:34 -   4. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:49:34 -   5. CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-18 13:49:34 - 
+=== GENERATION 15 ===
+2025-06-18 13:49:34 - Generating 5 offspring using GPT-4...
+2025-06-18 13:49:34 - 
+  --- Offspring 1 ---
+2025-06-18 13:49:40 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(NCC1CCC[NH+](Cc2cc(O)ccc2[N+](=O)[O-])C1)Nc1ccc(Cn2cc(Cl)c([N+](=O)[O-])n2)cc1,0.07]
+[Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1,0.12]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:40 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.07 and contains a piperidine ring with a catechol-like moiety and nitro groups, while the second molecule has a higher score of 0.12 and features a fluorophenyl group, a fused bicyclic heteroaromatic system with a morpholine substituent. The second molecule's higher score suggests that the fused bicyclic heteroaromatic system and the morpholine ring contribute positively to JNK3 activity. To design a molecule with a potentially higher JNK3 score, I propose combining the beneficial features of both molecules: retain the fused bicyclic heteroaromatic system and morpholine from the second molecule, and introduce a hydroxyl-substituted phenyl ring (similar to the catechol-like moiety in the first molecule) to enhance hydrogen bonding and interaction with JNK3. Additionally, replacing the nitro groups (which can be toxic and reduce drug-likeness) with hydroxyl groups may improve activity and reduce toxicity. This hybrid molecule aims to leverage the favorable bicyclic system and morpholine for binding affinity, while adding polar hydroxyl groups to improve interactions and solubility, potentially increasing the JNK3 score beyond 0.12.
+
+<<<Molecule>>>: \box{Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1Oc3ccc(O)cc3} }
+2025-06-18 13:49:40 -   Generated SMILES: Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1Oc1ccc(O)cc1
+2025-06-18 13:49:40 -   Score: 0.0500
+2025-06-18 13:49:40 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:49:40 - 
+  --- Offspring 2 ---
+2025-06-18 13:49:45 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1cc(O)ccc1C(=O)Nc1ccc2c(-c3ccccc3)ncnc2c1,0.18]
+[O=C(Nc1ccc(-c2nnc3n2CCCCC3)cc1)c1ccccc1C(F)(F)F,0.01]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:45 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.18) compared to the second (0.01), indicating that the scaffold and substituents in the first molecule are more favorable for JNK3 activity. The first molecule features a methoxyphenol group and a fused bicyclic heterocycle (a purine-like system) attached to an aniline amide. The second molecule has a trifluoromethyl-substituted benzamide linked to a pyrazolopyridine ring with a piperidine substituent, but shows low activity.
+
+To improve the JNK3 score, I propose combining the favorable features of the first molecule (the methoxyphenol and bicyclic heterocycle) with some elements from the second molecule that might enhance binding, such as the trifluoromethyl group, which can improve metabolic stability and binding affinity through hydrophobic interactions.
+
+Specifically, I suggest starting from the first molecule's scaffold and replacing the phenyl ring attached to the amide nitrogen with a trifluoromethyl-substituted phenyl ring, as in the second molecule, to potentially increase binding affinity and activity. This hybrid molecule maintains the bicyclic heterocycle and the methoxyphenol group, which seem important for activity, while adding the trifluoromethyl group to enhance potency.
+
+This new molecule is expected to have a higher JNK3 score than 0.18 due to the combination of favorable pharmacophores and improved physicochemical properties.
+
+<<<Molecule>>>: \box{COc1cc(O)ccc1C(=O)Nc1ccc2c(-c3ccccc3)ncnc2c1C(F)(F)F}}
+2025-06-18 13:49:45 -   Generated SMILES: COc1cc(O)ccc1C(=O)Nc1ccc2c(-c3ccccc3)ncnc2c1C(F)(F)F
+2025-06-18 13:49:45 -   Score: 0.0600
+2025-06-18 13:49:45 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:49:45 - 
+  --- Offspring 3 ---
+2025-06-18 13:49:49 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COC1=CC=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1[CH]CCC1,0.15]
+[CC(=O)Nc1ccc(NCc2ccccc2F)c(C(F)(F)F)c1,0.08]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:49 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.15) compared to the second (0.08), indicating better activity. The first molecule features a methoxyphenyl group linked to a bicyclic heteroaromatic system with an amide linkage, while the second has an acetamide linked to a trifluoromethyl-substituted phenyl ring with a fluorobenzylamine substituent. To improve activity, I propose combining the bicyclic heteroaromatic core and amide linkage from the first molecule with the trifluoromethyl-substituted phenyl ring from the second, as trifluoromethyl groups often enhance binding affinity and metabolic stability. Additionally, introducing a methoxy group on the phenyl ring may improve solubility and binding interactions. This hybrid molecule aims to leverage the higher activity scaffold of the first molecule and the beneficial trifluoromethyl substitution from the second, potentially increasing the JNK3 score. <<<Molecule>>>: \box{COC1=CC=CC=C1C(=O)NC2=CC=C3C(=C2)N=CN=C3C4=CC(C(F)(F)F)=CC=C4}}
+2025-06-18 13:49:49 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(-c3cccc(C(F)(F)F)c3)ncnc2c1
+2025-06-18 13:49:49 -   Score: 0.1500
+2025-06-18 13:49:49 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:49:49 - 
+  --- Offspring 4 ---
+2025-06-18 13:49:53 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1nc(N[C@@H]2C[NH+]3CCC2CC3)ccc1N,0.06]
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:53 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.06 and features a methoxy-substituted pyrimidine ring with a chiral amine-containing bicyclic moiety. The second molecule has a higher score of 0.19 and contains a benzamide linked to a fused bicyclic heteroaromatic system with a piperidine substituent. To design a molecule with a potentially higher JNK3 score, I propose combining the favorable features of both molecules: the bicyclic amine moiety from the first molecule (which may enhance binding through its basic nitrogen and conformational rigidity) and the fused bicyclic heteroaromatic system from the second molecule (which likely contributes to better π-stacking and binding affinity). Additionally, I will introduce a methoxy group on the aromatic ring to improve solubility and possibly enhance interactions. This hybrid molecule aims to leverage the beneficial structural elements of both molecules to increase biological activity against JNK3. 
+
+<<<Molecule>>>: \box{COc1ccc(NC2CN3CCC2CC3)nc1C(=O)Nc4ccc5c(ncnc5c4)N6CCCC6}}
+2025-06-18 13:49:53 -   Generated SMILES: COc1ccc(NC2CN3CCC2CC3)nc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1
+2025-06-18 13:49:53 -   Score: 0.1900
+2025-06-18 13:49:53 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:49:53 - 
+  --- Offspring 5 ---
+2025-06-18 13:49:58 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1ccccc1Nc1ccc(NC(=O)c2cc(C(F)(F)F)ccc2OC)c(N)c1,0.09]
+[Cc1ccccc1C(=O)NNc1ccc2c(N3CCCO3)ncnc2c1,0.09]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:49:58 -   LLM Explanation: {<<<Explanation>>>: Both given molecules have a JNK3 score of 0.09, indicating relatively low activity. The first molecule features a methoxyphenyl group linked to an aniline with an amide connected to a trifluoromethyl-substituted aromatic ring, which may contribute to binding affinity through hydrophobic and electronic effects. The second molecule contains a benzoyl hydrazine linked to a fused bicyclic heteroaromatic system with a morpholine ring, which could enhance solubility and binding through hydrogen bonding.
+
+To improve the JNK3 score, I propose combining favorable features from both molecules: retaining the trifluoromethyl-substituted aromatic amide from the first molecule for potency, and incorporating the bicyclic heteroaromatic system with the morpholine ring from the second molecule to enhance binding interactions and solubility. Additionally, replacing the aniline linker with a hydrazine linker may improve hydrogen bonding and flexibility.
+
+Thus, the proposed molecule is a trifluoromethyl-substituted aromatic amide linked via a hydrazine to the bicyclic heteroaromatic system containing the morpholine ring, aiming to increase JNK3 activity.
+
+<<<Molecule>>>: \box{COc1ccccc1NC(=O)c2cc(C(F)(F)F)ccc2NNc3ccc4c(N5CCCO5)ncnc4c3}}
+2025-06-18 13:49:58 -   Generated SMILES: COc1ccccc1NC(=O)c1cc(C(F)(F)F)ccc1NNc1ccc2c(N3CCCO3)ncnc2c1
+2025-06-18 13:49:58 -   Score: 0.1500
+2025-06-18 13:49:58 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:49:58 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:49:58 - 
+New offspring scores:
+2025-06-18 13:49:58 -   Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1Oc1ccc(O)cc1: 0.0500
+2025-06-18 13:49:58 -   COc1cc(O)ccc1C(=O)Nc1ccc2c(-c3ccccc3)ncnc2c1C(F)(F)F: 0.0600
+2025-06-18 13:49:58 -   COc1ccccc1C(=O)Nc1ccc2c(-c3cccc(C(F)(F)F)c3)ncnc2c1: 0.1500
+2025-06-18 13:49:58 -   COc1ccc(NC2CN3CCC2CC3)nc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:49:58 -   COc1ccccc1NC(=O)c1cc(C(F)(F)F)ccc1NNc1ccc2c(N3CCCO3)ncnc2c1: 0.1500
+2025-06-18 13:49:58 - 
+--- Generation 15 Summary ---
+2025-06-18 13:49:58 - Population size: 120
+2025-06-18 13:49:58 - Score statistics - Mean: 0.0676, Max: 0.2200, Min: 0.0100, Std: 0.0565
+2025-06-18 13:49:58 - Best molecule this generation: COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1 (score: 0.2200)
+2025-06-18 13:49:58 - Total oracle calls so far: 193
+2025-06-18 13:49:58 - Top 5 molecules:
+2025-06-18 13:49:58 -   1. COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1: 0.2200
+2025-06-18 13:49:58 -   2. COc1ccc(C)c(C(=O)Nc2ccc3c(N4CCCC4)ncnc3c2)c1: 0.2100
+2025-06-18 13:49:58 -   3. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:49:58 -   4. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:49:58 -   5. CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-18 13:49:58 - 
+=== GENERATION 16 ===
+2025-06-18 13:49:58 - Generating 5 offspring using GPT-4...
+2025-06-18 13:49:58 - 
+  --- Offspring 1 ---
+2025-06-18 13:50:03 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCOCC3)ncnc2c1,0.12]
+[COc1ccc(NC2CN3CCC2CC3)nc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.19]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:50:03 -   LLM Explanation: {<<<Explanation>>>: The second molecule has a higher JNK3 score (0.19) compared to the first (0.12). Both molecules share a common core: a substituted aminopyrimidine linked to a benzamide moiety. The second molecule features a methoxy group on the phenyl ring and a bicyclic amine (a fused azabicyclo system) attached to the pyrimidine, which likely improves binding affinity and activity. To propose a molecule with potentially higher activity, I will combine beneficial features from both molecules and introduce a slight modification to enhance interactions: 
+
+- Retain the methoxy group on the phenyl ring from the second molecule, as electron-donating groups can improve binding.
+- Use the bicyclic amine from the second molecule, but replace the piperidine ring with a morpholine ring (oxygen-containing heterocycle) to improve solubility and possibly binding.
+- Keep the benzamide linkage and the aminopyrimidine core.
+- Add a fluorine substituent on the phenyl ring para to the methoxy to potentially enhance binding via halogen bonding.
+
+This crossover and mutation approach aims to combine favorable features and add a fluorine to improve activity, potentially increasing the JNK3 score beyond 0.19.
+
+<<<Molecule>>>: \box{COc1cc(F)ccc1C(=O)Nc1ccc2c(N3COCCN3)ncnc2c1}}
+2025-06-18 13:50:03 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2c(N3COCCN3)ncnc2c1
+2025-06-18 13:50:03 -   Score: 0.1300
+2025-06-18 13:50:03 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:50:03 - 
+  --- Offspring 2 ---
+2025-06-18 13:50:09 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(NCC1CCN(C(=O)c2ccccn2)CC1)C(=O)NC1CCCC1,0.02]
+[COc1ccccc1C(=O)Nc1ccc2c(-c3cccc(C(F)(F)F)c3)ncnc2c1,0.15]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:50:09 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a low JNK3 score (0.02) and contains a piperazine ring linked to a pyridine amide, while the second molecule has a higher score (0.15) and features a methoxyphenyl amide connected to a fused bicyclic heteroaromatic system with a trifluoromethyl-substituted phenyl ring. The higher activity in the second molecule likely arises from the fused bicyclic system and the electron-withdrawing trifluoromethyl group, which can enhance binding affinity to JNK3. To design a molecule with potentially higher activity, I propose combining the piperazine amide motif from the first molecule (which may improve solubility and binding flexibility) with the bicyclic heteroaromatic core and trifluoromethyl-substituted phenyl ring from the second molecule. This hybrid molecule maintains key pharmacophores from both molecules, potentially improving binding interactions and activity against JNK3.
+
+<<<Molecule>>>: \box{O=C(NCC1CCN(C(=O)c2ccc3c(-c4cccc(C(F)(F)F)c4)ncnc3c2)CC1)C(=O)NC1CCCC1}}
+2025-06-18 13:50:09 -   Generated SMILES: O=C(NCC1CCN(C(=O)c2ccc3c(-c4cccc(C(F)(F)F)c4)ncnc3c2)CC1)C(=O)NC1CCCC1
+2025-06-18 13:50:09 -   Score: 0.0900
+2025-06-18 13:50:09 -   ✅ Molecule 2 saved to incremental files
+2025-06-18 13:50:09 - 
+  --- Offspring 3 ---
+2025-06-18 13:50:13 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1,0.14]
+[O=C(NCC1CCN(C(=O)c2ccccn2)CC1)C(=O)NC1CCCC1,0.02]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:50:13 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a higher JNK3 score (0.14) compared to the second (0.02), indicating that the scaffold containing the methoxy-fluorophenyl amide linked to a bicyclic heterocycle with a piperidine ring (N3CCCC3) is more active. The second molecule has a piperazine ring with amide linkers but lower activity. To improve activity, I propose combining the favorable features: retain the bicyclic heterocycle with the piperidine ring from the first molecule, but introduce an additional amide linker and a pyridine ring from the second molecule to potentially enhance binding interactions. Also, keeping the methoxy and fluorine substitutions on the phenyl ring may help maintain activity. This hybrid molecule aims to increase hydrogen bonding and hydrophobic interactions, potentially improving the JNK3 score.
+
+<<<Molecule>>>: \box{COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1C(=O)NCC3CCN(C(=O)c4ccccn4)CC3}}}
+2025-06-18 13:50:13 -   Generated SMILES: COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1C(=O)NCC1CCN(C(=O)c2ccccn2)CC1
+2025-06-18 13:50:13 -   Score: 0.0400
+2025-06-18 13:50:13 -   ✅ Molecule 3 saved to incremental files
+2025-06-18 13:50:13 - 
+  --- Offspring 4 ---
+2025-06-18 13:50:22 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[O=C(Nc1ccc2c(N3CCCC3)ncnc2c1)c1ccc(F)cc1O,0.13]
+[COc1ccccc1C(=O)Nc1ccc2c(-c3cccc(C(F)(F)F)c3)ncnc2c1,0.15]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:50:22 -   LLM Explanation: Both given molecules share a core structure of a substituted aminopyrimidine linked to a substituted phenyl ring, which likely contributes to JNK3 activity. The second molecule has a slightly higher JNK3 score (0.15) and features a trifluoromethyl-substituted phenyl ring, which can enhance binding affinity through hydrophobic and electronic effects. The first molecule has a hydroxyl and fluorine substitution on the phenyl ring, but a smaller JNK3 score (0.13). To design a molecule with potentially higher activity, I propose combining the trifluoromethyl-substituted phenyl ring from the second molecule with the hydroxyl group from the first molecule to increase hydrogen bonding potential, and also retain the piperidine ring (N3CCCC3) from the first molecule, which may improve binding through conformational constraints. This crossover and mutation approach aims to enhance both hydrophobic interactions and hydrogen bonding, potentially increasing JNK3 activity. 
+
+The proposed molecule SMILES is: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1-c1ccc(O)c(F)c1C(F)(F)F
+
+However, to keep the molecule valid and synthetically reasonable, I will place the trifluoromethyl group and hydroxyl group on the same phenyl ring attached to the aminopyrimidine core, and keep the piperidine substitution on the pyrimidine ring as in the first molecule.
+
+Final SMILES: COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1-c1ccc(O)c(F)c1C(F)(F)F
+
+But this is quite complex and may not be synthetically feasible. Alternatively, I will propose a simpler molecule by taking the second molecule and adding a hydroxyl group ortho to the trifluoromethyl group on the phenyl ring, which may increase hydrogen bonding and improve activity.
+
+Final proposed molecule SMILES: COc1ccccc1C(=O)Nc1ccc2c(-c3cc(O)ccc3C(F)(F)F)ncnc2c1
+
+This molecule combines the trifluoromethyl group and adds a hydroxyl group on the phenyl ring, potentially increasing JNK3 activity.
+2025-06-18 13:50:22 -   Generated SMILES: COc1ccccc1C(=O)Nc1ccc2c(-c3cc(O)ccc3C(F)(F)F)ncnc2c1
+2025-06-18 13:50:22 -   Score: 0.1100
+2025-06-18 13:50:22 -   ✅ Molecule 4 saved to incremental files
+2025-06-18 13:50:22 - 
+  --- Offspring 5 ---
+2025-06-18 13:50:25 -   LLM Prompt: Fallback genetic operation for parents: ['CC1=CC(Br)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1', 'COC1=CC(F)=CC=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCOCC1']
+2025-06-18 13:50:25 -   LLM Explanation: Fallback to genetic operations due to LLM error: 
+2025-06-18 13:50:25 -   Generated SMILES: C1=CC=C2C(=C1)N=CN=C2N1CCCC1
+2025-06-18 13:50:25 -   Score: 0.0100
+2025-06-18 13:50:25 -   ✅ Molecule 5 saved to incremental files
+2025-06-18 13:50:25 - 
+Generated 5 valid offspring molecules
+2025-06-18 13:50:25 - 
+New offspring scores:
+2025-06-18 13:50:25 -   COc1cc(F)ccc1C(=O)Nc1ccc2c(N3COCCN3)ncnc2c1: 0.1300
+2025-06-18 13:50:25 -   O=C(NCC1CCN(C(=O)c2ccc3c(-c4cccc(C(F)(F)F)c4)ncnc3c2)CC1)C(=O)NC1CCCC1: 0.0900
+2025-06-18 13:50:25 -   COc1cc(F)ccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1C(=O)NCC1CCN(C(=O)c2ccccn2)CC1: 0.0400
+2025-06-18 13:50:25 -   COc1ccccc1C(=O)Nc1ccc2c(-c3cc(O)ccc3C(F)(F)F)ncnc2c1: 0.1100
+2025-06-18 13:50:25 -   C1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.0100
+2025-06-18 13:50:25 - 
+--- Generation 16 Summary ---
+2025-06-18 13:50:25 - Population size: 120
+2025-06-18 13:50:25 - Score statistics - Mean: 0.0703, Max: 0.2200, Min: 0.0100, Std: 0.0560
+2025-06-18 13:50:25 - Best molecule this generation: COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1 (score: 0.2200)
+2025-06-18 13:50:25 - Total oracle calls so far: 198
+2025-06-18 13:50:25 - Top 5 molecules:
+2025-06-18 13:50:25 -   1. COc1ccccc1Nc1ccc(CSC(=S)Nc2ccc3c(N4CCCC4)ncnc3c2)cc1: 0.2200
+2025-06-18 13:50:25 -   2. COc1ccc(C)c(C(=O)Nc2ccc3c(N4CCCC4)ncnc3c2)c1: 0.2100
+2025-06-18 13:50:25 -   3. COc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.2000
+2025-06-18 13:50:25 -   4. Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1: 0.1900
+2025-06-18 13:50:25 -   5. CC1=CC=C(O)C=C1C(=O)NC1=CC=C2C(=C1)N=CN=C2N1CCCC1: 0.1900
+2025-06-18 13:50:25 - 
+=== GENERATION 17 ===
+2025-06-18 13:50:25 - Generating 5 offspring using GPT-4...
+2025-06-18 13:50:25 - 
+  --- Offspring 1 ---
+2025-06-18 13:50:30 -   LLM Prompt: I have two molecules and their JNK3 scores. The JNK3 score measures a molecular's biological activity against JNK3.
+
+
+[Cc1ccccc1C(=O)Nc1ccc2c(N3CCCC3)ncnc2c1-c1cc(Cl)cc(Cl)c1,0.05]
+[CCSCC(C)N(C)C(=O)NCc1ccc(Nc2ccccc2OC)cc1N(C)C,0.09]Please propose a new molecule that has a higher JNK3 score. You can either make crossover and mutations based on the given molecules or just propose a new molecule based on your knowledge.
+
+
+
+Your output should follow the format: {<<<Explaination>>>: $EXPLANATION, <<<Molecule>>>: \box{$Molecule}}. Here are the requirements:
+
+        
+
+1. $EXPLANATION should be your analysis.
+2. The $Molecule should be the smiles of your propsosed molecule.
+3. The molecule should be valid.
+        
+2025-06-18 13:50:30 -   LLM Explanation: {<<<Explanation>>>: The first molecule has a JNK3 score of 0.05 and features a benzamide linked to a fused bicyclic heteroaromatic system with a dichlorophenyl substituent. The second molecule has a slightly higher score of 0.09 and contains a thioether-linked alkyl chain with a dimethylamide and a substituted aniline bearing a methoxyphenyl group. To design a molecule with a higher JNK3 score, I propose combining the key features that might enhance binding: the bicyclic heteroaromatic core from the first molecule (which likely contributes to specificity) and the flexible alkyl chain with the dimethylamide and methoxyphenyl aniline from the second molecule (which may improve solubility and interactions). Additionally, replacing the dichlorophenyl group with a less bulky but still hydrophobic group such as a trifluoromethylphenyl might improve binding affinity by balancing hydrophobic and electronic effects. This hybrid molecule should maintain key interactions and potentially improve activity against JNK3. 
+
+<<<Molecule>>>: \box{Cc1ccccc1C(=O)Nc2ccc3c(N4CCCC4)ncnc3c2-c2ccc(C(F)(F)F)cc2CCSCC(C)N(C)C(=O)Nc5ccc(Nc6ccccc6OC)cc5N(C)C}}}
+2025-06-18 13:50:30 -   Generated SMILES: COc1ccccc1Nc1ccc(NC(=O)N(C)C(C)CSCCc2cc(C(F)(F)F)ccc2-c2c(NC(=O)c3ccccc3C)ccc3c(N4CCCC4)ncnc23)c(N(C)C)c1
+2025-06-18 13:50:31 -   Score: 0.1900
+2025-06-18 13:50:31 -   ✅ Molecule 1 saved to incremental files
+2025-06-18 13:50:31 - 
+  --- Offspring 2 ---

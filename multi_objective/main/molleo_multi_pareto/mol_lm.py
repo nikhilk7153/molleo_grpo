@@ -12,7 +12,7 @@ from .mol_lm_utils import get_SMILES_list, get_description_list, load_language_m
 from .mol_lm_utils import prepare_text_tokens, clean_edits
 from MoleculeSTM.utils import prepare_text_tokens, get_molecule_repr_MoleculeSTM, freeze_network
 from rdkit import Chem
-from utils import get_fp_scores
+from main.molleo_multi_pareto.utils import get_fp_scores
 
 
 def get_lr(t, initial_lr, rampdown=0.25, rampup=0.05):

@@ -146,6 +146,18 @@ class Qwen:
             # Save the conversation
             self.save_conversation(messages, metadata)
             
+            # Extract explanation
+            explanation = ""
+            try:
+                explanation_match = re.search(r'<<<Explaination>>>:\s*(.*?)<<<Molecule>>>', r, re.DOTALL)
+                if explanation_match:
+                    explanation = explanation_match.group(1).strip()
+                else:
+                    # Fallback: use the full response as explanation if format not found
+                    explanation = r
+            except:
+                explanation = r
+            
             # Try to extract SMILES using the expected format
             smiles_match = re.search(r'\\box\{(.*?)\}', r)
             if smiles_match:
@@ -155,15 +167,16 @@ class Qwen:
                 
                 if proposed_smiles is not None:
                     new_child = Chem.MolFromSmiles(proposed_smiles)
-                    return new_child
+                    # Return molecule, explanation, and prompt
+                    return new_child, explanation, prompt
                 else:
                     print("SMILES sanitization failed, setting reward to 0")
-                    return None
+                    return None, explanation, prompt
             else:
                 # If parsing fails, save raw output and set reward to 0
                 print("Could not parse SMILES from response, saving raw output and setting reward to 0")
                 print(f"Raw response: {r}")
-                return None
+                return None, explanation, prompt
                 
         except Exception as e:
             print(f"{type(e).__name__} {e}")
@@ -171,7 +184,9 @@ class Qwen:
             new_child = co.crossover(parent_mol[0], parent_mol[1])
             if new_child is not None:
                 new_child = mu.mutate(new_child, mutation_rate)
-            return new_child
+            # Return molecule with fallback explanation and prompt
+            fallback_prompt = f"Fallback genetic operation for parents: {[Chem.MolToSmiles(mol) for mol in parent_mol]}"
+            return new_child, f"Fallback to genetic operations due to LLM error: {e}", fallback_prompt
 
     def get_conversation_summary(self):
         """Get a summary of all conversations"""

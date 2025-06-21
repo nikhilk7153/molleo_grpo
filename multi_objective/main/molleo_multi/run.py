@@ -73,7 +73,7 @@ class GB_GA_Optimizer(BaseOptimizer):
         self.model_name = "graph_ga"
 
         self.mol_lm = None
-        if args.mol_lm == "GPT-4":
+        if args.mol_lm == "GPT-4" or args.mol_lm == "gpt-4.1-mini":
             self.mol_lm = GPT4()
         elif args.mol_lm == "BioT5":
             self.mol_lm = BioT5()
@@ -128,7 +128,7 @@ class GB_GA_Optimizer(BaseOptimizer):
             
             fp_scores = []
             offspring_mol_temp = []
-            if self.args.mol_lm == 'GPT-4' or self.args.mol_lm == 'Qwen':
+            if self.args.mol_lm == 'GPT-4' or self.args.mol_lm == 'gpt-4.1-mini' or self.args.mol_lm == 'Qwen':
                 print(f"Generating {config['offspring_size']} offspring using {self.args.mol_lm}...")
                 offspring_mol = []
                 offspring_smiles = []
