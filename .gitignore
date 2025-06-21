@@ -37,3 +37,23 @@ single_objective/results_*/
 .env.local
 .env.*.local
 *.key
+
+# Large model checkpoint files
+optimizer.pt
+scheduler.pt
+rng_state.pth
+
+# Training outputs
+*.log
+console_output.log
+
+# Training checkpoints with large files
+checkpoint-*/optimizer.pt
+checkpoint-*/scheduler.pt  
+checkpoint-*/rng_state.pth
+
+# Keep small config files but exclude large binary files
+*.pt
+!adapter_config.json
+!tokenizer_config.json
+!training_info.json

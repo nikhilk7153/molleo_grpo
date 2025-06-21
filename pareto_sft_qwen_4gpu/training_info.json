@@ -1,0 +1,16 @@
+{
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "training_examples": 2241,
+  "min_score_threshold": 1.8,
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "per_device_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "effective_batch_size": 32,
+  "gpus_used": 4,
+  "lora_config": {
+    "r": 16,
+    "alpha": 32,
+    "enabled": true
+  }
+}
