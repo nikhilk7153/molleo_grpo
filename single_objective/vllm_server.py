@@ -130,8 +130,8 @@ def main():
                         help='GPU memory utilization (default: 0.8)')
     parser.add_argument('--max-model-len', type=int, default=8192, 
                         help='Maximum model length for context (default: 8192)')
-    parser.add_argument('--tensor-parallel-size', type=int, default=4, 
-                        help='Tensor parallel size for multi-GPU inference (default: 4)')
+    parser.add_argument('--tensor-parallel-size', type=int, default=1, 
+                        help='Tensor parallel size for multi-GPU inference (default: 1)')
     parser.add_argument('--hf-token', type=str, default=None,
                         help='HuggingFace access token for authentication (required for Qwen models)')
     parser.add_argument('--trust-remote-code', action='store_true',

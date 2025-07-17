@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 """
-LLM Black-box Optimizer V2
+LLM Black-box Optimizer V2 - GPT-4.1-mini Version
 
-Uses Qwen-2.5-7B-Instruct via OpenRouter API.
+Uses GPT-4.1-mini via OpenAI API.
 
 Follows the specified algorithm:
 1. Randomly generate n samples to initialize a candidate pool
 2. For each iteration:
-   - Sample 2m samples from pool using exp(±r(sample)) weighting
+   - Sample 2m samples from pool using weighted sampling
    - Score samples with reward oracle
    - Prompt LLM with specific format
    - Generate m new diverse samples
@@ -31,26 +31,28 @@ sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 from main.optimizer import Oracle as MolleoOracle
 from main.molleo.GPT4 import sanitize_smiles
 
-# vLLM server configuration - using local server
-import requests
-VLLM_SERVER_URL = "http://localhost:8000/v1/chat/completions"
+# OpenAI API configuration
+from openai import OpenAI
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
 
-class LLMBlackBoxOptimizerV2:
+class LLMBlackBoxOptimizerV2GPT4:
     def __init__(self, args):
         self.args = args
         self.oracle = MolleoOracle(args=args)
         self.candidate_pool = []  # List of (smiles, score) tuples
-        self.model_name = "Qwen/Qwen2.5-7B-Instruct"
+        self.model_name = "gpt-4.1-mini"
         
-        print("🎯 Using Qwen-2.5-7B-Instruct via local vLLM server for molecular generation")
+        print("🎯 Using GPT-4.1-mini via OpenAI API for molecular generation")
         
-        # Test vLLM server connection
-        if not self._test_vllm_connection():
-            print("❌ Cannot connect to vLLM server!")
-            print("   Please make sure the vLLM server is running on localhost:8000")
-            raise ConnectionError("vLLM server not accessible")
+        # Test OpenAI API connection
+        if not self._test_openai_connection():
+            print("❌ Cannot connect to OpenAI API!")
+            print("   Please check your OPENAI_API_KEY environment variable")
+            raise ConnectionError("OpenAI API not accessible")
         else:
-            print("✅ vLLM server connection verified")
+            print("✅ OpenAI API connection verified")
         
         # Load dataset for random sampling
         self.all_smiles = self._load_zinc_dataset()
@@ -60,25 +62,18 @@ class LLMBlackBoxOptimizerV2:
         self.best_scores_history = []
         self.cumulative_reward = 0.0  # Track cumulative reward across iterations
         
-    def _test_vllm_connection(self) -> bool:
-        """Test if the vLLM server is accessible"""
+    def _test_openai_connection(self) -> bool:
+        """Test if the OpenAI API is accessible"""
         try:
-            payload = {
-                "model": self.model_name,
-                "messages": [{"role": "user", "content": "Test connection"}],
-                "max_tokens": 10,
-                "temperature": 0.1
-            }
-            response = requests.post(
-                VLLM_SERVER_URL,
-                headers={"Content-Type": "application/json"},
-                json=payload,
-                timeout=30
+            response = client.chat.completions.create(
+                model=self.model_name,
+                messages=[{"role": "user", "content": "Test connection"}],
+                max_tokens=10,
+                temperature=0.1
             )
-            response.raise_for_status()
             return True
         except Exception as e:
-            print(f"vLLM server test failed: {e}")
+            print(f"OpenAI API test failed: {e}")
             return False
     
     def _load_zinc_dataset(self) -> List[str]:
@@ -266,7 +261,7 @@ class LLMBlackBoxOptimizerV2:
                                      m: int) -> Tuple[str, str]:
         """Query LLM with the specific prompt format requested"""
         
-                # Extract molecules and rewards
+        # Extract molecules and rewards
         positive_molecules = [smi for smi, _ in positive_samples]
         positive_rewards = [score for _, score in positive_samples]
         negative_molecules = [smi for smi, _ in negative_samples]
@@ -288,6 +283,7 @@ Please analyze the results, and output {m} new samples with JNK3 scores better t
 
 Please generate exactly {m} new diverse molecular structures as SMILES strings that should achieve higher JNK3 scores than the positive samples. Having diverse molecules contributes to your reward score, so avoid making minr tweaks to the top molecules from the positive sameple.
 
+
 For each molecule, provide both an explanation and the molecule using this exact format:
 <explanation>Your reasoning for why this molecule should have higher JNK3 score</explanation> + <molecule>SMILES_STRING</molecule>
 
@@ -304,33 +300,18 @@ Generate {m} diverse molecules:"""
             {"role": "user", "content": prompt}
         ]
         
-        payload = {
-            "model": self.model_name,
-            "messages": messages,
-            "temperature": 0.7,
-            "max_tokens": 4096,
-            "stop": ["User:", "System:"]
-        }
-        
         for retry in range(3):
             try:
-                response = requests.post(
-                    VLLM_SERVER_URL,
-                    headers={"Content-Type": "application/json"},
-                    json=payload,
-                    timeout=120
+                response = client.chat.completions.create(
+                    model=self.model_name,
+                    messages=messages,
+                    temperature=0.7,
+                    max_tokens=2048
                 )
-                response.raise_for_status()
-                result = response.json()
-                return prompt, result["choices"][0]["message"]["content"].strip()
+                return prompt, response.choices[0].message.content.strip()
                 
-            except requests.exceptions.HTTPError as e:
-                print(f"vLLM server HTTP error (attempt {retry + 1}/3): {e}")
-                print(f"Response content: {response.text}")
-                if retry == 2:
-                    raise e
             except Exception as e:
-                print(f"vLLM server API call failed (attempt {retry + 1}/3): {e}")
+                print(f"OpenAI API call failed (attempt {retry + 1}/3): {e}")
                 if retry == 2:
                     raise e
         
@@ -455,7 +436,7 @@ Generate {m} diverse molecules:"""
         """Run the optimization following the specified algorithm"""
         
         print("="*80)
-        print("LLM BLACK-BOX OPTIMIZER V2")
+        print("LLM BLACK-BOX OPTIMIZER V2 - GPT-4.1-mini")
         print("="*80)
         
         # Step 1: Randomly generate n samples to initialize candidate pool
@@ -677,7 +658,8 @@ Generate {m} diverse molecules:"""
             'optimization_info': {
                 'oracle': self.args.oracle,
                 'seed': self.args.seed,
-                'algorithm': 'LLM_BlackBox_V2',
+                'algorithm': 'LLM_BlackBox_V2_GPT4',
+                'model': self.model_name,
                 'total_iterations': len(self.iteration_results)
             },
             'final_results': {
@@ -710,21 +692,27 @@ Generate {m} diverse molecules:"""
             }
         }
         
-        output_file = os.path.join(self.args.output_dir, 'optimization_results_v2.json')
+        # Use custom output filename if provided, otherwise use default
+        if hasattr(self.args, 'output_file') and self.args.output_file:
+            output_file = os.path.join(self.args.output_dir, self.args.output_file)
+        else:
+            output_file = os.path.join(self.args.output_dir, 'optimization_results_v2_gpt4.json')
+        
         with open(output_file, 'w') as f:
             json.dump(results, f, indent=2)
         
         print(f"💾 Results saved to: {output_file}")
 
 def main():
-    parser = argparse.ArgumentParser(description='LLM Black-box Optimizer V2')
+    parser = argparse.ArgumentParser(description='LLM Black-box Optimizer V2 - GPT-4.1-mini')
     parser.add_argument('--oracle', type=str, default='jnk3', help='Oracle to optimize')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     parser.add_argument('--n_init', type=int, default=120, help='Initial pool size (random)')
     parser.add_argument('--m', type=int, default=5, help='Number of positive/negative samples per iteration')
     parser.add_argument('--max_iterations', type=int, default=20, help='Maximum iterations')
     parser.add_argument('--max_oracle_calls', type=int, default=20000, help='Maximum oracle calls')
-    parser.add_argument('--output_dir', type=str, default='./results_blackbox_v2', help='Output directory')
+    parser.add_argument('--output_dir', type=str, default='./results_blackbox_v2_gpt4', help='Output directory')
+    parser.add_argument('--output_file', type=str, default=None, help='Custom output JSON filename (default: optimization_results_v2_gpt4.json)')
     
     args = parser.parse_args()
     
@@ -743,17 +731,17 @@ def main():
     args.log_results = True
     args.smi_file = None
     
-    print(f"Starting LLM Black-box Optimization V2:")
+    print(f"Starting LLM Black-box Optimization V2 with GPT-4.1-mini:")
     print(f"  Oracle: {args.oracle}")
     print(f"  Seed: {args.seed}")
     print(f"  Initial pool size (random): {args.n_init}")
     print(f"  Samples per iteration (m): {args.m}")
     print(f"  Max iterations: {args.max_iterations}")
     print(f"  Max oracle calls: {args.max_oracle_calls}")
-    print(f"  Using Qwen-2.5-7B-Instruct via OpenRouter")
+    print(f"  Using GPT-4.1-mini via OpenAI API")
     
     # Create optimizer
-    optimizer = LLMBlackBoxOptimizerV2(args)
+    optimizer = LLMBlackBoxOptimizerV2GPT4(args)
     
     # Run optimization
     final_pool = optimizer.optimize(

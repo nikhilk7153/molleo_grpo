@@ -27,7 +27,7 @@ pip install selfies
 pip install vllm
 pip install requests
 pip install tensorboard
-pip install scikit-learn=1.2.2
+pip install scikit-learn==1.2.2
 ```
 
 Then we can activate conda via following command. 
@@ -48,11 +48,11 @@ conda activate molleo
 ```bash
 conda activate molleo
 python single_objective/vllm_server.py \
-    --model Qwen/Qwen2.5-1.5B-Instruct \
+    --model Qwen/Qwen2.5-7B-Instruct \
     --host 0.0.0.0 \
     --port 8000 \
     --gpu-memory-utilization 0.8 \
-    --tensor-parallel-size 4 \
+    --tensor-parallel-size 1 \
     --trust-remote-code
 ```
 
